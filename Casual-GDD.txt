@@ -1,0 +1,194 @@
+# CAUSAL
+
+> "You caused one more round."
+
+---
+
+## 1. Logline
+
+A single decommissioned facility exists in two overlapping states, then and now, cause and effect. You toggle between what it was and what it is, running the same route again and again. Every return is causal. You are the reason the loop keeps going, and the reason it is falling apart.
+
+It is told entirely through environmental storytelling in a simple, original space. No cutscene explains it. The building does. No sprawling epic. Just one small facility with one Object at its center.
+
+---
+
+## 2. High Concept
+
+**CAUSAL** is a first-person liminal loop about causality.
+
+You explore one place, a compact research facility built around an Object, that lives in two states on the same layout:
+
+*   **CAUSE [ Operational ]** - Warm, loud, alive. The facility at peak operation. Fluorescents hum, machines cycle, silhouettes move through corridors, amber warning lights pulse.
+*   **EFFECT [ Derelict ]** - Cold, silent, dead. The same facility years after it was abandoned. Same concrete, but now rust, dead consoles, collapsed scaffolding, dust, and emergency lighting.
+
+You can flip between states at will on a short cooldown. That flip is the whole game. It is your time device and it is the trailer shot. CAUSAL does it with one readable brutalist building that is original, small in scope, and built to show off lighting and particles instead of lore.
+
+The loop is the point:
+
+> **Every "One More Round" is caused by you.**
+> Each reset pushes the world one step closer to collapse, but leaves one permanent trace you made. The facility is not dying despite you coming back. It is hanging on only because you keep coming back.
+
+The game never says the words causal loop. You feel it instead. A blast door you wedged open in CAUSE is still wedged in EFFECT three rounds later. The same hallway can be a shortcut or a dead end depending on what you did.
+
+The old title One More Round is now diegetic. It is what the status board says. It is what the checkpoint log says. It is what you do. It is not the game title anymore.
+
+---
+
+## 3. Theme Interpretation - Why CAUSAL?
+
+**What the game is really about:**
+
+CAUSAL. You are the causal agent. Picking one more round is the cause. The facility sticking around and rotting is the effect. It is a causal loop, a bootstrap paradox:
+
+*   The facility is empty because everyone left.
+*   Everyone left because the facility failed.
+*   You keep it alive by returning, and you wear it down by resetting.
+
+The switch is not just visual. It makes cause and effect walkable. What you do in CAUSE shows up as a consequence in EFFECT. A hatch you prop open in the past is still propped open years later. A conduit you overload in CAUSE ends up fried and sparking in EFFECT. You start to think causally, not just spatially.
+
+We never tell you this in dialogue. The building tells you. Your causes outlive your rounds. By the end you realize the facility was built around the Object, and in a way the Object was built around you.
+
+**Tone:** Quiet, stubborn, a little melancholic. Not horror. More clinical and lonely, like a proving ground after the test was canceled and everyone went home.
+
+---
+
+## 4. Core Pillars
+
+1.  **Two states, one space, one chain of cause.** Do not load a new level. Reveal a different truth about the same one, and let the player create the link between them.
+2.  **The switch is the spectacle.** Every change of state should be the juiciest moment in the game. Light sweep, machinery roar cutting to dead silence, dust inverting. That is the trailer shot.
+3.  **Loss with residue, causality you can touch.** Every reset takes something away and leaves something behind because you caused it. The world gets worse, but you get better at causing the right things.
+4.  **Small scope, one place, done well.** One facility built really well will always beat three half built ones. Go deep, not wide.
+
+---
+
+## 5. Setting
+
+**The Facility, a minimal research and containment site built around the Object.** A stripped down, functional building. Poured concrete, steel catwalks, observation glass, and one containment core. Small enough to stay readable, and clear enough that you recognize every room in both states.
+
+Picture a Cold War era proving ground or test silo. Too small to matter, except for what they put in the middle.
+
+*   **CAUSE [Operational] state:** Working and occupied, but people are just silhouettes or ambient presence. Warm fluorescents and amber warnings, consoles glowing, PA announcements and machinery loops. Status board reads `CAUSAL FACILITY - ROUND 07 - ONE MORE?`
+*   **EFFECT [Derelict] state:** Same layout, empty. Cold blues and greys, dust in the air, dead consoles, rust, collapsed scaffolding, water damage, flickering emergency strips. Near silence except for creaks and a failing alarm loop. The status board is dead, but someone has scratched tallies into the frame: `ROUND 08`. Your rounds.
+
+**The Object, your endpoint and your reset button:**
+
+Deep in the Containment Core sits the Object. Keep the art simple. A black monolith, a suspended sphere, or a sealed casket. One mesh, one good shader, lots of lighting. This is the loop machine that used to be the CAUSE/EFFECT server rack. When you reach it, the round ends. Interact with it, get a quote about causality, and you cause the next round. You loop back to the entry checkpoint.
+
+Lore crumbs, no dialogue trees: evacuation checklists where names are crossed out until only 1 is left. Observation logs that mention a CAUSE/EFFECT anomaly. Containment seals that look fine in CAUSE and are blown out in EFFECT. The Object chamber wall covered in tallies.
+
+This setup gives you a clear past and present read without needing a large art scope. A plain brutalist test site sells the same mechanic and stays buildable.
+
+---
+
+## 6. Core Mechanics
+
+### 6.1 The Switch (moment to moment, the Cause/Effect Device)
+
+*   Tap or hold to flip between CAUSE and EFFECT. It has a cooldown, so it is a rhythm and a resource, not a free spam.
+*   **Cause to Effect puzzles with facility logic:** What you do in one state sticks in the other.
+    *   Personnel barricade blocks a corridor in CAUSE, but it is clear in EFFECT.
+    *   You prop a blast door with a service jack in CAUSE, it is still propped years later in EFFECT. You made that.
+    *   You overload a conduit on the breaker panel in CAUSE, that same conduit is fried and dark in EFFECT. It opens a shadow path but kills a light you needed.
+    *   A keycard sits on the ops desk in CAUSE, but it is long gone in EFFECT. You have to spot it and grab it before you switch.
+    *   Sound only exists in one state and gives you hints. A technician yells watch the gantry in CAUSE and warns you about a collapsed catwalk you only see in EFFECT. A dying alarm loop in EFFECT marks where the observation window used to be in CAUSE.
+*   Some hazards only exist in one state. Sparking and gas leaks in the rotten EFFECT systems. Crowd blockage and noise that drowns out audio in CAUSE.
+*   **The switch feel is the top juice priority:** light bloom and desaturation sweep, machinery ambience whooshing into dead reverb or the other way around, dust rising or settling, emergency strips flickering.
+
+### 6.2 One More Round (session to session, the Causal Loop)
+
+You trigger a loop reset in three ways: you die, you fail a traversal, or you reach the Object. You can also choose to reset at marked one more spots like the status board, the checkpoint gate, or the Object chamber.
+
+When it triggers:
+
+*   Death or failure: hard reset to the entry checkpoint. Airlock gate hisses.
+*   Reaching the Object: play a causal quote (see 6.3), then reset.
+*   Either way, the world decays one notch. EFFECT gets a bit more collapsed, CAUSE gets a bit thinner with fewer silhouettes, quieter sounds, more dead stations. Both states slide toward the same dead end. Because you caused another round.
+*   You keep one causal trace. One thing you caused stays, even though everything else resets. A blast door you wedged stays wedged. A breaker you flipped stays flipped. A ladder you dropped stays down. A catwalk that collapsed stays collapsed and becomes a shortcut. That is the rule made physical. Your causes outlive your rounds.
+*   No HUD. Round count is diegetic. Tallies scratched into concrete and steel, status board ticking to ROUND N.
+
+This makes each round shorter and smarter, but structurally harder. The space fights you more as it falls apart. Do you rush before it gets worse, or take your time to learn the causality and pay for it with a round?
+
+**The hidden tuning rule:** If you rush and play without thinking, the facility decays faster. If you play causally and set up future effects, you get further. The game will teach you that without saying it out loud.
+
+### 6.3 The Object and Causal Quotes (end of loop beat)
+
+The Object is both your goal and your reset button.
+
+On interact:
+1.  You hold or get close. Screen desaturates a bit, audio ducks.
+2.  A short line about causality fades in on the chamber glass or monitor. For example, "Every cause produces more than one effect," "Shallow men believe in luck. Strong men believe in cause and effect," or "For every action, there is an equal and opposite reaction." We will curate 6 to 8 of these, one per round, presented as in-world observations without outside attribution.
+3.  Hard cut. The facility rewinds. You are back at the entry. Round goes up. Decay ticks.
+
+This gives each loop a little punctuation without any cutscene, and it makes One More Round feel deliberate. You reached the Object, you read the law, and you caused the next round anyway.
+
+### 6.4 Endgame Beat (closing the loop)
+
+After 4 to 6 tight rounds, all those causal traces add up. Now you can do what no single round allowed. You can cross the entire facility in one clean run, chaining all the causes you set up ages ago to reach the Object one last time.
+
+On that final interact, both states briefly overlay. Operational noise and derelict silence play together for 5 to 10 seconds. Warm industrial light mixes with cold emergency light. Silhouettes and dust exist at once. For a moment, cause and effect are both true.
+
+Then it settles on something defiant, not triumphant or bleak. The place is still mostly empty, but the light you left on is still on, and there is a second set of footprints at the entry. Maybe someone else just picked one more round too. You caused that.
+
+If we are tight on scope, keep it lean: doors open, you step out, chamber board holds on CAUSAL, cut to title card CAUSAL.
+
+---
+
+## 7. Multiplayer / Ghost Presence (optional)
+
+Pick one depending on time:
+
+*   **Async ghosts, low cost and high payoff, RECOMMENDED:** Other players' past runs show up as translucent silhouettes moving through their CAUSE state, faintly visible in your EFFECT state. It sells the idea that this place used to be full and your returns are now someone else's effect. Just replay recorded transforms, no real netcode. It fits CAUSAL perfectly. You actually see other causal agents.
+*   **Live co-presence, stretch goal:** A second player is in the opposite state and actions bleed across. A light you switch flickers for them. Cut this first if time is tight.
+
+**Recommendation is async ghosts only.** It looks multiplayer in the trailer and it reinforces the loop theme without extra work.
+
+---
+
+## 8. Level Design Notes
+
+One facility, three connected zones. Once you know it, a round is about 4 to 6 minutes. Each zone teaches you one causal idea, just smaller and more focused:
+
+1.  **Checkpoint / Transit Corridor** - Learn the switch. A personnel barricade makes the path obvious, blocked in CAUSE and clear in EFFECT. First authored cause: wedge a blast door. Brutalist entry, airlock gate is your spawn every time.
+2.  **Operations Wing / Gantry** - Learn sound and verticality. A collapsed catwalk becomes a shortcut you caused last round by overloading a conduit in CAUSE. Observation glass, consoles, mezzanine.
+3.  **Containment Core / Object Chamber** - The thematic core. The Object, the tally wall, the overlay ending. Lowest, heaviest room in the building. The reason the facility exists at all.
+
+Build each obstacle with two solutions. A fast causal one once you know the trick, and a slow blind one that works the first time. That split is what makes the loop addictive.
+
+---
+
+## 9. Art and Audio Direction
+
+*   **Lighting does most of the storytelling.** CAUSE is warm industrial fluorescents, amber warning pulses, active machine glow. EFFECT is cold, flat, mostly emergency strips and moonlight through damage. Put real time into lighting. The switch has to land.
+*   **Particles sell causality:** dust motes that settle when the place empties, haze and light flares when it fills back up. Water drips, concrete dust, paper and ash drift in EFFECT to show time passing.
+*   **Sound is half the liminal feel.** CAUSE is machinery hum, PA chatter, distant footsteps, alarm tests. EFFECT is room tone, drips, creaks, one dying alarm loop. The switch transition is the most important sound in the game. Get the PA pitch shift right.
+*   **Diegetic UI only.** No HUD. Round count and hints live in the world on boards, tallies, glass, and the Object chamber display that shows quotes.
+*   **The Object should stay stark.** Dark surface, faint edge light, subtle particle field. It should feel like it is causing the facility, not just sitting inside it.
+
+**Palette cue for causality:** Warm amber for cause, cold cyan for effect. They are complementary and they pop in thumbnails and trailer.
+
+---
+
+## 10. Technical Scope
+
+*   **Rapid iteration on the switch** - The VFX and timing for the state change should be quick to tweak. That polish is the highest leverage work.
+*   **Scene layers** - Build CAUSE and EFFECT as two parallel scene layers or object state sets you toggle, not two separate levels. Smaller memory and scope. Tag anything that persists with a PersistentCause component.
+*   **Particles and lighting** - Spend time here. This is not decoration, it is storytelling. The CAUSAL sign flicker and Object field should be light and particle events tied to the switch, not texture swaps.
+*   **Ghost replay** - Record your transform each round, play it back translucent next time. Fully local and async. No dedicated server needed.
+*   **Quote system** - Just a string table with 6 to 8 curated quotes shown in order on Object use, or random on replay.
+
+---
+
+## 11. Scope Discipline (what this game is NOT)
+
+To keep the idea tight and achievable:
+*   No branching narrative, dialogue trees, or voice acting. The building and the Object quotes do the talking.
+*   No combat. The facility is the puzzle.
+*   One facility, not many. Depth over breadth.
+*   No live multiplayer unless async ghosts are done early and you have spare time.
+*   No complex save system. A round is a run. You only need to save a few flags for which causes you have authored.
+
+---
+
+## 12. Identity Summary - The Pitch in One Paragraph
+
+**CAUSAL** boils its idea down to what matters. One small research facility around one Object, living in two times at once, operational then and derelict now. You flip between cause and effect and learn that what you do in one time echoes in the other. Every run ends at the Object. It throws a law of causality back at you, then you cause the next round anyway. By the end you get it. You were causing one more round the whole time.
