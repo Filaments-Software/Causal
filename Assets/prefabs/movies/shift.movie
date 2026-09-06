@@ -1,0 +1,302 @@
+{
+  "EditorData": {
+    "SampleRate": 30,
+    "Duration": 7560,
+    "ExportConfig": null,
+    "Tracks": {
+      "7f3cbac6-7a5d-48c0-9c20-619df00c633e": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "6b8b69fc-dadd-445a-bd6f-4791e0ae1b16",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "3.5315752E-06,0,-5",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1800,
+                  "Value": "3.5315752E-06,0,1.5",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 5400,
+                  "Value": "3.5315752E-06,0,1.5",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 7560,
+                  "Value": "3.5315752E-06,0,-5",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "6b8b69fc-dadd-445a-bd6f-4791e0ae1b16": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "a374e85b-a21e-4e2d-8347-18ec87249455"
+        },
+        "Name": "v_first_person_arms_human",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "17c97295-012f-4dfa-a435-fc27f1748ed1": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "2374fe7b-57ca-48a4-9801-0edfcff1e107",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "10.945097,-0.00050163269,-2.86102295E-05",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7560,
+                  "Value": "10.945097,-0.00050163269,-2.86102295E-05",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "2374fe7b-57ca-48a4-9801-0edfcff1e107": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "380c8bea-4db8-4b98-a5ae-9bc4e4b00de8"
+        },
+        "Name": "arm_lower_L",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "a72fa7cb-de3e-4ab4-bbbf-a0a33b76d67a"
+      },
+      "2d607e20-953a-4113-b5be-36fc277aa744": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Parameters",
+        "TargetType": {
+          "$type": "Nested",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer",
+          "Name": "ParameterAccessor"
+        },
+        "ParentId": "cfdf02da-d108-4b61-a5eb-4391af268c53"
+      },
+      "593a33a3-ab06-457d-bf28-47647dd10771": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalRotation",
+        "TargetType": "Rotation",
+        "ParentId": "2374fe7b-57ca-48a4-9801-0edfcff1e107",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "-0.0207157061,-0.0872592926,-0.762902379,-0.640262902",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7560,
+                  "Value": "-0.251045674,-0.154883638,-0.669202983,-0.682022274",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "2903ae29-2217-41cd-96a4-1b841dd06ee7": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "9111837d-4486-4031-83d0-287358b05293",
+        "Blocks": [
+          {
+            "TimeRange": "0,1800",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "-1.42964351,0.820137262,-4.8610692",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1800,
+                  "Value": "-1.42964351,0.820137262,-4.8610692",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "99f0950f-8c35-44cc-9c1b-7357483acd96": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalRotation",
+        "TargetType": "Rotation",
+        "ParentId": "9111837d-4486-4031-83d0-287358b05293",
+        "Blocks": [
+          {
+            "TimeRange": "0,1800",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "-0.643213272,-0.678514361,0.293311924,0.199656576",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 1800,
+                  "Value": "-0.697210491,-0.707069874,0.11684186,0.0172409285",
+                  "Interpolation": "Step"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "8a06b758-bddd-44d1-b813-299bfbc72874": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "b_jump",
+        "TargetType": "System.Boolean",
+        "ParentId": "2d607e20-953a-4113-b5be-36fc277aa744",
+        "Blocks": [
+          {
+            "TimeRange": "1080,6480",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 1080,
+                  "Value": true,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 1440,
+                  "Value": false,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 6480,
+                  "Value": false,
+                  "Interpolation": "Step"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "9111837d-4486-4031-83d0-287358b05293": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "ce862a3e-cfd3-4ae0-832f-3deb5a7a7d61"
+        },
+        "Name": "clavicle_L",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "1859bd5a-c94a-404f-b8ab-9713ef61153c"
+      },
+      "a72fa7cb-de3e-4ab4-bbbf-a0a33b76d67a": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "68daba98-aa9c-40bc-8014-9c4478c5780e"
+        },
+        "Name": "arm_upper_L",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "9111837d-4486-4031-83d0-287358b05293"
+      },
+      "cfdf02da-d108-4b61-a5eb-4391af268c53": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "0c3bc1ba-82a5-4901-80f5-9d1f69f2088d"
+        },
+        "Name": "SkinnedModelRenderer",
+        "TargetType": "Sandbox.SkinnedModelRenderer",
+        "ParentId": "6b8b69fc-dadd-445a-bd6f-4791e0ae1b16"
+      },
+      "af931f87-76c7-4a21-bca1-568185aebb03": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "b_holster",
+        "TargetType": "System.Boolean",
+        "ParentId": "2d607e20-953a-4113-b5be-36fc277aa744",
+        "Blocks": [
+          {
+            "TimeRange": "1440,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 1440,
+                  "Value": true,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 1800,
+                  "Value": false,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 5400,
+                  "Value": true,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 7200,
+                  "Value": false,
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 7560,
+                  "Value": false,
+                  "Interpolation": "Step"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "1859bd5a-c94a-404f-b8ab-9713ef61153c": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "54c776ac-8a28-4d94-a219-c0e54000cd4d"
+        },
+        "Name": "root",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6b8b69fc-dadd-445a-bd6f-4791e0ae1b16"
+      }
+    },
+    "References": []
+  },
+  "__references": [],
+  "__version": 0
+}

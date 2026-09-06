@@ -1,0 +1,26 @@
+{
+  "EditorData": {
+    "SampleRate": 30,
+    "Duration": 7560,
+    "ExportConfig": null,
+    "Tracks": {
+      "e7fc6044-36eb-49ef-8327-0fc2743ec3ef": {
+        "$type": "Sequence",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Transform": {},
+            "Resource": "prefabs/movies/shift.movie"
+          }
+        ],
+        "Name": "Shift Sequence",
+        "TargetType": "Sandbox.MovieMaker.MovieResource"
+      }
+    },
+    "References": [
+      "prefabs/movies/shift.movie"
+    ]
+  },
+  "__references": [],
+  "__version": 0
+}
