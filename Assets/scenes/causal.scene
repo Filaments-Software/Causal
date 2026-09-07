@@ -88,8 +88,8 @@
               "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {
-                  "b_holster": false,
-                  "b_jump": false
+                  "b_jump": false,
+                  "b_holster": false
                 },
                 "ints": {},
                 "floats": {},
@@ -750,7 +750,7 @@
                           "Flags": 1024,
                           "Name": "arm_lower_L",
                           "Position": "10.945097,-0.00050163269,-2.86102295E-05",
-                          "Rotation": "-0.251045674,-0.154883638,-0.669202983,-0.682022274",
+                          "Rotation": "-0.0207157061,-0.0872592926,-0.762902379,-0.640262902",
                           "Scale": "1,1,1",
                           "Tags": "",
                           "Enabled": true,
@@ -1960,7 +1960,7 @@
               "IsTrigger": false,
               "Mesh": {
                 "Data": {
-                  "$blob": "1f2c0144-193b-8e43-923e-7cc4911773f9"
+                  "$blob": "1f5d8d3e-622b-8725-be67-b9dc5b475f14"
                 },
                 "Materials": [
                   "materials/dev/reflectivity_30.vmat",
@@ -1996,7 +1996,7 @@
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "world",
-          "Enabled": true,
+          "Enabled": false,
           "NetworkMode": 2,
           "NetworkFlags": 0,
           "NetworkOrphaned": 0,
@@ -2017,10 +2017,12 @@
               "IsTrigger": false,
               "Mesh": {
                 "Data": {
-                  "$blob": "4237345b-bba5-8ece-b971-52cfc2244732"
+                  "$blob": "38138c37-e38a-8eae-88ee-67a6556161ab"
                 },
                 "Materials": [
-                  "materials/dev/reflectivity_30.vmat"
+                  "materials/trimsheets/metal/metal_trim_painted_blend_01.vmat",
+                  "materials/trimsheets/metal/metal_trim_02.vmat",
+                  "materials/generic/trim_a_metal.vmat"
                 ]
               },
               "OnComponentDestroy": null,
@@ -2041,7 +2043,346 @@
               "SurfaceVelocity": "0,0,0"
             }
           ],
-          "Children": []
+          "Children": [
+            {
+              "__guid": "52673753-727c-40c7-b495-c01c3d4366c8",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "blastdoor-large-top",
+              "Position": "0,-7.62939453E-06,21",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "51e8d0e5-0c06-4236-a39d-aea5dc99b92e",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "ColliderFlags": 0,
+                  "Collision": "Mesh",
+                  "Color": "1,1,1,1",
+                  "Elasticity": null,
+                  "Friction": null,
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Data": {
+                      "$blob": "b9b7c151-44de-85cb-83dd-d0137f00a6b5"
+                    },
+                    "Materials": [
+                      "materials/trimsheets/metal/metal_trim_02.vmat"
+                    ]
+                  },
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RenderType": "On",
+                  "RollingResistance": null,
+                  "SmoothingAngle": 40,
+                  "Static": true,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "31e219c6-af5d-4e14-8a65-8591182ca38d",
+              "__version": 2,
+              "Flags": 0,
+              "Name": "blastdoor-large-bottom",
+              "Position": "0,0,-37",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkFlags": 0,
+              "NetworkOrphaned": 0,
+              "NetworkTransmit": true,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.MeshComponent",
+                  "__guid": "5800dfd1-009b-42cd-bd09-33f962e5dfc8",
+                  "__enabled": true,
+                  "Flags": 0,
+                  "ColliderFlags": 0,
+                  "Collision": "Mesh",
+                  "Color": "1,1,1,1",
+                  "Elasticity": null,
+                  "Friction": null,
+                  "HideInGame": false,
+                  "IsTrigger": false,
+                  "Mesh": {
+                    "Data": {
+                      "$blob": "2b2ce73a-5f1a-8d30-a2d4-ada8cffcf942"
+                    },
+                    "Materials": [
+                      "materials/trimsheets/metal/metal_trim_02.vmat",
+                      "materials/trimsheets/metal/metal_trim_painted_blend_01.vmat"
+                    ]
+                  },
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "OnObjectTriggerEnter": null,
+                  "OnObjectTriggerExit": null,
+                  "OnTriggerEnter": null,
+                  "OnTriggerExit": null,
+                  "RenderType": "On",
+                  "RollingResistance": null,
+                  "SmoothingAngle": 40,
+                  "Static": true,
+                  "Surface": null,
+                  "SurfaceVelocity": "0,0,0"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "0e243ddd-cb90-4cc1-9ccf-0d32df23bd0f",
+                  "__version": 2,
+                  "Flags": 0,
+                  "Name": "Peg",
+                  "Position": "0,-96,30",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "world",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkFlags": 0,
+                  "NetworkOrphaned": 0,
+                  "NetworkTransmit": true,
+                  "OwnerTransfer": 1,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.MeshComponent",
+                      "__guid": "56c8f8d2-250a-4bb4-97fa-b70ef17cfa64",
+                      "__enabled": true,
+                      "Flags": 0,
+                      "ColliderFlags": 0,
+                      "Collision": "Mesh",
+                      "Color": "1,1,1,1",
+                      "Elasticity": null,
+                      "Friction": null,
+                      "HideInGame": false,
+                      "IsTrigger": false,
+                      "Mesh": {
+                        "Data": {
+                          "$blob": "7217da7b-fddb-8a25-b2de-6ed0eeb65635"
+                        },
+                        "Materials": [
+                          "materials/trimsheets/metal/metal_trim_02.vmat"
+                        ]
+                      },
+                      "OnComponentDestroy": null,
+                      "OnComponentDisabled": null,
+                      "OnComponentEnabled": null,
+                      "OnComponentFixedUpdate": null,
+                      "OnComponentStart": null,
+                      "OnComponentUpdate": null,
+                      "OnObjectTriggerEnter": null,
+                      "OnObjectTriggerExit": null,
+                      "OnTriggerEnter": null,
+                      "OnTriggerExit": null,
+                      "RenderType": "On",
+                      "RollingResistance": null,
+                      "SmoothingAngle": 40,
+                      "Static": true,
+                      "Surface": null,
+                      "SurfaceVelocity": "0,0,0"
+                    }
+                  ],
+                  "Children": []
+                },
+                {
+                  "__guid": "3f383753-3705-43aa-a42c-5cb4defd5ab5",
+                  "__version": 2,
+                  "Flags": 0,
+                  "Name": "Peg (1)",
+                  "Position": "0,-32,30",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "world",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkFlags": 0,
+                  "NetworkOrphaned": 0,
+                  "NetworkTransmit": true,
+                  "OwnerTransfer": 1,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.MeshComponent",
+                      "__guid": "9c680be3-9386-474b-9bf1-87e7b8844d49",
+                      "__enabled": true,
+                      "Flags": 0,
+                      "ColliderFlags": 0,
+                      "Collision": "Mesh",
+                      "Color": "1,1,1,1",
+                      "Elasticity": null,
+                      "Friction": null,
+                      "HideInGame": false,
+                      "IsTrigger": false,
+                      "Mesh": {
+                        "Data": {
+                          "$blob": "7217da7b-fddb-8a25-b2de-6ed0eeb65635"
+                        },
+                        "Materials": [
+                          "materials/trimsheets/metal/metal_trim_02.vmat"
+                        ]
+                      },
+                      "OnComponentDestroy": null,
+                      "OnComponentDisabled": null,
+                      "OnComponentEnabled": null,
+                      "OnComponentFixedUpdate": null,
+                      "OnComponentStart": null,
+                      "OnComponentUpdate": null,
+                      "OnObjectTriggerEnter": null,
+                      "OnObjectTriggerExit": null,
+                      "OnTriggerEnter": null,
+                      "OnTriggerExit": null,
+                      "RenderType": "On",
+                      "RollingResistance": null,
+                      "SmoothingAngle": 40,
+                      "Static": true,
+                      "Surface": null,
+                      "SurfaceVelocity": "0,0,0"
+                    }
+                  ],
+                  "Children": []
+                },
+                {
+                  "__guid": "1c1a8463-db42-4790-981f-266ffdfb7f37",
+                  "__version": 2,
+                  "Flags": 0,
+                  "Name": "Peg (2)",
+                  "Position": "0,32,30",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "world",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkFlags": 0,
+                  "NetworkOrphaned": 0,
+                  "NetworkTransmit": true,
+                  "OwnerTransfer": 1,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.MeshComponent",
+                      "__guid": "ba6a9fdb-01e0-4ad3-b074-9e44445acd0c",
+                      "__enabled": true,
+                      "Flags": 0,
+                      "ColliderFlags": 0,
+                      "Collision": "Mesh",
+                      "Color": "1,1,1,1",
+                      "Elasticity": null,
+                      "Friction": null,
+                      "HideInGame": false,
+                      "IsTrigger": false,
+                      "Mesh": {
+                        "Data": {
+                          "$blob": "7217da7b-fddb-8a25-b2de-6ed0eeb65635"
+                        },
+                        "Materials": [
+                          "materials/trimsheets/metal/metal_trim_02.vmat"
+                        ]
+                      },
+                      "OnComponentDestroy": null,
+                      "OnComponentDisabled": null,
+                      "OnComponentEnabled": null,
+                      "OnComponentFixedUpdate": null,
+                      "OnComponentStart": null,
+                      "OnComponentUpdate": null,
+                      "OnObjectTriggerEnter": null,
+                      "OnObjectTriggerExit": null,
+                      "OnTriggerEnter": null,
+                      "OnTriggerExit": null,
+                      "RenderType": "On",
+                      "RollingResistance": null,
+                      "SmoothingAngle": 40,
+                      "Static": true,
+                      "Surface": null,
+                      "SurfaceVelocity": "0,0,0"
+                    }
+                  ],
+                  "Children": []
+                },
+                {
+                  "__guid": "1908ee14-bd54-48ba-9d1d-ec4fd74a0c64",
+                  "__version": 2,
+                  "Flags": 0,
+                  "Name": "Peg (3)",
+                  "Position": "0,96,30",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "world",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkFlags": 0,
+                  "NetworkOrphaned": 0,
+                  "NetworkTransmit": true,
+                  "OwnerTransfer": 1,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.MeshComponent",
+                      "__guid": "a1942783-767a-4ef9-9e46-5fe6708d2c07",
+                      "__enabled": true,
+                      "Flags": 0,
+                      "ColliderFlags": 0,
+                      "Collision": "Mesh",
+                      "Color": "1,1,1,1",
+                      "Elasticity": null,
+                      "Friction": null,
+                      "HideInGame": false,
+                      "IsTrigger": false,
+                      "Mesh": {
+                        "Data": {
+                          "$blob": "7217da7b-fddb-8a25-b2de-6ed0eeb65635"
+                        },
+                        "Materials": [
+                          "materials/trimsheets/metal/metal_trim_02.vmat"
+                        ]
+                      },
+                      "OnComponentDestroy": null,
+                      "OnComponentDisabled": null,
+                      "OnComponentEnabled": null,
+                      "OnComponentFixedUpdate": null,
+                      "OnComponentStart": null,
+                      "OnComponentUpdate": null,
+                      "OnObjectTriggerEnter": null,
+                      "OnObjectTriggerExit": null,
+                      "OnTriggerEnter": null,
+                      "OnTriggerExit": null,
+                      "RenderType": "On",
+                      "RollingResistance": null,
+                      "SmoothingAngle": 40,
+                      "Static": true,
+                      "Surface": null,
+                      "SurfaceVelocity": "0,0,0"
+                    }
+                  ],
+                  "Children": []
+                }
+              ]
+            }
+          ]
         },
         {
           "__guid": "9a37b339-b40d-422d-9662-27a8e6646fc2",
@@ -2383,6 +2724,7 @@
   ],
   "SceneProperties": {
     "NetworkInterpolation": true,
+    "PhysicsMode": "Physics3D",
     "TimeScale": 1,
     "WantsSystemScene": true,
     "Metadata": {},
@@ -2426,6 +2768,7 @@
     "facepunch.metal_trim_rust_blend_01#344441",
     "facepunch.metaltrimpaintedblend03#344432",
     "facepunch.rust_trim#274178",
+    "facepunch.trim_a_metal#85432",
     "facepunch.v_first_person_arms_human#205798"
   ],
   "__version": 3
