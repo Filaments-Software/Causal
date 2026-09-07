@@ -1,0 +1,186 @@
+{
+  "EditorData": {
+    "SampleRate": 30,
+    "Duration": 18000,
+    "ExportConfig": null,
+    "Tracks": {
+      "180326e2-afde-4d4b-880c-7b8b0ac6e856": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "7b50397d-85b9-40a8-8141-36430f42d738"
+        },
+        "Name": "Riser",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "5123f1b4-41b0-4167-b625-754ddd46fbea": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "31e219c6-af5d-4e14-8a65-8591182ca38d"
+        },
+        "Name": "blastdoor-large-bottom",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "6560f614-f679-4451-832c-b07d1c8ee086": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "3141ca36-ea54-4b9a-a2e6-0117dc17df64"
+        },
+        "Name": "Riser",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "4a0e8f14-4c3c-4c6d-9620-83604b4dc08a": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "b5dfd3f8-0500-4e67-bd3e-8a5a29b8b155",
+        "Blocks": [
+          {
+            "TimeRange": "0,18000",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,21",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,22",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2520,
+                  "Value": "0,0,21",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 18000,
+                  "Value": "0,0,69",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "b5dfd3f8-0500-4e67-bd3e-8a5a29b8b155": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "52673753-727c-40c7-b495-c01c3d4366c8"
+        },
+        "Name": "blastdoor-large-top",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "cd545880-566a-401e-bf1e-b7c815654740": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalRotation",
+        "TargetType": "Rotation",
+        "ParentId": "180326e2-afde-4d4b-880c-7b8b0ac6e856",
+        "Blocks": [
+          {
+            "TimeRange": "0,18000",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,-2.57790089E-06,0,1.00000024",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7200,
+                  "Value": "0,-2.57790089E-06,0,1.00000024",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 18000,
+                  "Value": "0,-0.130528733,0,0.991444767",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "94fc6dfb-8876-48c6-900a-cfec18c6b979": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalRotation",
+        "TargetType": "Rotation",
+        "ParentId": "6560f614-f679-4451-832c-b07d1c8ee086",
+        "Blocks": [
+          {
+            "TimeRange": "0,18000",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "-2.57790066E-06,1.12683625E-13,-1.00000012,-4.37113989E-08",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7200,
+                  "Value": "-2.57790066E-06,1.12683625E-13,-1.00000012,-4.37113989E-08",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 18000,
+                  "Value": "-0.130528733,5.705592E-09,-0.991444767,-4.33374261E-08",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "726a37f0-e963-4447-b4f3-ca544bcd4502": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "5123f1b4-41b0-4167-b625-754ddd46fbea",
+        "Blocks": [
+          {
+            "TimeRange": "0,18000",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,-37",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,-38",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2520,
+                  "Value": "0,0,-37",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 18000,
+                  "Value": "0,0,-88",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "References": []
+  },
+  "__references": [],
+  "__version": 0
+}
