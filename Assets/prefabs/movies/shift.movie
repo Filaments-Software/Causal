@@ -48,7 +48,8 @@
           "ReferenceId": "a374e85b-a21e-4e2d-8347-18ec87249455"
         },
         "Name": "v_first_person_arms_human",
-        "TargetType": "Sandbox.GameObject"
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "50b2da7c-6b93-4290-9cc0-a3bd129d5168"
       },
       "17c97295-012f-4dfa-a435-fc27f1748ed1": {
         "$type": "Property",
@@ -86,6 +87,57 @@
         "Name": "arm_lower_L",
         "TargetType": "Sandbox.GameObject",
         "ParentId": "a72fa7cb-de3e-4ab4-bbbf-a0a33b76d67a"
+      },
+      "a2a25f86-2182-46a0-8898-3bcf233dd99e": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Strength",
+        "TargetType": "System.Single",
+        "ParentId": "9ac8b20b-9513-4399-a696-2c03cb7138e7",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": 0,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1800,
+                  "Value": 0,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 3600,
+                  "Value": 1,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 5400,
+                  "Value": 0,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7560,
+                  "Value": 0,
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "50b2da7c-6b93-4290-9cc0-a3bd129d5168": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "9289ca79-7050-437c-bab3-68a37a4d6491"
+        },
+        "Name": "Main Camera",
+        "TargetType": "Sandbox.GameObject"
       },
       "2d607e20-953a-4113-b5be-36fc277aa744": {
         "$type": "Property",
@@ -215,6 +267,49 @@
           }
         ]
       },
+      "6459ee42-afe0-4143-8f5b-53ed295052f9": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Contrast",
+        "TargetType": "System.Single",
+        "ParentId": "5c4ee87d-ce6e-4a34-bbca-4b3baa47b65f",
+        "Blocks": [
+          {
+            "TimeRange": "0,7560",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": 1,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1800,
+                  "Value": 1,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 3600,
+                  "Value": 1.2,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 5400,
+                  "Value": 1,
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7560,
+                  "Value": 1,
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
       "9111837d-4486-4031-83d0-287358b05293": {
         "$type": "Reference",
         "Metadata": {
@@ -232,6 +327,15 @@
         "Name": "arm_upper_L",
         "TargetType": "Sandbox.GameObject",
         "ParentId": "9111837d-4486-4031-83d0-287358b05293"
+      },
+      "9ac8b20b-9513-4399-a696-2c03cb7138e7": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "df91d89b-8e85-4488-a98e-074693d002c2"
+        },
+        "Name": "Bloom",
+        "TargetType": "Sandbox.Bloom",
+        "ParentId": "50b2da7c-6b93-4290-9cc0-a3bd129d5168"
       },
       "cfdf02da-d108-4b61-a5eb-4391af268c53": {
         "$type": "Reference",
@@ -284,6 +388,15 @@
             }
           }
         ]
+      },
+      "5c4ee87d-ce6e-4a34-bbca-4b3baa47b65f": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "4c5199e4-fb69-43d9-b556-45e217d15c97"
+        },
+        "Name": "ColorAdjustments",
+        "TargetType": "Sandbox.ColorAdjustments",
+        "ParentId": "50b2da7c-6b93-4290-9cc0-a3bd129d5168"
       },
       "1859bd5a-c94a-404f-b8ab-9713ef61153c": {
         "$type": "Reference",

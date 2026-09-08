@@ -14,8 +14,12 @@ public sealed class BlastDoor : Component
 
 	public bool IsAnimating => _player.IsValid() && _player.IsPlaying;
 
+	public bool CanClose => CloseMovie is not null && CloseMovie.IsValid();
+
 	private MoviePlayer _player;
 	private TimeSince _timeSinceAction = 99f;
+	private float _storedPosition;
+	private bool _wasPlaying;
 
 	protected override void OnStart()
 	{
@@ -90,6 +94,52 @@ public sealed class BlastDoor : Component
 
 		_player.Play( movie );
 		_timeSinceAction = 0f;
+		_storedPosition = 0f;
 		IsOpen = targetState;
+	}
+
+	protected override void OnUpdate()
+	{
+		if ( !_player.IsValid() )
+		{
+			return;
+		}
+
+		if ( _player.IsPlaying )
+		{
+			_storedPosition = _player.PositionSeconds;
+			_wasPlaying = true;
+			return;
+		}
+
+		if ( !_wasPlaying )
+		{
+			return;
+		}
+
+		_wasPlaying = false;
+		float pos = _player.PositionSeconds;
+		float end = ClipEndSeconds();
+		bool finished = end > 0f ? pos >= end - 0.05f : pos >= _storedPosition - 0.05f;
+		if ( _storedPosition > 0.05f && !finished )
+		{
+			_player.PositionSeconds = _storedPosition;
+			_player.IsPlaying = true;
+		}
+		else
+		{
+			_storedPosition = 0f;
+		}
+	}
+
+	private float ClipEndSeconds()
+	{
+		var clip = _player.Clip;
+		if ( clip is null )
+		{
+			return 0f;
+		}
+
+		return (float)clip.Duration.TotalSeconds;
 	}
 }

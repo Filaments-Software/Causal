@@ -1,0 +1,2011 @@
+{
+  "RootObject": {
+    "__guid": "186dbabd-6587-4c10-905f-507e0f94a403",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "entryroom-derelict",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "effect",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [],
+    "Children": [
+      {
+        "__guid": "2fdaae1c-7c63-4369-87aa-c610d2d0bfa4",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Block",
+        "Position": "84.3180389,6.91285324,79.7905121",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "world",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.MeshComponent",
+            "__guid": "26afcd14-0326-4c7f-9edb-597df21b2e69",
+            "__enabled": true,
+            "Flags": 0,
+            "ColliderFlags": 0,
+            "Collision": "Mesh",
+            "Color": "1,1,1,1",
+            "Elasticity": null,
+            "Friction": null,
+            "HideInGame": false,
+            "IsTrigger": false,
+            "Mesh": {
+              "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3mkEAAAQwAAAO4AAAArAAAA/////////////////////6sAAACFAAAAFwAAAOcAAAAdAAAAHAAAACAAAADRAAAAPwAAAOkAAAAwAAAANAAAADgAAAA6AAAAPgAAAGwAAABEAAAAUQAAAEoAAABMAAAAUAAAAFIAAABWAAAAWAAAAFoAAABrAAAAXgAAAGAAAAD//////////48AAAD/////eQAAAP////+BAAAA//////////+mAAAAkQAAAP//////////4AAAAP//////////qgAAAP////+0AAAA/////7wAAAD/////6wAAAP/////MAAAAzwAAAM4AAADWAAAA/////9cAAAD/////3QAAAMsAAADoAAAA6gAAAP//////////////////////////////////////////EAAAAAMAAAA4AAAACgAAAAkAAAACAAAAIQAAAA4AAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8TAAAACwAAAKgAAAApAAAABQAAAAoAAAAUAAAADQAAAP////////////////////////////////////////////////////////////////////////////////////8EAAAAEQAAAKsAAAAqAAAADgAAABAAAAA1AAAADAAAAP//////////////////////////////////////////DwAAABUAAAA3AAAADQAAAAUAAAAUAAAAhQAAAAwAAAAGAAAAFwAAADsAAAAOAAAACgAAABYAAAAlAAAACAAAAP////////////////////////////////////////////////////////////////////////////////////8IAAAAHQAAACYAAAAAAAAACQAAABwAAAACAAAACgAAAP//////////////////////////////////////////CQAAACEAAAAcAAAAAAAAAAoAAAAgAAAAFgAAAA4AAAD//////////////////////////////////////////woAAAAlAAAAIAAAAAAAAAALAAAAJAAAANEAAAAIAAAACwAAACcAAAAkAAAAAAAAAAgAAAAmAAAAwAAAAAsAAAD/////////////////////////////////////////////////////////////////////////////////////DAAAAC0AAAA2AAAABgAAAA0AAAAsAAAA6QAAAAoAAAD//////////////////////////////////////////w0AAAAxAAAALAAAAAYAAAAOAAAAMAAAABAAAAAqAAAA//////////////////////////////////////////8OAAAANQAAADAAAAAGAAAADwAAADQAAAAVAAAADAAAAA8AAAA3AAAANAAAAAYAAAAMAAAANgAAAD8AAAANAAAAEgAAADkAAAA+AAAACgAAABAAAAA4AAAAPAAAAA8AAAAGAAAAOwAAAOYAAAApAAAAEQAAADoAAABNAAAADgAAABQAAAA9AAAASAAAAA8AAAAQAAAAPAAAAAMAAAAOAAAADAAAAD8AAAAtAAAACgAAABIAAAA+AAAAQgAAAA0AAAD//////////////////////////////////////////xUAAABDAAAARgAAAA0AAAASAAAAQgAAADkAAAAPAAAAFwAAAEUAAABPAAAAEQAAABQAAABEAAAAPQAAAA4AAAAZAAAARwAAAFIAAAANAAAAFQAAAEYAAABRAAAAEAAAABYAAABJAAAASgAAAA8AAAAUAAAASAAAAEQAAAARAAAAGAAAAEsAAABQAAAADwAAABYAAABKAAAAZgAAABUAAAARAAAATQAAAGoAAAAXAAAAFwAAAEwAAABFAAAADgAAABcAAABPAAAAaAAAABYAAAAWAAAATgAAAEkAAAARAAAAFQAAAFEAAABDAAAADwAAABgAAABQAAAAVAAAABAAAAATAAAAUwAAAAsAAAANAAAAGQAAAFIAAABlAAAAGQAAABkAAABVAAAARwAAABAAAAAYAAAAVAAAAGIAAAAUAAAAGwAAAFcAAABYAAAA/////xoAAABWAAAAYwAAABUAAAAcAAAAWQAAAFoAAAD/////GwAAAFgAAABnAAAAFgAAAB0AAABbAAAAawAAAP////8cAAAAWgAAAGkAAAAXAAAA//////////////////////////////////////////8fAAAAXwAAAGAAAAD/////HgAAAF4AAABtAAAAGQAAABoAAABhAAAAVgAAAP////8fAAAAYAAAAGQAAAAUAAAAGgAAAGMAAABhAAAAFAAAABgAAABiAAAASwAAABUAAAAZAAAAZQAAAFUAAAAUAAAAHwAAAGQAAABfAAAAGQAAABsAAABnAAAAVwAAABUAAAAWAAAAZgAAAE4AAAAWAAAAHAAAAGkAAABZAAAAFgAAABcAAABoAAAATAAAABcAAAAdAAAAawAAAFsAAAAXAAAAEQAAAGoAAACnAAAA/////x4AAABtAAAAXgAAAP////8TAAAAbAAAAFMAAAAZAAAA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yQAAAB5AAAAgAAAAP////8iAAAAeAAAAI8AAAApAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////JgAAAIEAAADhAAAA/////yQAAACAAAAAeQAAACkAAAD//////////////////////////////////////////wUAAACFAAAACgAAACkAAAAEAAAAhAAAABEAAAAMAAAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8iAAAAjwAAAHgAAAD/////KgAAAI4AAACRAAAAKQAAACoAAACRAAAAjgAAAP////8pAAAAkAAAAKYAAAApAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////OQAAAJ8AAADKAAAAKQAAAAcAAACeAAAA0AAAAAsAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8RAAAApwAAADoAAAApAAAAKQAAAKYAAACQAAAA/////y0AAACpAAAA4AAAACkAAAATAAAAqAAAAGwAAAD/////BAAAAKsAAACEAAAAKQAAADAAAACqAAAArgAAACoAAAD//////////////////////////////////////////zIAAACvAAAAtAAAACoAAAAwAAAArgAAANMAAAD//////////////////////////////////////////////////////////////////////////////////////////zQAAAC1AAAAvAAAACoAAAAyAAAAtAAAAK8AAAD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////QgAAAL0AAADtAAAAKgAAADQAAAC8AAAAtQAAAP///////////////////////////////////////////////0EAAADBAAAA7AAAAAsAAAAIAAAAwAAAAB0AAAAKAAAA//////////////////////////////////////////84AAAAxQAAAMwAAAALAAAANgAAAMQAAADrAAAA//////////////////////////////////////////////////////////////////////////////////////////9AAAAAywAAAOUAAAApAAAAOQAAAMoAAADPAAAA/////zoAAADNAAAAzgAAAAsAAAA4AAAAzAAAAMUAAAD/////OQAAAM8AAACfAAAACwAAADoAAADOAAAAzQAAAP////8LAAAA0QAAACcAAAALAAAABwAAANAAAADnAAAACAAAADAAAADTAAAAqgAAACkAAAA7AAAA0gAAANYAAAD///////////////////////////////////////////////89AAAA1wAAANwAAAD/////OwAAANYAAADSAAAAKQAAAP////////////////////////////////////////////////////////////////////////////////////8/AAAA3QAAAOQAAAD/////PQAAANwAAADXAAAAKQAAAP//////////////////////////////////////////JgAAAOEAAACBAAAAKQAAAC0AAADgAAAAqQAAAP///////////////////////////////////////////////0AAAADlAAAAywAAAP////8/AAAA5AAAAN0AAAApAAAABwAAAOcAAACeAAAAKQAAAAYAAADmAAAAFwAAAAgAAAANAAAA6QAAADEAAAAqAAAAQQAAAOgAAADBAAAACgAAADYAAADrAAAAxAAAAAsAAABCAAAA6gAAAL0AAAD/////QgAAAO0AAADqAAAACwAAAEEAAADsAAAA6AAAACoAAAAgAAAA//////////////////////////8wAAAA/////+cAAAD/////wQAAAOwAAACFAAAAQgAAAD0AAABIAAAAVAAAAE8AAAD//////////2QAAABjAAAAZwAAAGkAAAD/////bQAAAP///////////////////////////////////////////////////////////////////////////////+YAAADtAAAACQAAAHBvc2l0aW9ucyQDAAAAABDDAQAwQwAAoEIAABBDAQAwQwAAoEIAABBDAQAwwwAAoEIAABDDAQAwwwAAoEIAABDDAQAwwwAAoMIAAEdDAQAwwwAAoMIAAEdDAQAwQwAAoMIAABDDAQAwQwAAoMIAABDDAQAIQwAAkEIAAEdDAQAIQwAAkEIAAEdDAQAYQwAAYEIAABDDAQAYQwAAYEIAAEdDrAAIwwKXj0IAABDDrAAIwwKXj0IAABDDU/8Xw/zRYEIAAEdDU/8Xw/zRYEIAAEdDAADgQrz2j0IAAEdD/v/fQgAAoMIAAEdDAADgwkagj0IAAEdDAADgwgAAoMIAAEdDAADgQgAAQEIAAEdDAADgwgAAQEIAAEdDAACgQgAAQEIAAEdDAADgQgAAgEEAAEdD/v+fwgAAQEIAAEdDAADgwvj/f0EAAGBD/v+fwgAAQEIAAGBDAACgQgAAQEIAAGBDAADgQgAAgEEAAGBD/v/fQgAAoMIAAGBDAADgwgAAoMIAAGBDAADgwvj/f0EAAFBDAACwQgAAoMIAABDDAACwQgAAoMIAADhDAACwQgAAoMIAADhDAQAwwwAAoMIAADhDAgCwwgAAoMIAAFBDAACwwgAAoMIAAEdDAQCwwgAAoMIAAFBDAADIQgAAoMIAABDDAADIQgAAoMIAAEdDAADIQgAAoMIAAEdDAACwQgAAoMIAAFBDAADIwgAAoMIAABDD///HwgAAoMIAAEdDAADIwgAAoMIAAEhDAgCwwgAAoMIAAEhDAACwQgAAoMIAABDDYtPpwgAAoMIAABDDYNPpwmGej0IAABDDYdPpwg5aY0EAABDDCBRtwqG0j0IAABDDYdOpwoXWOEIAABDDTroZQ4bWOEIAABDDniySQobWOEIAABDDBQIrQ1fYTsIAABDDnizOQgitgUEAABDDnizOQgAAoMIAABDDnizOQr+Un8IAABDDYtPFwgAAoMIAAEdDYtPFwgAAoMJsUQHDYtPFwgAAoMJsUQHDAQAwQwAAoMJsUQHDnyyuQgAAoMIAABDDniyuQgAAoMIAABDDhk2XwTTEj0IAABDD5yWXwYbWOEIGAAAAYmxlbmRzuAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAY29sb3JzuAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAdGV4Y29vcmRwBwAAAACQPwAAsL8AAJC/AACAvgEAAD+6tHQ/qKVlvionCz8AAJC/AAAYQAAAkL8AAIC+AAAAvmLTaT8AAAAAAAAAAAAAAAAAAAAAAACQPwAAgD9gdFE/QHTRPAAAQD8AAIA/AAAAAAAAAAAAgCNA+f9/PwAAAAAAAAAAAAAYQAAAAAAAAEA///9/PwAAAAD///8+AAAAAAAAAAAAAAC++v9/P1P/Jz/kKA0/AAAAPwAAgD4BAIC+AACAP////z7//38+AACQvwAAsL8AABBAAACAvgAAsL8AAIC+AACQPwAAoL8AAGCzAACAPQEAAD8AAIA/AACQPwAAgL4AALC/AAAAvv///z4AAIA9AgCAvuJzFz8AABhAAACAvgAAkL8AAAC+////Pv7//z0AAGCz//9/PgAAYLP+//89AABgP1anWD8AAJA/AAAYQFsBoD8UuHy+CADAvgAAgL4AAJC/rQAQQAAAAD8AAAA+AAAAM/7//z4AAJA/AACAvggAwL4AAAC+AAAAAAAAAD4AAEA/o+lLPwIAsD8AAIC+AACQvwAAAL4AAAAAAACAPQAAAD8AAAA/AAAAPwYAgD2sABg/6AMAPwEAAD+USws/AABgNAAAgD0AAIA0QHTRPAMAAL4AAIA/AAAAs5z//z0IpDW+uioLPwEAAD/+//8+AAAAP////z4wukg/AACAMwAAAAAAAAAAAAAAP+gTFD/8//8+KOeAPQAAAL8AAAC/MC0tvj6aHT8AAAA/7w4vPwAA4D8AAEC/HEmSPaz//z0AAAC/AABAv6xt2z74//89AAAgvwCAO0AAgENA/v9/P+bhIb6uMzY/atEEQGrRDEAAAIC+AABAv/X//z4EAAA+AADAPwAAQL8AAAA/AACAP/9/A8AAAIA+AADgPwAAAL/Roqm/zqL5P/7/H78AAIC//v8fPwAASED+/1+/AABAvyaoHUAmqAVA/P9fvwAAAAAAAFBAAgCAPgIAYD8AAAAAAAAwQPz/X78CAGA///8/v///D8D//38/AAAgPwAAgL9NUJu/JqgVQE9Qu78kqAVA/v8fPwCAO0DRoom/aNEMQP//D8AAAIA+AAAgvwAASEBq0RRA0qL5PyaoDUAmqBVAAIBDQAIAgD4AAFBA/v9/PwAAKED8/1+/AAAwQAIAYD//fwPA//9/PwAAvkAAAPq/AAAAAAAAAAAAAAAAAAAAAP//1z8AAAAAVlXpP6uqEr8AAL5AAADcvwAAcL8AANy/AACvQAAA3L8AAAAAAAAAAAAAuL8AAIA/AAAAAAAAAAAIAIA+6KKLPQAAr0ABAFxAAACvQAMA3D8AAAAAAAAAAAAAGEAAAAAAAAC+QAAA3L8K1xNAuh5FPwAAAAAAAAAABABAP+iiiz0AAAAAAAAAAAAAuUABANw/AgCAP0B00TwrEb8yAACAPpguOj6AdNE8AAAAAAAAAAAAAAAAAAAAAP//4z8AAAAAAAAAAAAAAABQF10+AACAMwAAcL////m/AAC5QAAA+r8AAAAAAAAAAAgAgD5AdNE8AAAAAAAAAABWF10+QHTRPAAAAAAAAAAAAAAYQAAAAAAAAL5AAADcPwAAAAAAAAAAAAAAAAAAAAD5/18+AAAAADC6SD/ALro8AAAAAAAAAAAAAHC////5PwAAuUAAAPo/ye9HP4B00TwAAAAAAAAAAEIcVD4AAIA/AABgPwAAgD8CAEA/wC66PAAAAAAAAAAABACAPsAuujwAAAAAAAAAAAQAgD7woos9AAAAAAAAAACgLjo+QHTRPAAAAAAAAAAAMrpIP0B00TwAAAAAAAAAAAIAgD8AAIA/AABgP///fz8AAAC+DhTtPgAAAAAAAAAAAABgP66RUz/gZLE9AACAP/JksT0wz5e/6mSxPUFrPL8AAAC+/v+HvwAAAAAAAAAAAABgP7BJLz/gZLE9fCmHPvp1CT9Q2pe/OVmsPkFrfL8AAAAAAAAAAAAAAL4OFO0+AAAAAAAAAAAAAAC+vC1lPAAAYD////8+OFmsPoAvZTwm3QxAQ2t8v04WyT9Ca3y/AABgPwAAAD8AAAAyAACAPwAAAAAAAAAAAAAAviZsRz8AAEA/ozJhP04WyT9AL2U8AoEVQFJPYr5OFuc/QWtAvwAAAAAAAAAAAAAAviZsRz/yU4E+AACAPwAAAAAAAAAAAABAP9jlfz9OFuc/+FJ+PgAAQD8AAIA/ThbnP7+Ufz8AAGA/KPtdPwAAYLMAAAA/EAdVPwAAgD8AAAAAAAAAAAMAQD+AdNE8AAAAAAAAAADJ70c/fVJ1P8rvRz8AAIA/ye9HP4B00TzJ70c/flJ1PwAAAAAAAAAATrYovPn/fz/wU4E+fVJ1P8rvRz99UnU/AABANH5SdT/wU4E+flJ1PwQAQD9AdNE8AAAAAAAAAADJ70c/AACAP4DI1D8IuWs/8FOBPgAAgD/yU4E+fVJ1PwAAgDQAAIA/////PgAAAD8AAEA/1gVHPwAAgDK8GTc/AABAP4NqOz+ENlo/Zi9lPAAAQD8AAAA/AABAP////z4NAAAAbWF0ZXJpYWxpbmRleKwAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAAAAAAACQAAAGVkZ2VmbGFnc7gDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Materials": [
+                "materials/hotspots/concrete_c_painted_hs.vmat",
+                "materials/dev/reflectivity_30.vmat",
+                "materials/concrete/wall/concrete_rough_a.vmat"
+              ]
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RenderType": "On",
+            "RollingResistance": null,
+            "SmoothingAngle": 40,
+            "Static": true,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "3324df88-c051-4468-9660-7833daab88d4",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Doors",
+        "Position": "293.463806,-3.81469727E-06,50.0805588",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "3856f5a3-4903-4862-8d68-c404c3220f66",
+            "__version": 2,
+            "__Prefab": "prefabs/objects/blastdoorframe-large-derelict.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "9dfd72ac-95b2-46fd-b823-c2794334594a"
+                  },
+                  "Parent": {
+                    "Type": "GameObject",
+                    "IdValue": "a8f5bd04-136f-4d20-b66c-f2992302f6b6"
+                  },
+                  "PreviousElement": null,
+                  "ContainerProperty": "Children",
+                  "IsContainerArray": true,
+                  "Data": {
+                    "__guid": "9dfd72ac-95b2-46fd-b823-c2794334594a",
+                    "__version": 2,
+                    "__Prefab": "particles/explosion/explosion.medium.prefab",
+                    "__PrefabInstancePatch": {
+                      "AddedObjects": [],
+                      "RemovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "6fd26423-d712-4027-a867-4041b7d0a179"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "49a3e038-4f24-473a-adf2-e8838d253405"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "80b92221-5334-44be-9b85-14fab86ec3d1"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "160a3827-0835-4973-a7ab-e1220e701005"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "882e9e5f-cf80-4321-a63d-967fef63bd9a"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c73c446e-8acb-41fe-b787-3adbe6abb75d"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f1deac4e-6669-406f-a601-a07655a64cd5"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "beb383b0-418a-49b1-86ad-9d2fcb7548ae"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "d500726c-c1a5-44ad-891a-11b23c5044f7"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "145f7533-b3f0-43d5-86b2-b8490d5a1251"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "cda0305d-cf31-429f-a958-cafbb0afd155"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "77db0f27-720c-445b-a434-00ae1c135ff8"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f5492ff1-9cc1-41b9-917b-34cca9256a05"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2f7bda90-3691-46bc-8a70-57dc12a1230e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c63c1178-a19e-4812-baae-913c70f6537f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9b2d8663-88f6-45b8-83c2-fdd44fae9370"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "654354a6-aaaf-4012-9082-b9920a2e632f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2ef5d023-8fda-4783-9484-e58513cc91ba"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "5bf581d4-0359-4503-bf8a-e401f8cb2e82"
+                          }
+                        }
+                      ],
+                      "PropertyOverrides": [
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Position",
+                          "Value": "-14.3180237,65.0871506,-9.79050827"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Rotation",
+                          "Value": "0,0,0,1"
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Alpha",
+                          "Value": {
+                            "Type": "Curve",
+                            "Evaluation": "Life",
+                            "CurveA": [
+                              {
+                                "x": 0,
+                                "y": 0,
+                                "in": -4.0000024,
+                                "out": 4.0000024,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.09317273,
+                                "y": 1,
+                                "in": 0.613249,
+                                "out": -0.613249,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.70186013,
+                                "y": 0.7934889,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 0.99345237,
+                                "y": 0,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 1,
+                                "y": 0,
+                                "in": 0.6748099,
+                                "out": -0.6748099,
+                                "mode": "Mirrored"
+                              }
+                            ],
+                            "CurveB": [
+                              {
+                                "x": 0.5,
+                                "y": 0.5,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Mirrored"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Collision",
+                          "Value": true
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "DieOnCollisionChance",
+                          "Value": 100
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "ForceScale",
+                          "Value": 2
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Gradient",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Life",
+                            "ConstantA": "0.35349,0.32126,0.28443,1",
+                            "ConstantB": "0.22791,0.19897,0.18339,1"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "StartVelocity",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Seed",
+                            "Constants": "50,100,0,0"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "CenterBias",
+                          "Value": 1
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeAngle",
+                          "Value": 87.530045
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeFar",
+                          "Value": 2
+                        }
+                      ],
+                      "MovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "NewParent": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "NewContainerProperty": "Children",
+                          "IsNewContainerArray": true,
+                          "NewPreviousElement": null
+                        }
+                      ]
+                    },
+                    "__PrefabIdToInstanceId": {
+                      "46dd51b8-74cd-4aec-90d9-9717388c25fe": "9dfd72ac-95b2-46fd-b823-c2794334594a",
+                      "103554f3-78fa-4c2b-b898-3e0758c27694": "bc8d364e-57c7-4035-a4d8-5d90d87fa1e9",
+                      "98bd4786-2151-4d74-a6ec-bde17334b09f": "bd2f77a5-3f86-476e-98d5-7123069f4b4f",
+                      "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "cf25398a-4fe7-4f00-b6be-201a660558a4",
+                      "3c506a5c-f30a-4978-9244-53b05084e409": "f79d901c-8f6f-4998-8e1a-91a0956f1d3f",
+                      "6fd26423-d712-4027-a867-4041b7d0a179": "f74d03d8-ad89-45e7-b203-2e5cb0836b12",
+                      "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "9d03428d-ada6-4f41-b198-86abc8e5adf5",
+                      "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "6219a72f-d3ec-4012-a3fe-cccb66c33ae4",
+                      "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "ec2172cc-d058-4827-811e-d3da33e63d11",
+                      "77db0f27-720c-445b-a434-00ae1c135ff8": "a2db2619-fb20-435e-b523-320882542a11",
+                      "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "679b221d-9b8f-472c-9063-8c11eb265953",
+                      "49a3e038-4f24-473a-adf2-e8838d253405": "7f79a830-9c72-474b-9e2b-312bb5f5dd12",
+                      "80b92221-5334-44be-9b85-14fab86ec3d1": "cd09134f-8a1c-41fa-9fb1-1e9cdf52326f",
+                      "160a3827-0835-4973-a7ab-e1220e701005": "a30826fe-5847-4df6-814c-0a236f5937b7",
+                      "882e9e5f-cf80-4321-a63d-967fef63bd9a": "5a902857-c2e2-4b05-a284-0d0d20e6c016",
+                      "c73c446e-8acb-41fe-b787-3adbe6abb75d": "bf990e35-1fb7-427e-9856-c74e9fa6ee7c",
+                      "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "9165ee05-dff1-464b-846e-a517006389a6",
+                      "f1deac4e-6669-406f-a601-a07655a64cd5": "accbf114-8a11-42bf-846c-86d5342d745b",
+                      "d500726c-c1a5-44ad-891a-11b23c5044f7": "de9bd8b9-f45e-4be8-90d6-6a48b0007688",
+                      "145f7533-b3f0-43d5-86b2-b8490d5a1251": "27422933-daa1-48ea-9216-14592285b2db",
+                      "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "892e1854-4c4c-4bad-9a78-c8aff3d6e786",
+                      "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "a14d3eb4-bb3d-434d-bd59-6df04cb79d20",
+                      "cda0305d-cf31-429f-a958-cafbb0afd155": "25845013-2120-4180-b23b-4bf9b351c464",
+                      "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "5a63aa31-df63-45c6-8873-96d5ea0da0cd",
+                      "f5492ff1-9cc1-41b9-917b-34cca9256a05": "84c18471-7478-46ad-9654-b9e49c481603",
+                      "2f7bda90-3691-46bc-8a70-57dc12a1230e": "68e75959-3a1d-456e-aae7-12df8db7cf1a",
+                      "c63c1178-a19e-4812-baae-913c70f6537f": "e43abd9e-1a41-410f-83da-afecf43ce2f3",
+                      "654354a6-aaaf-4012-9082-b9920a2e632f": "cf9490e1-f465-4dc4-bb25-cd1ec46d79df",
+                      "2ef5d023-8fda-4783-9484-e58513cc91ba": "ba27ee1a-2094-4c50-9568-bd33b3824aa8",
+                      "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "eb3d29b9-a520-4954-a6a2-d7a9b7ed2680"
+                    }
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "9ac134ed-e3c1-48d2-b340-7a1c35f2dcad"
+                  },
+                  "Parent": {
+                    "Type": "GameObject",
+                    "IdValue": "a8f5bd04-136f-4d20-b66c-f2992302f6b6"
+                  },
+                  "PreviousElement": {
+                    "Type": "GameObject",
+                    "IdValue": "9dfd72ac-95b2-46fd-b823-c2794334594a"
+                  },
+                  "ContainerProperty": "Children",
+                  "IsContainerArray": true,
+                  "Data": {
+                    "__guid": "9ac134ed-e3c1-48d2-b340-7a1c35f2dcad",
+                    "__version": 2,
+                    "__Prefab": "particles/explosion/explosion.medium.prefab",
+                    "__PrefabInstancePatch": {
+                      "AddedObjects": [],
+                      "RemovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "6fd26423-d712-4027-a867-4041b7d0a179"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "49a3e038-4f24-473a-adf2-e8838d253405"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "80b92221-5334-44be-9b85-14fab86ec3d1"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "160a3827-0835-4973-a7ab-e1220e701005"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "882e9e5f-cf80-4321-a63d-967fef63bd9a"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c73c446e-8acb-41fe-b787-3adbe6abb75d"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f1deac4e-6669-406f-a601-a07655a64cd5"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "beb383b0-418a-49b1-86ad-9d2fcb7548ae"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "d500726c-c1a5-44ad-891a-11b23c5044f7"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "145f7533-b3f0-43d5-86b2-b8490d5a1251"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "cda0305d-cf31-429f-a958-cafbb0afd155"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "77db0f27-720c-445b-a434-00ae1c135ff8"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f5492ff1-9cc1-41b9-917b-34cca9256a05"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2f7bda90-3691-46bc-8a70-57dc12a1230e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c63c1178-a19e-4812-baae-913c70f6537f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9b2d8663-88f6-45b8-83c2-fdd44fae9370"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "654354a6-aaaf-4012-9082-b9920a2e632f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2ef5d023-8fda-4783-9484-e58513cc91ba"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "5bf581d4-0359-4503-bf8a-e401f8cb2e82"
+                          }
+                        }
+                      ],
+                      "PropertyOverrides": [
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Name",
+                          "Value": "explosion.medium (1)"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Position",
+                          "Value": "-14.3180237,-76.9128494,-9.79050827"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Position",
+                          "Value": "0,8,0"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Rotation",
+                          "Value": "0,0,0,1"
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Alpha",
+                          "Value": {
+                            "Type": "Curve",
+                            "Evaluation": "Life",
+                            "CurveA": [
+                              {
+                                "x": 0,
+                                "y": 0,
+                                "in": -4.0000024,
+                                "out": 4.0000024,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.09317273,
+                                "y": 1,
+                                "in": 0.613249,
+                                "out": -0.613249,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.70186013,
+                                "y": 0.7934889,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 0.99345237,
+                                "y": 0,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 1,
+                                "y": 0,
+                                "in": 0.6748099,
+                                "out": -0.6748099,
+                                "mode": "Mirrored"
+                              }
+                            ],
+                            "CurveB": [
+                              {
+                                "x": 0.5,
+                                "y": 0.5,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Mirrored"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Collision",
+                          "Value": true
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "DieOnCollisionChance",
+                          "Value": 100
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "ForceScale",
+                          "Value": 2
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Gradient",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Life",
+                            "ConstantA": "0.35349,0.32126,0.28443,1",
+                            "ConstantB": "0.22791,0.19897,0.18339,1"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "StartVelocity",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Seed",
+                            "Constants": "50,100,0,0"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "CenterBias",
+                          "Value": 1
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeAngle",
+                          "Value": 87.530045
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeFar",
+                          "Value": 2
+                        }
+                      ],
+                      "MovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "NewParent": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "NewContainerProperty": "Children",
+                          "IsNewContainerArray": true,
+                          "NewPreviousElement": null
+                        }
+                      ]
+                    },
+                    "__PrefabIdToInstanceId": {
+                      "46dd51b8-74cd-4aec-90d9-9717388c25fe": "9ac134ed-e3c1-48d2-b340-7a1c35f2dcad",
+                      "103554f3-78fa-4c2b-b898-3e0758c27694": "b12e1474-ae72-46f4-b494-aa65d544c93f",
+                      "98bd4786-2151-4d74-a6ec-bde17334b09f": "f4bfc70b-c76f-4859-9c7a-5d2eef638065",
+                      "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "068bf2f2-f5df-47f5-963d-a839693c4aff",
+                      "3c506a5c-f30a-4978-9244-53b05084e409": "6fde310a-3907-4b38-bbe1-0cc6be20b06b",
+                      "6fd26423-d712-4027-a867-4041b7d0a179": "2d31f971-e80e-42bf-8269-835a504b0714",
+                      "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "aad210ed-0250-438c-81bd-f600ef2c18c1",
+                      "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "6b08d202-76c5-4077-9656-e09f82f83e70",
+                      "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "1a2c8b4e-c172-47d4-a935-3e65196e2c12",
+                      "77db0f27-720c-445b-a434-00ae1c135ff8": "51538dd2-6c54-4db3-9ce0-17d04fe11dc4",
+                      "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "a8e9962b-6401-4d42-a128-f3ca8ed086af",
+                      "49a3e038-4f24-473a-adf2-e8838d253405": "a22b8c11-33e6-427c-b9e8-23e781218fd2",
+                      "80b92221-5334-44be-9b85-14fab86ec3d1": "c73499fb-1fa7-4137-836d-38fed35536d2",
+                      "160a3827-0835-4973-a7ab-e1220e701005": "5042de9f-07a0-4bd5-81d5-364ff8690c55",
+                      "882e9e5f-cf80-4321-a63d-967fef63bd9a": "0f3acc82-7429-4d5b-a1ed-ace5cc5a8d02",
+                      "c73c446e-8acb-41fe-b787-3adbe6abb75d": "f746323d-4a59-4eb0-b71a-70c7a1d5937b",
+                      "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "f25c966c-22aa-4e53-9935-91cd71800290",
+                      "f1deac4e-6669-406f-a601-a07655a64cd5": "0bb828c0-a69e-4bea-a345-4e3f14434d3b",
+                      "d500726c-c1a5-44ad-891a-11b23c5044f7": "4eb312e1-78c3-4706-b2da-f2150bcc8b4a",
+                      "145f7533-b3f0-43d5-86b2-b8490d5a1251": "6ac439d8-aae7-4206-8169-6f6ef6e23dfd",
+                      "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "f686f37d-a810-4d4f-aa47-1ad761fd2646",
+                      "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "e0a23a91-1ea2-462a-8acb-acdb20f41429",
+                      "cda0305d-cf31-429f-a958-cafbb0afd155": "168df4d8-7487-4310-9461-a19228e92428",
+                      "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "ef151296-dab5-480c-897a-11cc6255b1d4",
+                      "f5492ff1-9cc1-41b9-917b-34cca9256a05": "4bdbe989-a7c8-4ea2-9180-3fc8a3a14fd3",
+                      "2f7bda90-3691-46bc-8a70-57dc12a1230e": "023e97a8-3a92-4145-8ce9-d89a30732bde",
+                      "c63c1178-a19e-4812-baae-913c70f6537f": "079388fd-6249-45db-bc1c-5d3fad3a606e",
+                      "654354a6-aaaf-4012-9082-b9920a2e632f": "c3d871f1-373e-4aa8-9814-5105f706dc53",
+                      "2ef5d023-8fda-4783-9484-e58513cc91ba": "eb8b14a9-3e3e-4856-abca-60b24d175c34",
+                      "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "18c93d08-c299-4265-b942-94290a89252b"
+                    }
+                  }
+                }
+              ],
+              "RemovedObjects": [
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "2f0faa93-3b6c-4916-bc78-ebacefe0837e"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "ace28e58-4d80-48f4-b224-133e824efaae"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "32a3e371-80d5-49b3-bfd4-bfece5615aa1"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "240e03ed-dd14-4222-a31b-ba8a0f7eff18"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "b77d7388-23b2-4ad9-a322-e025db1877aa"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "cb31cd72-d8f9-403b-bb59-785d884e34dd"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "312807c1-c968-4d3e-a900-68b22bbf0db6"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "16e4cff1-2b24-4286-a472-2d4a50c2ae20"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "60445048-7877-4256-ac8f-fee7862e3256"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "29f43515-4c79-4872-bb78-80a7b4e99868"
+                  }
+                }
+              ],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "76facdcd-21b8-4fce-b650-89cb8e34c6e5"
+                  },
+                  "Property": "Position",
+                  "Value": "-1.14578247,6.91285324,13.7099495"
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "76facdcd-21b8-4fce-b650-89cb8e34c6e5": "3856f5a3-4903-4862-8d68-c404c3220f66",
+              "90cf0112-802c-4c6f-b961-f4f5cf4ad5d8": "4ec0b2fb-e4e8-437a-8917-ed5eaf5ef926",
+              "dff71f25-f867-4000-b3c9-688bf359c8bf": "ad26524b-7453-42a0-b700-80c3f4ffaa7c",
+              "e0b184b7-2e68-474b-8a22-bc8f01f20368": "a139316a-3dbb-4a47-bb56-f68de25f15c8",
+              "1c3654b1-12dc-409b-86fe-6217c784a170": "508c9b07-2acf-497e-83ec-464efd5da01f",
+              "26d17654-8f5b-49a5-a81d-015c2483b974": "494984d8-28f7-4f6a-bfef-c007324c9b14",
+              "d18bef1b-a8af-49f4-9b90-70d366e5622b": "bf553860-b99b-4f8c-89a8-e09ff4b021a9",
+              "c5f85efb-4290-48b4-b8ff-768b88c5cbb7": "ab17e6ee-d1d6-4cea-ac2f-b6d76d4b616d",
+              "a991cf40-7598-441f-b92e-6b4bfff9f9fc": "821a3b34-2326-4bec-87a8-1ceefe1819ac",
+              "949f4ec4-5437-4f46-b24d-3995ac7c17db": "33bf7055-4386-4773-a052-c0dfb7bf1873",
+              "05e8d170-9c63-424d-a58c-a051553d657b": "cdbca3c0-8ea3-4cfc-9396-36e249fba2dd",
+              "25917c69-f6c5-4e64-b34f-7c24e17a0814": "0b7f4476-24b7-471c-9ea5-61145fa195dd",
+              "07577a49-a23e-4555-a96d-2bfaf50f68c5": "dcc27fad-ef0d-4aa2-8f1f-4bef95bfd997",
+              "df4aeeb7-7f53-4256-b896-7d8a94497699": "304316ba-ffae-44df-ba6a-ea1320158af9",
+              "0181a925-c866-42d2-839e-3b86ee5d0925": "ff0bb51a-55cc-412b-a76b-4f28990f7489",
+              "119ed33a-fb87-43b2-96b9-ac5c5db833c0": "27246530-955f-40f5-b2ad-bd91c700652b",
+              "44caa168-6901-41c4-8c13-e87b539754e0": "0c1a9454-040d-47ce-9eee-f13e8693e765",
+              "db48518b-878b-4973-aa11-6937025351b3": "7644e05b-19e6-499a-a8fb-a987d176a6b8",
+              "1ed6e10d-9ed7-40eb-a50d-6d98a1c064cf": "b471c044-1938-4c07-af6d-e739c8793aad",
+              "f32956f7-fa99-4435-a7d9-e19e78d0a976": "e4b09d8f-53fc-4a39-8042-51a288713ee9",
+              "7ece8409-17e7-47bb-b20d-9f9eede8adf6": "57565ba3-5928-4c11-ae44-5289eb8be8f2",
+              "a8f5bd04-136f-4d20-b66c-f2992302f6b6": "b2a597b6-f5c4-42bc-a67e-2ea3e54b2c2a",
+              "2f0faa93-3b6c-4916-bc78-ebacefe0837e": "9dfd72ac-95b2-46fd-b823-c2794334594a",
+              "ace28e58-4d80-48f4-b224-133e824efaae": "bc8d364e-57c7-4035-a4d8-5d90d87fa1e9",
+              "32a3e371-80d5-49b3-bfd4-bfece5615aa1": "bd2f77a5-3f86-476e-98d5-7123069f4b4f",
+              "240e03ed-dd14-4222-a31b-ba8a0f7eff18": "cf25398a-4fe7-4f00-b6be-201a660558a4",
+              "b77d7388-23b2-4ad9-a322-e025db1877aa": "f79d901c-8f6f-4998-8e1a-91a0956f1d3f",
+              "cb31cd72-d8f9-403b-bb59-785d884e34dd": "9ac134ed-e3c1-48d2-b340-7a1c35f2dcad",
+              "312807c1-c968-4d3e-a900-68b22bbf0db6": "b12e1474-ae72-46f4-b494-aa65d544c93f",
+              "16e4cff1-2b24-4286-a472-2d4a50c2ae20": "f4bfc70b-c76f-4859-9c7a-5d2eef638065",
+              "60445048-7877-4256-ac8f-fee7862e3256": "068bf2f2-f5df-47f5-963d-a839693c4aff",
+              "29f43515-4c79-4872-bb78-80a7b4e99868": "6fde310a-3907-4b38-bbe1-0cc6be20b06b"
+            }
+          },
+          {
+            "__guid": "c0a3de72-5613-4c9e-bf99-8894b4a7f918",
+            "__version": 2,
+            "__Prefab": "prefabs/objects/blastdoorframe-large-derelict.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "05bd39ef-0c9d-4756-802b-16058a6e5b6d"
+                  },
+                  "Parent": {
+                    "Type": "GameObject",
+                    "IdValue": "a8f5bd04-136f-4d20-b66c-f2992302f6b6"
+                  },
+                  "PreviousElement": null,
+                  "ContainerProperty": "Children",
+                  "IsContainerArray": true,
+                  "Data": {
+                    "__guid": "05bd39ef-0c9d-4756-802b-16058a6e5b6d",
+                    "__version": 2,
+                    "__Prefab": "particles/explosion/explosion.medium.prefab",
+                    "__PrefabInstancePatch": {
+                      "AddedObjects": [],
+                      "RemovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "6fd26423-d712-4027-a867-4041b7d0a179"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "49a3e038-4f24-473a-adf2-e8838d253405"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "80b92221-5334-44be-9b85-14fab86ec3d1"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "160a3827-0835-4973-a7ab-e1220e701005"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "882e9e5f-cf80-4321-a63d-967fef63bd9a"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c73c446e-8acb-41fe-b787-3adbe6abb75d"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f1deac4e-6669-406f-a601-a07655a64cd5"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "beb383b0-418a-49b1-86ad-9d2fcb7548ae"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "d500726c-c1a5-44ad-891a-11b23c5044f7"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "145f7533-b3f0-43d5-86b2-b8490d5a1251"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "cda0305d-cf31-429f-a958-cafbb0afd155"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "77db0f27-720c-445b-a434-00ae1c135ff8"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f5492ff1-9cc1-41b9-917b-34cca9256a05"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2f7bda90-3691-46bc-8a70-57dc12a1230e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c63c1178-a19e-4812-baae-913c70f6537f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9b2d8663-88f6-45b8-83c2-fdd44fae9370"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "654354a6-aaaf-4012-9082-b9920a2e632f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2ef5d023-8fda-4783-9484-e58513cc91ba"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "5bf581d4-0359-4503-bf8a-e401f8cb2e82"
+                          }
+                        }
+                      ],
+                      "PropertyOverrides": [
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Position",
+                          "Value": "-14.3180237,65.0871506,-9.79050827"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Rotation",
+                          "Value": "0,0,0,1"
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Alpha",
+                          "Value": {
+                            "Type": "Curve",
+                            "Evaluation": "Life",
+                            "CurveA": [
+                              {
+                                "x": 0,
+                                "y": 0,
+                                "in": -4.0000024,
+                                "out": 4.0000024,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.09317273,
+                                "y": 1,
+                                "in": 0.613249,
+                                "out": -0.613249,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.70186013,
+                                "y": 0.7934889,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 0.99345237,
+                                "y": 0,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 1,
+                                "y": 0,
+                                "in": 0.6748099,
+                                "out": -0.6748099,
+                                "mode": "Mirrored"
+                              }
+                            ],
+                            "CurveB": [
+                              {
+                                "x": 0.5,
+                                "y": 0.5,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Mirrored"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Collision",
+                          "Value": true
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "DieOnCollisionChance",
+                          "Value": 100
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "ForceScale",
+                          "Value": 2
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Gradient",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Life",
+                            "ConstantA": "0.35349,0.32126,0.28443,1",
+                            "ConstantB": "0.22791,0.19897,0.18339,1"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "StartVelocity",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Seed",
+                            "Constants": "50,100,0,0"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "CenterBias",
+                          "Value": 1
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeAngle",
+                          "Value": 87.530045
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeFar",
+                          "Value": 2
+                        }
+                      ],
+                      "MovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "NewParent": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "NewContainerProperty": "Children",
+                          "IsNewContainerArray": true,
+                          "NewPreviousElement": null
+                        }
+                      ]
+                    },
+                    "__PrefabIdToInstanceId": {
+                      "46dd51b8-74cd-4aec-90d9-9717388c25fe": "05bd39ef-0c9d-4756-802b-16058a6e5b6d",
+                      "103554f3-78fa-4c2b-b898-3e0758c27694": "5df25315-4c39-44e0-9719-a21275ad8fbe",
+                      "98bd4786-2151-4d74-a6ec-bde17334b09f": "0192a9b8-8599-45e6-8dca-d76dbaccbf60",
+                      "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "d108eab1-a1e3-4047-8249-2fcfcc5f1e1e",
+                      "3c506a5c-f30a-4978-9244-53b05084e409": "83943c1a-37a6-4cab-b49c-2e5eb73bddca",
+                      "6fd26423-d712-4027-a867-4041b7d0a179": "ca53e009-eba2-4e1c-a893-fdbbbf717139",
+                      "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "8f88c93c-7a08-48a2-98db-56f13d5ed0fb",
+                      "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "d8a2b428-e449-4d80-838a-0da0253b881a",
+                      "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "29d899fb-63dd-4d21-b1cd-97a60bfd366d",
+                      "77db0f27-720c-445b-a434-00ae1c135ff8": "a74dddee-7edf-4a84-b21e-e547dbad1902",
+                      "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "58b8d127-580b-4438-9636-fb6b8016668c",
+                      "49a3e038-4f24-473a-adf2-e8838d253405": "3bf9ba27-44b0-4ec8-9d06-ef25fc5c04a1",
+                      "80b92221-5334-44be-9b85-14fab86ec3d1": "e2e563e7-370e-4002-91a3-71c018c7eddd",
+                      "160a3827-0835-4973-a7ab-e1220e701005": "4d21e6ca-56f1-4288-b7c6-2912f95f883a",
+                      "882e9e5f-cf80-4321-a63d-967fef63bd9a": "f6119fc2-d8e2-4630-91ef-7382ff977772",
+                      "c73c446e-8acb-41fe-b787-3adbe6abb75d": "57785518-1b1c-467b-99db-3dd1dab14a9f",
+                      "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "d8ef10f3-bf6e-4caf-8f70-169945a13eda",
+                      "f1deac4e-6669-406f-a601-a07655a64cd5": "9c4a4ff9-8a80-44fe-a2d0-396c7b95fd29",
+                      "d500726c-c1a5-44ad-891a-11b23c5044f7": "86af1402-db5d-4b4f-840a-34905025d908",
+                      "145f7533-b3f0-43d5-86b2-b8490d5a1251": "2636ad84-752f-4c48-bbd3-d9bde5089cd0",
+                      "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "1a488841-6308-4642-8416-79abeccff476",
+                      "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "f6a08df1-b828-4918-9d08-711be80fd0f5",
+                      "cda0305d-cf31-429f-a958-cafbb0afd155": "8a53f550-6f16-43d7-b8ff-4efb520f6c7b",
+                      "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "11f2b408-1c86-4843-9df5-72be10cc25a0",
+                      "f5492ff1-9cc1-41b9-917b-34cca9256a05": "205b5407-214f-4889-a7d3-d6a6937d6215",
+                      "2f7bda90-3691-46bc-8a70-57dc12a1230e": "a77892a8-7191-4233-9961-3bbf2b317fcf",
+                      "c63c1178-a19e-4812-baae-913c70f6537f": "cdfc8df6-d7f9-4857-a4d8-f83c0fc1748b",
+                      "654354a6-aaaf-4012-9082-b9920a2e632f": "d4033dd6-d8ad-4bb9-b488-7ce4c8a0b422",
+                      "2ef5d023-8fda-4783-9484-e58513cc91ba": "739630e6-ba01-4d0d-b3bd-c076402e3ccd",
+                      "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "c0725c95-14be-4324-8b85-a33df9f66c75"
+                    }
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "9dc90b36-2706-4848-8230-760c9c2a0b9c"
+                  },
+                  "Parent": {
+                    "Type": "GameObject",
+                    "IdValue": "a8f5bd04-136f-4d20-b66c-f2992302f6b6"
+                  },
+                  "PreviousElement": {
+                    "Type": "GameObject",
+                    "IdValue": "05bd39ef-0c9d-4756-802b-16058a6e5b6d"
+                  },
+                  "ContainerProperty": "Children",
+                  "IsContainerArray": true,
+                  "Data": {
+                    "__guid": "9dc90b36-2706-4848-8230-760c9c2a0b9c",
+                    "__version": 2,
+                    "__Prefab": "particles/explosion/explosion.medium.prefab",
+                    "__PrefabInstancePatch": {
+                      "AddedObjects": [],
+                      "RemovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "6fd26423-d712-4027-a867-4041b7d0a179"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "49a3e038-4f24-473a-adf2-e8838d253405"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "80b92221-5334-44be-9b85-14fab86ec3d1"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "160a3827-0835-4973-a7ab-e1220e701005"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "882e9e5f-cf80-4321-a63d-967fef63bd9a"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c73c446e-8acb-41fe-b787-3adbe6abb75d"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f1deac4e-6669-406f-a601-a07655a64cd5"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "beb383b0-418a-49b1-86ad-9d2fcb7548ae"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "d500726c-c1a5-44ad-891a-11b23c5044f7"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "145f7533-b3f0-43d5-86b2-b8490d5a1251"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "cda0305d-cf31-429f-a958-cafbb0afd155"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "77db0f27-720c-445b-a434-00ae1c135ff8"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "f5492ff1-9cc1-41b9-917b-34cca9256a05"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2f7bda90-3691-46bc-8a70-57dc12a1230e"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "c63c1178-a19e-4812-baae-913c70f6537f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "9b2d8663-88f6-45b8-83c2-fdd44fae9370"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "654354a6-aaaf-4012-9082-b9920a2e632f"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "2ef5d023-8fda-4783-9484-e58513cc91ba"
+                          }
+                        },
+                        {
+                          "Id": {
+                            "Type": "Component",
+                            "IdValue": "5bf581d4-0359-4503-bf8a-e401f8cb2e82"
+                          }
+                        }
+                      ],
+                      "PropertyOverrides": [
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Name",
+                          "Value": "explosion.medium (1)"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "Property": "Position",
+                          "Value": "-14.3180237,-76.9128494,-9.79050827"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Position",
+                          "Value": "0,8,0"
+                        },
+                        {
+                          "Target": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "Property": "Rotation",
+                          "Value": "0,0,0,1"
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Alpha",
+                          "Value": {
+                            "Type": "Curve",
+                            "Evaluation": "Life",
+                            "CurveA": [
+                              {
+                                "x": 0,
+                                "y": 0,
+                                "in": -4.0000024,
+                                "out": 4.0000024,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.09317273,
+                                "y": 1,
+                                "in": 0.613249,
+                                "out": -0.613249,
+                                "mode": "Mirrored"
+                              },
+                              {
+                                "x": 0.70186013,
+                                "y": 0.7934889,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 0.99345237,
+                                "y": 0,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Linear"
+                              },
+                              {
+                                "x": 1,
+                                "y": 0,
+                                "in": 0.6748099,
+                                "out": -0.6748099,
+                                "mode": "Mirrored"
+                              }
+                            ],
+                            "CurveB": [
+                              {
+                                "x": 0.5,
+                                "y": 0.5,
+                                "in": 0,
+                                "out": 0,
+                                "mode": "Mirrored"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Collision",
+                          "Value": true
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "DieOnCollisionChance",
+                          "Value": 100
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "ForceScale",
+                          "Value": 2
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "Gradient",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Life",
+                            "ConstantA": "0.35349,0.32126,0.28443,1",
+                            "ConstantB": "0.22791,0.19897,0.18339,1"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "98bd4786-2151-4d74-a6ec-bde17334b09f"
+                          },
+                          "Property": "StartVelocity",
+                          "Value": {
+                            "Type": "Range",
+                            "Evaluation": "Seed",
+                            "Constants": "50,100,0,0"
+                          }
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "CenterBias",
+                          "Value": 1
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeAngle",
+                          "Value": 87.530045
+                        },
+                        {
+                          "Target": {
+                            "Type": "Component",
+                            "IdValue": "3c506a5c-f30a-4978-9244-53b05084e409"
+                          },
+                          "Property": "ConeFar",
+                          "Value": 2
+                        }
+                      ],
+                      "MovedObjects": [
+                        {
+                          "Id": {
+                            "Type": "GameObject",
+                            "IdValue": "103554f3-78fa-4c2b-b898-3e0758c27694"
+                          },
+                          "NewParent": {
+                            "Type": "GameObject",
+                            "IdValue": "46dd51b8-74cd-4aec-90d9-9717388c25fe"
+                          },
+                          "NewContainerProperty": "Children",
+                          "IsNewContainerArray": true,
+                          "NewPreviousElement": null
+                        }
+                      ]
+                    },
+                    "__PrefabIdToInstanceId": {
+                      "46dd51b8-74cd-4aec-90d9-9717388c25fe": "9dc90b36-2706-4848-8230-760c9c2a0b9c",
+                      "103554f3-78fa-4c2b-b898-3e0758c27694": "8b854df1-7e38-44e1-9377-b7b665320326",
+                      "98bd4786-2151-4d74-a6ec-bde17334b09f": "0b2da621-5789-4a60-9bcd-e45aad461f4c",
+                      "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "69b0a037-35d6-4cf4-ac0b-1bb6622da22a",
+                      "3c506a5c-f30a-4978-9244-53b05084e409": "607588f3-f927-4f86-9b2d-aaf36efb2f19",
+                      "6fd26423-d712-4027-a867-4041b7d0a179": "551c53bf-089d-4282-aa31-04791680a62e",
+                      "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "ce51095e-a5a9-4c28-a864-cd2efddbf753",
+                      "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "17821ff9-6caa-4133-b5e2-1c1b08ac73e6",
+                      "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "d61294cf-a520-4d6c-9637-0b4d2b10e1ad",
+                      "77db0f27-720c-445b-a434-00ae1c135ff8": "eeb94f80-f256-4273-acc2-ab3bf0e79f75",
+                      "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "0be27b6e-b91f-4797-b747-451de7f13f2b",
+                      "49a3e038-4f24-473a-adf2-e8838d253405": "13ccb0cb-fcfc-41fd-acc1-9e1ed86fedb3",
+                      "80b92221-5334-44be-9b85-14fab86ec3d1": "c8d34628-0d99-4ff7-aeb6-7c28be9c65be",
+                      "160a3827-0835-4973-a7ab-e1220e701005": "98c55179-328a-461d-9bcd-4476a3af2eb7",
+                      "882e9e5f-cf80-4321-a63d-967fef63bd9a": "045bfc6f-dde5-4503-8fbd-9e962399c560",
+                      "c73c446e-8acb-41fe-b787-3adbe6abb75d": "50aba1aa-7fb8-4913-875d-3a84f6cb4850",
+                      "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "72c8beed-63b7-4ebd-8a31-147ea5aba22a",
+                      "f1deac4e-6669-406f-a601-a07655a64cd5": "d9bea698-99a3-4014-aea5-c43acb7c817c",
+                      "d500726c-c1a5-44ad-891a-11b23c5044f7": "d5fa60f3-cffb-4993-877a-33d27ebddec6",
+                      "145f7533-b3f0-43d5-86b2-b8490d5a1251": "47423916-7f84-443a-9917-e89cd372d756",
+                      "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "1bd234ed-8b44-49d7-9971-4942da285097",
+                      "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "8d82a57a-5fab-4d22-a9b4-6e26008b6234",
+                      "cda0305d-cf31-429f-a958-cafbb0afd155": "32be2699-8b3f-4d28-ab43-37fc445fc990",
+                      "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "1fc536b8-cb8d-459e-9a7b-caec6e803bb5",
+                      "f5492ff1-9cc1-41b9-917b-34cca9256a05": "40c1bc68-d179-4b65-881e-8d1c8b69e2f3",
+                      "2f7bda90-3691-46bc-8a70-57dc12a1230e": "0fe5fee7-e3ae-4d63-95b9-8d9cc2b0b433",
+                      "c63c1178-a19e-4812-baae-913c70f6537f": "28aecbe3-2458-44b3-b474-ddcc34fd24e7",
+                      "654354a6-aaaf-4012-9082-b9920a2e632f": "6ec4f5cf-9c20-48eb-b27a-1a227459f3fb",
+                      "2ef5d023-8fda-4783-9484-e58513cc91ba": "fb2fa5c7-4d8f-448e-80bf-06182f4eca4e",
+                      "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "fa2ca064-baeb-4f2b-aa80-1499307b91e2"
+                    }
+                  }
+                }
+              ],
+              "RemovedObjects": [
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "2f0faa93-3b6c-4916-bc78-ebacefe0837e"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "ace28e58-4d80-48f4-b224-133e824efaae"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "32a3e371-80d5-49b3-bfd4-bfece5615aa1"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "240e03ed-dd14-4222-a31b-ba8a0f7eff18"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "b77d7388-23b2-4ad9-a322-e025db1877aa"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "cb31cd72-d8f9-403b-bb59-785d884e34dd"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "GameObject",
+                    "IdValue": "312807c1-c968-4d3e-a900-68b22bbf0db6"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "16e4cff1-2b24-4286-a472-2d4a50c2ae20"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "60445048-7877-4256-ac8f-fee7862e3256"
+                  }
+                },
+                {
+                  "Id": {
+                    "Type": "Component",
+                    "IdValue": "29f43515-4c79-4872-bb78-80a7b4e99868"
+                  }
+                }
+              ],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "76facdcd-21b8-4fce-b650-89cb8e34c6e5"
+                  },
+                  "Property": "Position",
+                  "Value": "-361.463806,3.81469727E-06,13.7099495"
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "76facdcd-21b8-4fce-b650-89cb8e34c6e5": "c0a3de72-5613-4c9e-bf99-8894b4a7f918",
+              "90cf0112-802c-4c6f-b961-f4f5cf4ad5d8": "2af80286-1182-4d2d-b83d-5886052fc4cb",
+              "dff71f25-f867-4000-b3c9-688bf359c8bf": "5aec8d60-2deb-4cab-960e-62ff52c2c91e",
+              "e0b184b7-2e68-474b-8a22-bc8f01f20368": "fda946b7-b207-479e-ba2a-117c392511a8",
+              "1c3654b1-12dc-409b-86fe-6217c784a170": "2d48f503-c6d4-49d0-8531-c331ba26efde",
+              "26d17654-8f5b-49a5-a81d-015c2483b974": "7f1f94b7-a3e7-4206-a793-617238d37990",
+              "d18bef1b-a8af-49f4-9b90-70d366e5622b": "25f53c2e-aceb-4620-873b-6943e3206bb4",
+              "c5f85efb-4290-48b4-b8ff-768b88c5cbb7": "99157a43-44dd-4e91-a2f0-cdee5aa1d2f7",
+              "a991cf40-7598-441f-b92e-6b4bfff9f9fc": "0d54b471-2a74-4145-8091-c8c3f2f893e8",
+              "949f4ec4-5437-4f46-b24d-3995ac7c17db": "40943709-5ae8-40d3-8a4f-3d2b772b2cce",
+              "05e8d170-9c63-424d-a58c-a051553d657b": "e6220db8-e50c-43dc-ae0e-2a0ef907e483",
+              "25917c69-f6c5-4e64-b34f-7c24e17a0814": "63264f6d-c283-41c3-b46c-6b2620731a71",
+              "07577a49-a23e-4555-a96d-2bfaf50f68c5": "4c05a604-288b-4ae2-9767-96efe370ae21",
+              "df4aeeb7-7f53-4256-b896-7d8a94497699": "75c63467-6802-44f9-b854-fd7b5fadf718",
+              "0181a925-c866-42d2-839e-3b86ee5d0925": "c967d185-b9dc-447d-8633-e74c745c58f2",
+              "119ed33a-fb87-43b2-96b9-ac5c5db833c0": "38d22194-ba89-487b-8de6-6df446d6bce7",
+              "44caa168-6901-41c4-8c13-e87b539754e0": "4de07195-9824-4032-98ce-9e147d5d0acc",
+              "db48518b-878b-4973-aa11-6937025351b3": "96910e18-bb98-4c3d-9d40-fb6c341ce801",
+              "1ed6e10d-9ed7-40eb-a50d-6d98a1c064cf": "3a08d3e0-cce9-4a82-8b8c-86da2e20d454",
+              "f32956f7-fa99-4435-a7d9-e19e78d0a976": "b7fbe6e1-bbe5-4275-86e2-6ad08334cb4c",
+              "7ece8409-17e7-47bb-b20d-9f9eede8adf6": "961c7fd3-7a98-40c9-8441-19bc0b81a52c",
+              "a8f5bd04-136f-4d20-b66c-f2992302f6b6": "b7c42f4f-f192-4eb2-ba53-4ba0314c62ec",
+              "2f0faa93-3b6c-4916-bc78-ebacefe0837e": "05bd39ef-0c9d-4756-802b-16058a6e5b6d",
+              "ace28e58-4d80-48f4-b224-133e824efaae": "5df25315-4c39-44e0-9719-a21275ad8fbe",
+              "32a3e371-80d5-49b3-bfd4-bfece5615aa1": "0192a9b8-8599-45e6-8dca-d76dbaccbf60",
+              "240e03ed-dd14-4222-a31b-ba8a0f7eff18": "d108eab1-a1e3-4047-8249-2fcfcc5f1e1e",
+              "b77d7388-23b2-4ad9-a322-e025db1877aa": "83943c1a-37a6-4cab-b49c-2e5eb73bddca",
+              "cb31cd72-d8f9-403b-bb59-785d884e34dd": "9dc90b36-2706-4848-8230-760c9c2a0b9c",
+              "312807c1-c968-4d3e-a900-68b22bbf0db6": "8b854df1-7e38-44e1-9377-b7b665320326",
+              "16e4cff1-2b24-4286-a472-2d4a50c2ae20": "0b2da621-5789-4a60-9bcd-e45aad461f4c",
+              "60445048-7877-4256-ac8f-fee7862e3256": "69b0a037-35d6-4cf4-ac0b-1bb6622da22a",
+              "29f43515-4c79-4872-bb78-80a7b4e99868": "607588f3-f927-4f86-9b2d-aaf36efb2f19"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "d14b10ef-9bf3-47ab-aec3-92a217244642",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Probes",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "ad720971-7170-4166-8ca5-57d95af13318",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Envmap Probe",
+            "Position": "0,0,60",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.EnvmapProbe",
+                "__guid": "adb844b5-13e8-4c98-a63f-8ccabdfc5bed",
+                "__enabled": true,
+                "Flags": 0,
+                "__version": 1,
+                "BakedTexture": null,
+                "Bounds": {
+                  "Mins": "-68,-172,-62",
+                  "Maxs": "292,184,98"
+                },
+                "DelayBetweenUpdates": 0.1,
+                "Feathering": 0.2,
+                "FrameInterval": 5,
+                "MaxDistance": 512,
+                "Mode": "Realtime",
+                "MultiBounce": false,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Priority": 0,
+                "Projection": "Box",
+                "RenderExcludeTags": "",
+                "Resolution": "Small",
+                "Texture": "textures/cubemaps/default2.vtex",
+                "TintColor": "1,1,1,1",
+                "UpdateStrategy": "OnEnabled",
+                "ZFar": 4096,
+                "ZNear": 16
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "97fc5304-81fa-494a-9b94-dd2d6625a3a6",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Lights",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "aaaa5f50-02c7-4ea4-904c-208f3f7f2675",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "108,0,78",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "light_point,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "ef3ada02-ef05-49e7-a05f-97e9a511e48c",
+                "__enabled": true,
+                "Flags": 0,
+                "Attenuation": 1,
+                "Contribution": "Diffuse, Specular, Transmissive",
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0.91373,0.98039,1,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 400,
+                "ShadowBias": 0,
+                "ShadowHardness": 0,
+                "Shadows": true
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "bb6abbb3-e2f3-4330-b95e-664c81efdd1b",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Spawn",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.SpawnPoint",
+            "__guid": "a67f0722-fa42-403e-9d6a-3aa298647405",
+            "__enabled": true,
+            "Flags": 0,
+            "Color": "0.8902,0.31765,0.05098,1",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      }
+    ]
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [
+    "facepunch.concrete_c_painted_hs#291811",
+    "facepunch.concreterough#313517",
+    "facepunch.explosionmedium#110500"
+  ],
+  "__version": 2
+}

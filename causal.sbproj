@@ -12,6 +12,11 @@
   "IsStandaloneOnly": false,
   "Metadata": {
     "LaunchMode": "Normal",
-    "SystemScene": "scenes/system.scene"
+    "SystemScene": "scenes/system.scene",
+    "ControlModes": {
+      "Keyboard": false,
+      "VR": false,
+      "Gamepad": false
+    }
   }
 }
