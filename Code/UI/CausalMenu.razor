@@ -10,10 +10,10 @@
 			<img class="logo-image" src="textures/causal-logo.png" alt="CAUSAL" />
 		</div>
 		<div class="buttons-section">
-			<div class="menu-item primary" @onclick=@EnterGame>
+			<div class="menu-item primary" @onclick=@EnterGame onmouseover=@PlayHoverSound>
 				<span>New Game</span>
 			</div>
-			<div class="menu-item" @onclick=@QuitGame>
+			<div class="menu-item" @onclick=@QuitGame onmouseover=@PlayHoverSound>
 				<span>Quit</span>
 			</div>
 		</div>
@@ -44,6 +44,11 @@
 	private void QuitGame()
 	{
 		Game.Close();
+	}
+
+	private void PlayHoverSound()
+	{
+		Sound.Play( "audio/ui/menuhover.sound" );
 	}
 
 	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading );
