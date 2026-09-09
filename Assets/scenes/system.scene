@@ -6,8 +6,8 @@
       "__version": 2,
       "Flags": 0,
       "Name": "Main Camera",
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
+      "Position": "-23,120,105",
+      "Rotation": "0.0499503873,0.12059091,-0.379409492,0.91597569",
       "Scale": "1,1,1",
       "Tags": "",
       "Enabled": true,
@@ -25,7 +25,7 @@
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "EnablePostProcessing": true,
-          "FieldOfView": 60,
+          "FieldOfView": 90,
           "FovAxis": "Horizontal",
           "IsMainCamera": true,
           "OnComponentDestroy": null,
@@ -1554,6 +1554,14 @@
           {
             "Target": {
               "Type": "Component",
+              "IdValue": "0f074abc-e1e7-4c4f-ad9c-74fb8db4e277"
+            },
+            "Property": "FootstepVolume",
+            "Value": 3
+          },
+          {
+            "Target": {
+              "Type": "Component",
               "IdValue": "4f4da498-ec8c-4855-8af3-0267d5922409"
             },
             "Property": "Binder",
@@ -1662,6 +1670,55 @@
           },
           "Timing": "AfterPostProcess",
           "ZIndex": 100
+        },
+        {
+          "__type": "Causal.CausalMenu",
+          "__guid": "fe3c1b4f-c0dd-4200-964e-8a53bf473946",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "e28da393-53a4-4d9a-9f95-7d2391759cfe",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Game Manager",
+      "Position": "246.506042,0.347578555,-129.790588",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Causal.CausalGameManager",
+          "__guid": "0c2183a7-7eb7-4ba3-a4c6-15b19c73666b",
+          "__enabled": true,
+          "Flags": 0,
+          "CameraFlightSeconds": 2.2,
+          "MenuFadeSeconds": 0.6,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Player": {
+            "_type": "gameobject",
+            "go": "a028cc9f-0156-46a9-8465-34bf240576c0"
+          }
         }
       ],
       "Children": []

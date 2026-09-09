@@ -1,0 +1,50 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits PanelComponent
+@namespace Causal
+
+<root class="@MenuClass">
+	<div class="menu-container">
+		<div class="logo-section">
+			<img class="logo-image" src="textures/causal-logo.png" alt="CAUSAL" />
+		</div>
+		<div class="buttons-section">
+			<div class="menu-item primary" @onclick=@EnterGame>
+				<span>New Game</span>
+			</div>
+			<div class="menu-item" @onclick=@QuitGame>
+				<span>Quit</span>
+			</div>
+		</div>
+	</div>
+</root>
+
+@code
+{
+	private bool IsMenuVisible => !CausalGameManager.Instance.IsValid() || !CausalGameManager.Instance.IsActive;
+
+	private bool IsFading => CausalGameManager.Instance.IsValid() && CausalGameManager.Instance.IsInIntro;
+
+	private string MenuClass => !IsMenuVisible ? "hidden" : (IsFading ? "fading" : "");
+
+	private void EnterGame()
+	{
+		var manager = CausalGameManager.Instance;
+		if ( !manager.IsValid() )
+		{
+			Log.Warning( "CausalMenu found no CausalGameManager." );
+			return;
+		}
+
+		manager.BeginIntro();
+		StateHasChanged();
+	}
+
+	private void QuitGame()
+	{
+		Game.Close();
+	}
+
+	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading );
+}

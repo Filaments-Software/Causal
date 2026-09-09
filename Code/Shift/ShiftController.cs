@@ -8,6 +8,7 @@ public sealed class ShiftController : Component
 	[Property] public float ShiftAtSeconds { get; set; } = 0.5f;
 
 	private MoviePlayer _shiftPlayer;
+	private TimeShiftManager _manager;
 	private TimeSince _timeSinceShiftStart;
 	private bool _shiftPending;
 	private bool _wasPlaying;
@@ -15,6 +16,15 @@ public sealed class ShiftController : Component
 	protected override void OnStart()
 	{
 		_shiftPlayer = ShiftPlayer.IsValid() ? ShiftPlayer : GetComponentInChildren<MoviePlayer>();
+		_manager = Game.ActiveScene?.GetSystem<TimeShiftManager>();
+		if ( _shiftPlayer.IsValid() )
+		{
+			var clip = _shiftPlayer.Clip;
+			if ( clip is not null )
+			{
+				_ = clip.Duration;
+			}
+		}
 	}
 
 	protected override void OnUpdate()
@@ -29,9 +39,14 @@ public sealed class ShiftController : Component
 
 	private void TryBeginShift()
 	{
+		if ( CausalGameManager.Instance.IsValid() && !CausalGameManager.Instance.IsActive )
+		{
+			return;
+		}
+
 		if ( !_shiftPlayer.IsValid() )
 		{
-			Game.ActiveScene?.GetSystem<TimeShiftManager>()?.RequestShift();
+			GetManager()?.RequestShift();
 			return;
 		}
 
@@ -75,6 +90,17 @@ public sealed class ShiftController : Component
 	private void FireShift()
 	{
 		_shiftPending = false;
-		Game.ActiveScene?.GetSystem<TimeShiftManager>()?.RequestShift();
+		GetManager()?.RequestShift();
+	}
+
+	private TimeShiftManager GetManager()
+	{
+		if ( _manager is not null )
+		{
+			return _manager;
+		}
+
+		_manager = Game.ActiveScene?.GetSystem<TimeShiftManager>();
+		return _manager;
 	}
 }

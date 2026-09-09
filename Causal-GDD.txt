@@ -133,14 +133,9 @@ If we are tight on scope, keep it lean: doors open, you step out, chamber board 
 
 ---
 
-## 7. Multiplayer / Ghost Presence (optional)
+## 7. Multiplayer / Ghost Presence (cut)
 
-Pick one depending on time:
-
-*   **Async ghosts, low cost and high payoff, RECOMMENDED:** Other players' past runs show up as translucent silhouettes moving through their CAUSE state, faintly visible in your EFFECT state. It sells the idea that this place used to be full and your returns are now someone else's effect. Just replay recorded transforms, no real netcode. It fits CAUSAL perfectly. You actually see other causal agents.
-*   **Live co-presence, stretch goal:** A second player is in the opposite state and actions bleed across. A light you switch flickers for them. Cut this first if time is tight.
-
-**Recommendation is async ghosts only.** It looks multiplayer in the trailer and it reinforces the loop theme without extra work.
+Out of scope. Single-player only: no live multiplayer and no async ghosts.
 
 ---
 
@@ -173,8 +168,7 @@ Build each obstacle with two solutions. A fast causal one once you know the tric
 *   **Rapid iteration on the switch** - The VFX and timing for the state change should be quick to tweak. That polish is the highest leverage work.
 *   **Scene layers** - Build CAUSE and EFFECT as two parallel scene layers or object state sets you toggle, not two separate levels. Smaller memory and scope. Tag anything that persists with a PersistentCause component.
 *   **Particles and lighting** - Spend time here. This is not decoration, it is storytelling. The CAUSAL sign flicker and Object field should be light and particle events tied to the switch, not texture swaps.
-*   **Ghost replay** - Record your transform each round, play it back translucent next time. Fully local and async. No dedicated server needed.
-*   **Quote system** - Just a string table with 6 to 8 curated quotes shown in order on Object use, or random on replay.
+*   **Quote system** - Just a string table with 6 to 8 curated quotes shown in order on Object use.
 
 ---
 
@@ -184,7 +178,7 @@ To keep the idea tight and achievable:
 *   No branching narrative, dialogue trees, or voice acting. The building and the Object quotes do the talking.
 *   No combat. The facility is the puzzle.
 *   One facility, not many. Depth over breadth.
-*   No live multiplayer unless async ghosts are done early and you have spare time.
+*   No multiplayer of any kind.
 *   No complex save system. A round is a run. You only need to save a few flags for which causes you have authored.
 
 ---

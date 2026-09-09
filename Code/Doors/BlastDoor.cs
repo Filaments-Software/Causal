@@ -7,6 +7,8 @@ public sealed class BlastDoor : Component
 	[Property] public MovieResource OpenMovie { get; set; }
 	[Property] public MovieResource CloseMovie { get; set; }
 	[Property] public float ActionCooldown { get; set; } = 2f;
+	[Property] public GameObject VfxObject { get; set; }
+	[Property] public float VfxSeconds { get; set; } = 2f;
 	[Property] public bool StartOpen { get; set; }
 	[Property] public bool AllowInterrupt { get; set; } = false;
 
@@ -17,7 +19,10 @@ public sealed class BlastDoor : Component
 	public bool CanClose => CloseMovie is not null && CloseMovie.IsValid();
 
 	private MoviePlayer _player;
+	private GameObject _vfx;
 	private TimeSince _timeSinceAction = 99f;
+	private TimeSince _timeSinceVfx = 99f;
+	private bool _vfxShowing;
 	private float _storedPosition;
 	private bool _wasPlaying;
 
@@ -34,6 +39,7 @@ public sealed class BlastDoor : Component
 		_player.CreateTargets = false;
 		IsOpen = StartOpen;
 		_timeSinceAction = 99f;
+		ResolveVfx();
 	}
 
 	public void Open()
@@ -96,10 +102,13 @@ public sealed class BlastDoor : Component
 		_timeSinceAction = 0f;
 		_storedPosition = 0f;
 		IsOpen = targetState;
+		ShowVfx();
 	}
 
 	protected override void OnUpdate()
 	{
+		TickVfx();
+
 		if ( !_player.IsValid() )
 		{
 			return;
@@ -141,5 +150,50 @@ public sealed class BlastDoor : Component
 		}
 
 		return (float)clip.Duration.TotalSeconds;
+	}
+
+	private void ResolveVfx()
+	{
+		_vfx = VfxObject;
+
+		if ( !_vfx.IsValid() )
+		{
+			Log.Warning( $"BlastDoor on '{GameObject.Name}' has no VfxObject assigned." );
+			return;
+		}
+
+		_vfx.Enabled = false;
+	}
+
+	private void ShowVfx()
+	{
+		if ( !_vfx.IsValid() )
+		{
+			return;
+		}
+
+		_vfx.Enabled = true;
+		_timeSinceVfx = 0f;
+		_vfxShowing = true;
+	}
+
+	private void TickVfx()
+	{
+		if ( !_vfxShowing )
+		{
+			return;
+		}
+
+		if ( !_vfx.IsValid() )
+		{
+			_vfxShowing = false;
+			return;
+		}
+
+		if ( _timeSinceVfx >= VfxSeconds )
+		{
+			_vfx.Enabled = false;
+			_vfxShowing = false;
+		}
 	}
 }

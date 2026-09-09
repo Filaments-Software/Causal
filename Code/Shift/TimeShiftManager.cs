@@ -29,6 +29,7 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 		RefreshRoots();
 		IsCause = StartInCause;
 		_timeSinceShift = 99f;
+		WarmRoots();
 		ApplyState();
 	}
 
@@ -77,6 +78,25 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 	{
 		var parent = go.Parent;
 		return !parent.IsValid() || !parent.Tags.Has( tag );
+	}
+
+	private void WarmRoots()
+	{
+		foreach ( var go in _causeRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
+
+		foreach ( var go in _effectRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
 	}
 
 	private void ApplyState()
