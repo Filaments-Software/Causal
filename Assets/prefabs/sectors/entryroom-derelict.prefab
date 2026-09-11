@@ -91,60 +91,6 @@
             "Children": []
           },
           {
-            "__guid": "4b5ef2f3-3e90-8126-9f72-510625637aa0",
-            "__version": 2,
-            "Flags": 0,
-            "Name": "Block",
-            "Position": "592,27.0145245,102",
-            "Rotation": "0,0,0,1",
-            "Scale": "1,1,1",
-            "Tags": "world",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkFlags": 0,
-            "NetworkOrphaned": 0,
-            "NetworkTransmit": true,
-            "OwnerTransfer": 1,
-            "Components": [
-              {
-                "__type": "Sandbox.MeshComponent",
-                "__guid": "b5cdbd71-baf0-8068-996c-874482dd0d71",
-                "__enabled": true,
-                "Flags": 0,
-                "ColliderFlags": 0,
-                "Collision": "Mesh",
-                "Color": "1,1,1,1",
-                "Elasticity": null,
-                "Friction": null,
-                "HideInGame": false,
-                "IsTrigger": false,
-                "Mesh": {
-                  "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3lgBAAAEgAAAD4AAAALAAAANwAAAAIAAAAEAAAALwAAABkAAAAKAAAADAAAAD0AAAA5AAAA/////yIAAAD/////KgAAAP////8yAAAA/////zoAAAA4AAAAAQAAAAEAAAACAAAAAAAAAAAAAAAAAAAANwAAAAQAAAACAAAAAwAAAAQAAAAAAAAAAQAAAAIAAAAWAAAAAwAAAAMAAAAFAAAALwAAAAAAAAACAAAABAAAABUAAAAFAAAA//////////////////////////////////////////8FAAAACQAAAAoAAAABAAAABAAAAAgAAAARAAAABQAAAAYAAAALAAAADAAAAAEAAAAFAAAACgAAABQAAAADAAAABwAAAA0AAAA9AAAAAQAAAAYAAAAMAAAAFwAAAAQAAAD//////////////////////////////////////////wQAAAARAAAAGQAAAAIAAAADAAAAEAAAAAUAAAAFAAAA//////////////////////////////////////////8CAAAAFQAAAAMAAAADAAAABQAAABQAAAAJAAAABQAAAAYAAAAXAAAACwAAAAMAAAABAAAAFgAAAAEAAAAEAAAABAAAABkAAAAIAAAAAQAAAAgAAAAYAAAAHAAAAAIAAAD//////////////////////////////////////////woAAAAdAAAAIgAAAAIAAAAIAAAAHAAAADkAAAD//////////////////////////////////////////////////////////////////////////////////////////wwAAAAjAAAAKgAAAAIAAAAKAAAAIgAAAB0AAAD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////DgAAACsAAAAyAAAAAgAAAAwAAAAqAAAAIwAAAP///////////////////////////////////////////////wMAAAAvAAAAEAAAAAIAAAAAAAAALgAAAAAAAAAAAAAA//////////////////////////////////////////8QAAAAMwAAADoAAAACAAAADgAAADIAAAArAAAA////////////////////////////////////////////////AAAAADcAAAAuAAAAAgAAAAcAAAA2AAAADQAAAAQAAAAIAAAAOQAAABgAAAABAAAAEQAAADgAAAA7AAAA/////xEAAAA7AAAAPAAAAAIAAAAQAAAAOgAAADMAAAD/////BwAAAD0AAAA2AAAAAgAAABEAAAA8AAAAOAAAAAEAAAAvAAAAPQAAADwAAAAWAAAANwAAABUAAAD//////////////////////////wkAAABwb3NpdGlvbnPYAAAAAACKwwAAUUMAANRCAACHQwAAUUMAANRCAACHQwAAUcMAANRCAACKwwAAUcMAANRCAACKwwAAUcMAAMzCAACHQwAAUcMAAMzCAACHQwAAUUMAAMzCAACKwwAAUUMAAMzCAACKwwAACcMAAMzCAACKwwAACcMAANRCAACKwwAACcMAAADBAACKw2KZ+cAAANRCAACKw///zcIAALBBAACKwwAAUUMCALBBAACKw///K0IBALBBAACKw7htSkMAAMzCAACKwwAAnkL8/7/AAACKwwAAnkIAAMzCBgAAAGJsZW5kc/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAABjb2xvcnP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAdGV4Y29vcmTwAQAApzd9PwAAAAAAAAAAAAAAAKc3fT8AAIA/AAAAAAAAAAAAAAAAAACAP4AWMjwAAAAAAAAAAIDnUz8AAAAAAAAAAKc3fT8AAIA/AACAP3krez+nN30/AAAAAAAAgD95K3s/AAAAAAAAAACnN30/eSt7PwAAAAB+yYA8AAAAAAAAAAAAAAAAeSt7PwAAgD8AAAAAAAAAAAAAAAAAAAAAeSt7PwAAgD8AAAAAgBYyPHkrez8AAAAAeSt7P6c3fT8AAAAAAAAAAAAAgD/9YTA+eSt7PwAAAADqxgQ/AAAAAAAAAAD9YTA+DqkJP/1hMD55K3s//mEwPgAAAAD9YTA+D6kJPwAAAAAAAAAAAAAAAAAAAABb1oE+MN7KPv1hMD4OqQk/K3L2PgAAAABb1oE+Md7KPgAAAAAAAAAAAAAAAOrGBD8AAAAAAAAAAAAAAAAw3so+vlUaPzDeyj5b1oE+MN7KPgAAgD8w3so+vlUaPzHeyj4AAAAAAAAAAAAAAAAAAAAAAAAAAAU8nz4AAAAAAAAAAP5hMD/LPgc/vlUaPzDeyj60+Xs/eSt7P/5hMD/LPgc/AACAPwAAAAAAAAAAeSt7PwAAAACB51M//mEwP3krez/+YTA/eSt7P/5hMD/LPgc/AACAP3krez8AAAAABTyfPg0AAABtYXRlcmlhbGluZGV4LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAGVkZ2VmbGFnc/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-                  "Materials": [
-                    "materials/generic/wall_concrete_painted_a.vmat"
-                  ]
-                },
-                "OnComponentDestroy": null,
-                "OnComponentDisabled": null,
-                "OnComponentEnabled": null,
-                "OnComponentFixedUpdate": null,
-                "OnComponentStart": null,
-                "OnComponentUpdate": null,
-                "OnObjectTriggerEnter": null,
-                "OnObjectTriggerExit": null,
-                "OnTriggerEnter": null,
-                "OnTriggerExit": null,
-                "RenderType": "On",
-                "RollingResistance": null,
-                "SmoothingAngle": 40,
-                "Static": true,
-                "Surface": null,
-                "SurfaceVelocity": "0,0,0"
-              }
-            ],
-            "Children": []
-          },
-          {
             "__guid": "f383036a-6009-8421-a783-a77edc8d0d9b",
             "__version": 2,
             "Flags": 0,
@@ -1256,14 +1202,6 @@
                     "_type": "gameobject",
                     "go": "a8f5bd04-136f-4d20-b66c-f2992302f6b6"
                   }
-                },
-                {
-                  "Target": {
-                    "Type": "Component",
-                    "IdValue": "e0b184b7-2e68-474b-8a22-bc8f01f20368"
-                  },
-                  "Property": "VfxSeconds",
-                  "Value": 2
                 }
               ],
               "MovedObjects": []
@@ -3561,6 +3499,42 @@
           }
         ],
         "Children": []
+      },
+      {
+        "__guid": "fb3eba5e-98c0-4fc5-be6a-82fa3957707b",
+        "__version": 2,
+        "__Prefab": "prefabs/paralix-decal-derelict.prefab",
+        "__PrefabInstancePatch": {
+          "AddedObjects": [],
+          "RemovedObjects": [],
+          "PropertyOverrides": [
+            {
+              "Target": {
+                "Type": "GameObject",
+                "IdValue": "dd654443-2df4-416a-a33d-31fe3fd45e39"
+              },
+              "Property": "Position",
+              "Value": "113.000008,-161.403412,77.1828537"
+            },
+            {
+              "Target": {
+                "Type": "GameObject",
+                "IdValue": "dd654443-2df4-416a-a33d-31fe3fd45e39"
+              },
+              "Property": "Rotation",
+              "Value": "-0.0616284534,-0.0616284534,-0.704416037,0.704416037"
+            }
+          ],
+          "MovedObjects": []
+        },
+        "__PrefabIdToInstanceId": {
+          "dd654443-2df4-416a-a33d-31fe3fd45e39": "fb3eba5e-98c0-4fc5-be6a-82fa3957707b",
+          "daeb35d7-5e30-45b0-a50c-bda7538868be": "6751b78b-2a1d-42c6-a811-1cac363b86d0",
+          "2590fdc7-9045-4618-a1c0-85dcb8e95560": "44972cc3-0c3e-453b-baca-81b9724bf07d",
+          "7b07a98b-4edc-44cd-95d1-207d855449f3": "fa6cef3e-3249-4b54-8178-b2ab92bcddf0",
+          "f1445913-4b3b-410f-b1c3-ef6d44a100e3": "c66fb880-c902-432b-8e41-152c9da644a9",
+          "4b508577-593e-497f-a848-178a4e4a8eeb": "67c9863c-20cf-4b6b-8e48-220418671835"
+        }
       }
     ],
     "__properties": {

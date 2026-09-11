@@ -12,6 +12,56 @@
         "Name": "Riser",
         "TargetType": "Sandbox.GameObject"
       },
+      "188477ca-1cbd-40e0-8257-57a7fd2a8b70": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "619e973d-eeaf-8190-9e9d-8040d7898a0f"
+        },
+        "Name": "MeshComponent",
+        "TargetType": "Sandbox.MeshComponent",
+        "ParentId": "4d5b0cc6-a9f7-4513-9b47-7d73c46b4e69"
+      },
+      "5a4ecf45-7ed3-4cf8-9473-e40152db898a": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "be936103-ec01-864c-8b10-c9c778c95b6d"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "e905b44c-7bd5-4572-a7c1-068e3ca54a97": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "50418a12-6682-4822-939f-aec14bc89be9",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
       "5123f1b4-41b0-4167-b625-754ddd46fbea": {
         "$type": "Reference",
         "Metadata": {
@@ -20,6 +70,48 @@
         "Name": "blastdoor-large-bottom",
         "TargetType": "Sandbox.GameObject"
       },
+      "5daa4c7a-64ac-410c-b950-fdd741a00118": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "cf8f2f60-c372-8a79-8199-efd55c651eb5"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "e1dc04ae-0a37-4a05-832a-c626feb366c2"
+      },
+      "4461fca2-531d-43b5-b276-7b506ff65282": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Color",
+        "TargetType": "Color",
+        "ParentId": "188477ca-1cbd-40e0-8257-57a7fd2a8b70",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
       "6560f614-f679-4451-832c-b07d1c8ee086": {
         "$type": "Reference",
         "Metadata": {
@@ -27,6 +119,39 @@
         },
         "Name": "Riser",
         "TargetType": "Sandbox.GameObject"
+      },
+      "4d692857-62f5-4b20-9864-c75160d340be": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "6d73a70e-c9ff-408c-9985-d4682aa9d22f",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
       },
       "4a0e8f14-4c3c-4c6d-9620-83604b4dc08a": {
         "$type": "Property",
@@ -65,6 +190,15 @@
             }
           }
         ]
+      },
+      "f2dbb7b7-42f7-4726-b7e7-a81e08e6dc59": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "da3c6ea6-76b9-8721-bcb3-d18231ac8116"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "5a4ecf45-7ed3-4cf8-9473-e40152db898a"
       },
       "b5dfd3f8-0500-4e67-bd3e-8a5a29b8b155": {
         "$type": "Reference",
@@ -107,6 +241,115 @@
           }
         ]
       },
+      "3655b366-8243-4fdc-a746-4d85d331d8fa": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "decb96e4-c89f-8ad5-a8f6-4220a7cdbb21"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6c617ee1-a9de-4b1a-b93c-ba59a8195c49"
+      },
+      "4d5b0cc6-a9f7-4513-9b47-7d73c46b4e69": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "99ea9008-257f-889b-a050-60bb086ea60a"
+        },
+        "Name": "Block",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "42ee214f-67ea-4ae8-9d8a-c1fd33cf55d9": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Color",
+        "TargetType": "Color",
+        "ParentId": "c3a64219-8350-4494-b684-f679ebd525ae",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "50418a12-6682-4822-939f-aec14bc89be9": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "bfc75109-fefe-86aa-ba6e-5a10ee97db8a"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "c15af3cb-aa00-4e6d-8e5e-d3319aee80fa"
+      },
+      "2bbb7eab-1ee1-4737-89dc-882f71eff971": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "f2dbb7b7-42f7-4726-b7e7-a81e08e6dc59",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "6c617ee1-a9de-4b1a-b93c-ba59a8195c49": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "8e9549c4-51a7-82f9-aff7-878f61e25845"
+        },
+        "Name": "DoorLightFixture",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "c15af3cb-aa00-4e6d-8e5e-d3319aee80fa": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "9034a1f4-79ff-8746-9604-f87a3e373e3e"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6c617ee1-a9de-4b1a-b93c-ba59a8195c49"
+      },
       "94fc6dfb-8876-48c6-900a-cfec18c6b979": {
         "$type": "Property",
         "Format": "Editor",
@@ -140,6 +383,23 @@
           }
         ]
       },
+      "e1dc04ae-0a37-4a05-832a-c626feb366c2": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "abd88eea-8368-8f9f-a933-3bb21d76580e"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "c3a64219-8350-4494-b684-f679ebd525ae": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "1e6c08d7-a5f9-8ab7-ae35-d468fed9e59e"
+        },
+        "Name": "MeshComponent",
+        "TargetType": "Sandbox.MeshComponent",
+        "ParentId": "94072858-7abd-4c0c-b727-d7983ddca132"
+      },
       "726a37f0-e963-4447-b4f3-ca544bcd4502": {
         "$type": "Property",
         "Format": "Editor",
@@ -171,6 +431,57 @@
                 {
                   "Time": 18000,
                   "Value": "0,0,-88",
+                  "Interpolation": "Cubic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "6d73a70e-c9ff-408c-9985-d4682aa9d22f": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "b79b7a21-a5f5-8fe9-ba5c-6c811729f2e0"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "3655b366-8243-4fdc-a746-4d85d331d8fa"
+      },
+      "94072858-7abd-4c0c-b727-d7983ddca132": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "65ecd5fc-5034-8279-8995-4a6d4bd4441d"
+        },
+        "Name": "Block",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6c617ee1-a9de-4b1a-b93c-ba59a8195c49"
+      },
+      "4a36e2b6-82fc-40a3-82fb-7609a75ed675": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "5daa4c7a-64ac-410c-b950-fdd741a00118",
+        "Blocks": [
+          {
+            "TimeRange": "0,4680",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 1440,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 4680,
+                  "Value": "0.91373,0.98039,1,1",
                   "Interpolation": "Cubic"
                 }
               ]

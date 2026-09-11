@@ -74,6 +74,7 @@
             "__enabled": true,
             "Flags": 0,
             "ActionCooldown": 4,
+            "AdvanceWhileHidden": true,
             "AllowInterrupt": false,
             "CloseMovie": "prefabs/movies/doors/blastdoor-large-anim-close.movie",
             "OnComponentDestroy": null,
@@ -129,9 +130,38 @@
                 {
                   "Track": "03e8268e-e5c1-4b7a-a082-b15f19f1d5f2",
                   "Reference": "78cb7a62-88e5-4d99-8247-5b5279542b2c"
+                },
+                {
+                  "Track": "6c617ee1-a9de-4b1a-b93c-ba59a8195c49",
+                  "Reference": "6fa13db4-e179-4c97-b9f5-ffa07201bd7d"
+                },
+                {
+                  "Track": "94072858-7abd-4c0c-b727-d7983ddca132",
+                  "Reference": "a3c399bb-0a49-42e7-99fa-9c7faf5cdeb8"
+                },
+                {
+                  "Track": "c15af3cb-aa00-4e6d-8e5e-d3319aee80fa",
+                  "Reference": "8e3e510c-fe7a-4bb4-bb67-dd19e4c89eba"
+                },
+                {
+                  "Track": "3655b366-8243-4fdc-a746-4d85d331d8fa",
+                  "Reference": "78de771b-74ba-4100-83c6-089181577db0"
                 }
               ],
-              "Components": []
+              "Components": [
+                {
+                  "Track": "c3a64219-8350-4494-b684-f679ebd525ae",
+                  "Reference": "7614f7c6-30bb-4ab2-9eaa-e7a07a9e308f"
+                },
+                {
+                  "Track": "50418a12-6682-4822-939f-aec14bc89be9",
+                  "Reference": "08043278-82dc-4d3a-bee9-5149f5ddd09e"
+                },
+                {
+                  "Track": "6d73a70e-c9ff-408c-9985-d4682aa9d22f",
+                  "Reference": "a4ae4cd2-baaa-47e7-8552-1b541a6c840b"
+                }
+              ]
             },
             "CreateTargets": false,
             "IsLooping": false,
@@ -201,7 +231,110 @@
             "SurfaceVelocity": "0,0,0"
           }
         ],
-        "Children": []
+        "Children": [
+          {
+            "__guid": "9e1a9523-1c83-4b72-8e58-40559e82c648",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "caution",
+            "Position": "-8,0,-13",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.Decal",
+                "__guid": "e0ff0072-f9d1-479a-871e-a4649af965f6",
+                "__enabled": true,
+                "Flags": 0,
+                "__version": 3,
+                "AttenuationAngle": 1,
+                "ColorMix": 1,
+                "ColorTint": "1,1,1,1",
+                "CoverageAmount": 1,
+                "CoverageRange": 0.07,
+                "Decals": [
+                  "decals/caution.decal"
+                ],
+                "Depth": 8,
+                "LifeTime": 0,
+                "Looped": false,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parallax": 1,
+                "Rotation": 0,
+                "Scale": 3,
+                "SequenceId": 0,
+                "SheetSequence": false,
+                "Size": "4,1",
+                "SortLayer": 0,
+                "Transient": false
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "d3a6cd32-3840-4ff8-83f4-c68ec76e24d9",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "caution (3)",
+            "Position": "6,0,-13",
+            "Rotation": "0,0,1,-4.37113883E-08",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.Decal",
+                "__guid": "eabe4922-9a9e-407c-9ef5-2167010f310b",
+                "__enabled": true,
+                "Flags": 0,
+                "__version": 3,
+                "AttenuationAngle": 1,
+                "ColorMix": 1,
+                "ColorTint": "1,1,1,1",
+                "CoverageAmount": 1,
+                "CoverageRange": 0.07,
+                "Decals": [
+                  "decals/caution.decal"
+                ],
+                "Depth": 8,
+                "LifeTime": 0,
+                "Looped": false,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parallax": 1,
+                "Rotation": 0,
+                "Scale": 3,
+                "SequenceId": 0,
+                "SheetSequence": false,
+                "Size": "4,1",
+                "SortLayer": 0,
+                "Transient": false
+              }
+            ],
+            "Children": []
+          }
+        ]
       },
       {
         "__guid": "e6f0e865-1ef2-496f-bbac-1d63dcb9eb2b",
@@ -472,6 +605,108 @@
               }
             ],
             "Children": []
+          },
+          {
+            "__guid": "869e1e82-3664-4f4f-8a5b-080ec664f8bb",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "caution (1)",
+            "Position": "-8,0,11",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.Decal",
+                "__guid": "79c286c9-30c9-42bd-803a-bef88302ab83",
+                "__enabled": true,
+                "Flags": 0,
+                "__version": 3,
+                "AttenuationAngle": 1,
+                "ColorMix": 1,
+                "ColorTint": "1,1,1,1",
+                "CoverageAmount": 1,
+                "CoverageRange": 0.07,
+                "Decals": [
+                  "decals/caution.decal"
+                ],
+                "Depth": 8,
+                "LifeTime": 0,
+                "Looped": false,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parallax": 1,
+                "Rotation": 0,
+                "Scale": 3,
+                "SequenceId": 0,
+                "SheetSequence": false,
+                "Size": "4,1",
+                "SortLayer": 0,
+                "Transient": false
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "0feb682d-b189-4e4e-b450-45b1244ba50f",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "caution (2)",
+            "Position": "6,0,11",
+            "Rotation": "0,0,1,-4.37113883E-08",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.Decal",
+                "__guid": "39d8cd25-ce9c-44be-9f5b-7c7f5d22868d",
+                "__enabled": true,
+                "Flags": 0,
+                "__version": 3,
+                "AttenuationAngle": 1,
+                "ColorMix": 1,
+                "ColorTint": "1,1,1,1",
+                "CoverageAmount": 1,
+                "CoverageRange": 0.07,
+                "Decals": [
+                  "decals/caution.decal"
+                ],
+                "Depth": 8,
+                "LifeTime": 0,
+                "Looped": false,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parallax": 1,
+                "Rotation": 0,
+                "Scale": 3,
+                "SequenceId": 0,
+                "SheetSequence": false,
+                "Size": "4,1",
+                "SortLayer": 0,
+                "Transient": false
+              }
+            ],
+            "Children": []
           }
         ]
       },
@@ -601,393 +836,11 @@
         "Components": [],
         "Children": [
           {
-            "__guid": "10db204a-3f63-430f-8a09-59e337cbb430",
+            "__guid": "ff5bf1ad-de64-863a-9015-7e5716b14840",
             "__version": 2,
             "__Prefab": "particles/explosion/explosion.medium.prefab",
             "__PrefabInstancePatch": {
-              "AddedObjects": [
-                {
-                  "Id": {
-                    "Type": "GameObject",
-                    "IdValue": "70866106-1e2b-4da1-a53f-564e75a659cb"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "10db204a-3f63-430f-8a09-59e337cbb430"
-                  },
-                  "PreviousElement": null,
-                  "ContainerProperty": "Children",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__guid": "70866106-1e2b-4da1-a53f-564e75a659cb",
-                    "__version": 2,
-                    "Flags": 0,
-                    "Name": "Dust Ring ",
-                    "Position": "0,0,0",
-                    "Rotation": "0,0,0,1",
-                    "Scale": "1,1,1",
-                    "Tags": "particles",
-                    "Enabled": true,
-                    "NetworkMode": 2,
-                    "NetworkFlags": 0,
-                    "NetworkOrphaned": 0,
-                    "NetworkTransmit": true,
-                    "OwnerTransfer": 1,
-                    "Components": [],
-                    "Children": []
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "b61f53e6-c5ed-4d07-bd7e-c20a7a66f284"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "70866106-1e2b-4da1-a53f-564e75a659cb"
-                  },
-                  "PreviousElement": null,
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleEffect",
-                    "__guid": "b61f53e6-c5ed-4d07-bd7e-c20a7a66f284",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "__version": 3,
-                    "Alpha": {
-                      "Type": "Curve",
-                      "Evaluation": "Life",
-                      "CurveA": [
-                        {
-                          "x": 0,
-                          "y": 0,
-                          "in": -4.0000024,
-                          "out": 4.0000024,
-                          "mode": "Mirrored"
-                        },
-                        {
-                          "x": 0.09317273,
-                          "y": 1,
-                          "in": 0.613249,
-                          "out": -0.613249,
-                          "mode": "Mirrored"
-                        },
-                        {
-                          "x": 0.70186013,
-                          "y": 0.7934889,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Linear"
-                        },
-                        {
-                          "x": 0.99345237,
-                          "y": 0,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Linear"
-                        },
-                        {
-                          "x": 1,
-                          "y": 0,
-                          "in": 0.6748099,
-                          "out": -0.6748099,
-                          "mode": "Mirrored"
-                        }
-                      ],
-                      "CurveB": [
-                        {
-                          "x": 0.5,
-                          "y": 0.5,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Mirrored"
-                        }
-                      ]
-                    },
-                    "ApplyAlpha": true,
-                    "ApplyColor": true,
-                    "ApplyRotation": true,
-                    "ApplyShape": true,
-                    "Bounce": 1,
-                    "Brightness": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "Constants": "1,0,0,0"
-                    },
-                    "Bumpiness": 0,
-                    "Collision": true,
-                    "CollisionIgnore": null,
-                    "CollisionPrefab": null,
-                    "CollisionPrefabAlign": false,
-                    "CollisionPrefabChance": 1,
-                    "CollisionPrefabRotation": 0,
-                    "CollisionRadius": 1,
-                    "ConstantMovement": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "Damping": 2,
-                    "DieOnCollisionChance": 100,
-                    "FollowerPrefab": null,
-                    "FollowerPrefabChance": 1,
-                    "FollowerPrefabKill": true,
-                    "Force": true,
-                    "ForceDirection": "0,0,0",
-                    "ForceScale": 2,
-                    "ForceSpace": "World",
-                    "Friction": 1,
-                    "Gradient": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "ConstantA": "0.35349,0.32126,0.28443,1",
-                      "ConstantB": "0.22791,0.19897,0.18339,1"
-                    },
-                    "InitialPitch": 0,
-                    "InitialRoll": 0,
-                    "InitialScale": 1,
-                    "InitialVelocity": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "InitialYaw": 0,
-                    "Lifetime": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "1,4,0,0"
-                    },
-                    "LocalSpace": 0,
-                    "MaxParticles": 50,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "OnParticleCreated": null,
-                    "OnParticleDestroyed": null,
-                    "OrbitalForce": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "OrbitalPull": 0,
-                    "PerParticleTimeScale": 1,
-                    "Pitch": 0,
-                    "PreWarm": 0,
-                    "PushStrength": 0,
-                    "Roll": 0,
-                    "Scale": {
-                      "Type": "CurveRange",
-                      "Evaluation": "Life",
-                      "CurveA": {
-                        "rangey": "0,150",
-                        "frames": [
-                          {
-                            "x": 0,
-                            "y": 0.030303031,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 0.08466601,
-                            "y": 0.6901741,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 1,
-                            "y": 1,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Mirrored"
-                          }
-                        ]
-                      },
-                      "CurveB": {
-                        "rangey": "0,150",
-                        "frames": [
-                          {
-                            "x": 0,
-                            "y": 0,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Mirrored"
-                          },
-                          {
-                            "x": 0.11121247,
-                            "y": 0.31972232,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 1,
-                            "y": 0.91820717,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          }
-                        ]
-                      }
-                    },
-                    "SequenceFitToLifetime": false,
-                    "SequenceId": 0,
-                    "SequenceSpeed": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "Constants": "0.800000012,0.300000012,0,0"
-                    },
-                    "SequenceTime": 1,
-                    "SheetSequence": true,
-                    "SnapToFrame": false,
-                    "StartDelay": 0,
-                    "StartVelocity": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "50,100,0,0"
-                    },
-                    "Stretch": 0,
-                    "TimeScale": 1,
-                    "Timing": "GameTime",
-                    "Tint": "0.53953,0.52147,0.51695,1",
-                    "UsePrefabFeature": false,
-                    "Yaw": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "0,360,0,0"
-                    }
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "578cd73e-30cd-4a13-91d9-d4e8d5eeaf5b"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "70866106-1e2b-4da1-a53f-564e75a659cb"
-                  },
-                  "PreviousElement": {
-                    "Type": "Component",
-                    "IdValue": "b61f53e6-c5ed-4d07-bd7e-c20a7a66f284"
-                  },
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleSpriteRenderer",
-                    "__guid": "578cd73e-30cd-4a13-91d9-d4e8d5eeaf5b",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "__version": 2,
-                    "Additive": true,
-                    "Alignment": "LookAtCamera",
-                    "BlurAmount": 0.05,
-                    "BlurOpacity": 0.91,
-                    "BlurSpacing": 0.73,
-                    "CameraFadeFar": 0,
-                    "CameraFadeNear": 0,
-                    "DepthFeather": 34.61,
-                    "FaceVelocity": false,
-                    "FogStrength": 0.57,
-                    "LeadingTrail": false,
-                    "Lighting": true,
-                    "MotionBlur": false,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "Opaque": false,
-                    "PlaybackSpeed": 1,
-                    "RenderOptions": {
-                      "GameLayer": true,
-                      "OverlayLayer": false,
-                      "BloomLayer": false,
-                      "AfterUILayer": false
-                    },
-                    "RotationOffset": 339.53,
-                    "Scale": 2,
-                    "Shadows": false,
-                    "SortMode": "Unsorted",
-                    "Sprite": {
-                      "$compiler": "embed",
-                      "$source": null,
-                      "data": {
-                        "Animations": [
-                          {
-                            "Name": "Default",
-                            "FrameRate": 15,
-                            "Origin": "0.5,0.5",
-                            "LoopMode": "Loop",
-                            "LoopStart": -1,
-                            "LoopEnd": -1,
-                            "Frames": [
-                              {
-                                "Texture": "textures/particles/smoke/smokeloop_i_0.vtex",
-                                "BroadcastMessages": []
-                              }
-                            ]
-                          }
-                        ],
-                        "__references": null
-                      },
-                      "compiled": null
-                    },
-                    "StartingAnimationName": "Default",
-                    "TextureFilter": "Bilinear"
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "311d0cb8-69c2-41eb-8890-57e94f535ff1"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "70866106-1e2b-4da1-a53f-564e75a659cb"
-                  },
-                  "PreviousElement": {
-                    "Type": "Component",
-                    "IdValue": "578cd73e-30cd-4a13-91d9-d4e8d5eeaf5b"
-                  },
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleConeEmitter",
-                    "__guid": "311d0cb8-69c2-41eb-8890-57e94f535ff1",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "Burst": 25,
-                    "CenterBias": 1,
-                    "CenterBiasVelocity": 0,
-                    "ConeAngle": 87.530045,
-                    "ConeFar": 2,
-                    "ConeNear": 1,
-                    "Delay": 0,
-                    "DestroyOnEnd": true,
-                    "Duration": 5,
-                    "InVolume": true,
-                    "Loop": false,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "OnEdge": false,
-                    "Rate": 0,
-                    "RateOverDistance": 0,
-                    "VelocityMultiplier": 1,
-                    "VelocityRandom": 0
-                  }
-                }
-              ],
+              "AddedObjects": [],
               "RemovedObjects": [
                 {
                   "Id": {
@@ -1167,396 +1020,45 @@
               "PropertyOverrides": [],
               "MovedObjects": []
             },
-            "__PrefabIdToInstanceId": {}
+            "__PrefabIdToInstanceId": {
+              "46dd51b8-74cd-4aec-90d9-9717388c25fe": "ff5bf1ad-de64-863a-9015-7e5716b14840",
+              "6fd26423-d712-4027-a867-4041b7d0a179": "bb9ae40c-5fea-8062-a8e5-f21d97ce9fe3",
+              "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "9cd57af7-a05f-80aa-91b2-e5a4d5d8936e",
+              "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "01f133e4-e9ff-8c38-abe1-d10de5f59516",
+              "103554f3-78fa-4c2b-b898-3e0758c27694": "bee7bfc2-f58b-857f-b76b-0690fd5da46b",
+              "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "a2778a37-d7c6-875c-b8f7-c51ed58018da",
+              "77db0f27-720c-445b-a434-00ae1c135ff8": "d6d43ff6-9da2-8c0f-828b-ab14def89034",
+              "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "ec017d00-f8d5-850b-a476-10402c8be918",
+              "49a3e038-4f24-473a-adf2-e8838d253405": "e78ac3ca-54a0-88d4-9e7a-1c6aa393693d",
+              "80b92221-5334-44be-9b85-14fab86ec3d1": "3ef2e242-b3a9-8745-9940-7ce56260ce2b",
+              "160a3827-0835-4973-a7ab-e1220e701005": "2bc441d9-7d9f-8a99-a311-2d4b9d08da5d",
+              "882e9e5f-cf80-4321-a63d-967fef63bd9a": "55fd905b-92e1-8ed8-851d-856b8757aec1",
+              "c73c446e-8acb-41fe-b787-3adbe6abb75d": "dd5475fe-a05d-848f-a97e-08183e08e2fe",
+              "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "cc6c60ea-ef56-8096-90ec-a0cfa821458c",
+              "f1deac4e-6669-406f-a601-a07655a64cd5": "26ec0a5a-5e6d-8a0e-aa1e-6d8b2591341e",
+              "d500726c-c1a5-44ad-891a-11b23c5044f7": "c2d9ac3d-42cc-839c-b53b-2ddc4ddca0b0",
+              "145f7533-b3f0-43d5-86b2-b8490d5a1251": "0e9b8f2a-f31e-8fd5-9eaa-163c4ffe42ca",
+              "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "921c2f81-4d23-8506-a9be-23675556dfae",
+              "98bd4786-2151-4d74-a6ec-bde17334b09f": "8cff48ec-5313-8e47-ba9b-b4d96c3200d4",
+              "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "866dd926-94e1-83fd-8d78-7ccc7b003752",
+              "3c506a5c-f30a-4978-9244-53b05084e409": "b0122055-a5c5-8bd0-9eb2-f97b80bcefa4",
+              "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "8cfc0a6b-a338-877f-85f9-df91eca54cb9",
+              "cda0305d-cf31-429f-a958-cafbb0afd155": "732b4bbd-23f3-8431-9b83-3ec5808a33a3",
+              "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "019e0346-9002-83cd-8f20-ca70386d85aa",
+              "f5492ff1-9cc1-41b9-917b-34cca9256a05": "2973cda0-f64e-8c50-8230-ff4b9018c62c",
+              "2f7bda90-3691-46bc-8a70-57dc12a1230e": "7335cc41-f903-8d1e-ac53-2964de2428ee",
+              "c63c1178-a19e-4812-baae-913c70f6537f": "462cf6e5-3041-8055-8681-876a4cafd764",
+              "654354a6-aaaf-4012-9082-b9920a2e632f": "d0dd45b3-f01c-834a-9160-655b8e6c1254",
+              "2ef5d023-8fda-4783-9484-e58513cc91ba": "d375e2d3-ebef-8836-acb5-71647cbc63a2",
+              "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "460bca63-1e56-8414-90a0-54f90213969b"
+            }
           },
           {
-            "__guid": "7ac943f8-959e-4d20-bd75-e088c8dd7620",
+            "__guid": "8d2cb94d-8078-86ce-9811-6a33c5e2c44a",
             "__version": 2,
             "__Prefab": "particles/explosion/explosion.medium.prefab",
             "__PrefabInstancePatch": {
-              "AddedObjects": [
-                {
-                  "Id": {
-                    "Type": "GameObject",
-                    "IdValue": "89fed44d-3734-4bed-a11b-bc5d530b5b23"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "7ac943f8-959e-4d20-bd75-e088c8dd7620"
-                  },
-                  "PreviousElement": null,
-                  "ContainerProperty": "Children",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__guid": "89fed44d-3734-4bed-a11b-bc5d530b5b23",
-                    "__version": 2,
-                    "Flags": 0,
-                    "Name": "Dust Ring ",
-                    "Position": "0,8,0",
-                    "Rotation": "0,0,0,1",
-                    "Scale": "1,1,1",
-                    "Tags": "particles",
-                    "Enabled": true,
-                    "NetworkMode": 2,
-                    "NetworkFlags": 0,
-                    "NetworkOrphaned": 0,
-                    "NetworkTransmit": true,
-                    "OwnerTransfer": 1,
-                    "Components": [],
-                    "Children": []
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "eae31466-a2b6-4d13-a02a-5075c3ee4eb8"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "89fed44d-3734-4bed-a11b-bc5d530b5b23"
-                  },
-                  "PreviousElement": null,
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleEffect",
-                    "__guid": "eae31466-a2b6-4d13-a02a-5075c3ee4eb8",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "__version": 3,
-                    "Alpha": {
-                      "Type": "Curve",
-                      "Evaluation": "Life",
-                      "CurveA": [
-                        {
-                          "x": 0,
-                          "y": 0,
-                          "in": -4.0000024,
-                          "out": 4.0000024,
-                          "mode": "Mirrored"
-                        },
-                        {
-                          "x": 0.09317273,
-                          "y": 1,
-                          "in": 0.613249,
-                          "out": -0.613249,
-                          "mode": "Mirrored"
-                        },
-                        {
-                          "x": 0.70186013,
-                          "y": 0.7934889,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Linear"
-                        },
-                        {
-                          "x": 0.99345237,
-                          "y": 0,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Linear"
-                        },
-                        {
-                          "x": 1,
-                          "y": 0,
-                          "in": 0.6748099,
-                          "out": -0.6748099,
-                          "mode": "Mirrored"
-                        }
-                      ],
-                      "CurveB": [
-                        {
-                          "x": 0.5,
-                          "y": 0.5,
-                          "in": 0,
-                          "out": 0,
-                          "mode": "Mirrored"
-                        }
-                      ]
-                    },
-                    "ApplyAlpha": true,
-                    "ApplyColor": true,
-                    "ApplyRotation": true,
-                    "ApplyShape": true,
-                    "Bounce": 1,
-                    "Brightness": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "Constants": "1,0,0,0"
-                    },
-                    "Bumpiness": 0,
-                    "Collision": true,
-                    "CollisionIgnore": null,
-                    "CollisionPrefab": null,
-                    "CollisionPrefabAlign": false,
-                    "CollisionPrefabChance": 1,
-                    "CollisionPrefabRotation": 0,
-                    "CollisionRadius": 1,
-                    "ConstantMovement": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "Damping": 2,
-                    "DieOnCollisionChance": 100,
-                    "FollowerPrefab": null,
-                    "FollowerPrefabChance": 1,
-                    "FollowerPrefabKill": true,
-                    "Force": true,
-                    "ForceDirection": "0,0,0",
-                    "ForceScale": 2,
-                    "ForceSpace": "World",
-                    "Friction": 1,
-                    "Gradient": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "ConstantA": "0.35349,0.32126,0.28443,1",
-                      "ConstantB": "0.22791,0.19897,0.18339,1"
-                    },
-                    "InitialPitch": 0,
-                    "InitialRoll": 0,
-                    "InitialScale": 1,
-                    "InitialVelocity": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "InitialYaw": 0,
-                    "Lifetime": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "1,4,0,0"
-                    },
-                    "LocalSpace": 0,
-                    "MaxParticles": 50,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "OnParticleCreated": null,
-                    "OnParticleDestroyed": null,
-                    "OrbitalForce": {
-                      "X": 0,
-                      "Y": 0,
-                      "Z": 0
-                    },
-                    "OrbitalPull": 0,
-                    "PerParticleTimeScale": 1,
-                    "Pitch": 0,
-                    "PreWarm": 0,
-                    "PushStrength": 0,
-                    "Roll": 0,
-                    "Scale": {
-                      "Type": "CurveRange",
-                      "Evaluation": "Life",
-                      "CurveA": {
-                        "rangey": "0,150",
-                        "frames": [
-                          {
-                            "x": 0,
-                            "y": 0.030303031,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 0.08466601,
-                            "y": 0.6901741,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 1,
-                            "y": 1,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Mirrored"
-                          }
-                        ]
-                      },
-                      "CurveB": {
-                        "rangey": "0,150",
-                        "frames": [
-                          {
-                            "x": 0,
-                            "y": 0,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Mirrored"
-                          },
-                          {
-                            "x": 0.11121247,
-                            "y": 0.31972232,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          },
-                          {
-                            "x": 1,
-                            "y": 0.91820717,
-                            "in": 0,
-                            "out": 0,
-                            "mode": "Linear"
-                          }
-                        ]
-                      }
-                    },
-                    "SequenceFitToLifetime": false,
-                    "SequenceId": 0,
-                    "SequenceSpeed": {
-                      "Type": "Range",
-                      "Evaluation": "Life",
-                      "Constants": "0.800000012,0.300000012,0,0"
-                    },
-                    "SequenceTime": 1,
-                    "SheetSequence": true,
-                    "SnapToFrame": false,
-                    "StartDelay": 0,
-                    "StartVelocity": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "50,100,0,0"
-                    },
-                    "Stretch": 0,
-                    "TimeScale": 1,
-                    "Timing": "GameTime",
-                    "Tint": "0.53953,0.52147,0.51695,1",
-                    "UsePrefabFeature": false,
-                    "Yaw": {
-                      "Type": "Range",
-                      "Evaluation": "Seed",
-                      "Constants": "0,360,0,0"
-                    }
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "132c68ed-d6b6-4cd8-9e51-2b7c72f891f7"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "89fed44d-3734-4bed-a11b-bc5d530b5b23"
-                  },
-                  "PreviousElement": {
-                    "Type": "Component",
-                    "IdValue": "eae31466-a2b6-4d13-a02a-5075c3ee4eb8"
-                  },
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleSpriteRenderer",
-                    "__guid": "132c68ed-d6b6-4cd8-9e51-2b7c72f891f7",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "__version": 2,
-                    "Additive": true,
-                    "Alignment": "LookAtCamera",
-                    "BlurAmount": 0.05,
-                    "BlurOpacity": 0.91,
-                    "BlurSpacing": 0.73,
-                    "CameraFadeFar": 0,
-                    "CameraFadeNear": 0,
-                    "DepthFeather": 34.61,
-                    "FaceVelocity": false,
-                    "FogStrength": 0.57,
-                    "LeadingTrail": false,
-                    "Lighting": true,
-                    "MotionBlur": false,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "Opaque": false,
-                    "PlaybackSpeed": 1,
-                    "RenderOptions": {
-                      "GameLayer": true,
-                      "OverlayLayer": false,
-                      "BloomLayer": false,
-                      "AfterUILayer": false
-                    },
-                    "RotationOffset": 339.53,
-                    "Scale": 2,
-                    "Shadows": false,
-                    "SortMode": "Unsorted",
-                    "Sprite": {
-                      "$compiler": "embed",
-                      "$source": null,
-                      "data": {
-                        "Animations": [
-                          {
-                            "Name": "Default",
-                            "FrameRate": 15,
-                            "Origin": "0.5,0.5",
-                            "LoopMode": "Loop",
-                            "LoopStart": -1,
-                            "LoopEnd": -1,
-                            "Frames": [
-                              {
-                                "Texture": "textures/particles/smoke/smokeloop_i_0.vtex",
-                                "BroadcastMessages": []
-                              }
-                            ]
-                          }
-                        ],
-                        "__references": null
-                      },
-                      "compiled": null
-                    },
-                    "StartingAnimationName": "Default",
-                    "TextureFilter": "Bilinear"
-                  }
-                },
-                {
-                  "Id": {
-                    "Type": "Component",
-                    "IdValue": "333fabc6-ee72-4683-b31c-eafec1e99fdf"
-                  },
-                  "Parent": {
-                    "Type": "GameObject",
-                    "IdValue": "89fed44d-3734-4bed-a11b-bc5d530b5b23"
-                  },
-                  "PreviousElement": {
-                    "Type": "Component",
-                    "IdValue": "132c68ed-d6b6-4cd8-9e51-2b7c72f891f7"
-                  },
-                  "ContainerProperty": "Components",
-                  "IsContainerArray": true,
-                  "Data": {
-                    "__type": "Sandbox.ParticleConeEmitter",
-                    "__guid": "333fabc6-ee72-4683-b31c-eafec1e99fdf",
-                    "__enabled": true,
-                    "Flags": 0,
-                    "Burst": 25,
-                    "CenterBias": 1,
-                    "CenterBiasVelocity": 0,
-                    "ConeAngle": 87.530045,
-                    "ConeFar": 2,
-                    "ConeNear": 1,
-                    "Delay": 0,
-                    "DestroyOnEnd": true,
-                    "Duration": 5,
-                    "InVolume": true,
-                    "Loop": false,
-                    "OnComponentDestroy": null,
-                    "OnComponentDisabled": null,
-                    "OnComponentEnabled": null,
-                    "OnComponentFixedUpdate": null,
-                    "OnComponentStart": null,
-                    "OnComponentUpdate": null,
-                    "OnEdge": false,
-                    "Rate": 0,
-                    "RateOverDistance": 0,
-                    "VelocityMultiplier": 1,
-                    "VelocityRandom": 0
-                  }
-                }
-              ],
+              "AddedObjects": [],
               "RemovedObjects": [
                 {
                   "Id": {
@@ -1736,7 +1238,428 @@
               "PropertyOverrides": [],
               "MovedObjects": []
             },
-            "__PrefabIdToInstanceId": {}
+            "__PrefabIdToInstanceId": {
+              "46dd51b8-74cd-4aec-90d9-9717388c25fe": "8d2cb94d-8078-86ce-9811-6a33c5e2c44a",
+              "6fd26423-d712-4027-a867-4041b7d0a179": "2aa3143f-4b13-8be5-b262-bf1088157046",
+              "9a9600ba-a53e-4ca0-baa5-9c5b0c5dd888": "4f1b4256-62e1-8c1e-baee-8fabc5e930c5",
+              "beb383b0-418a-49b1-86ad-9d2fcb7548ae": "921c7bf7-6719-8648-96a6-227e77cd6879",
+              "103554f3-78fa-4c2b-b898-3e0758c27694": "16a3748a-da94-80d5-8938-8dff52c9c8fe",
+              "70e67ed3-4eda-4c12-93cd-8e2a5d7659ef": "4071e74b-2f06-8c65-a52c-faf52b97df00",
+              "77db0f27-720c-445b-a434-00ae1c135ff8": "3d32d140-2276-8f5f-ad0c-3aba3fcf9f29",
+              "9b2d8663-88f6-45b8-83c2-fdd44fae9370": "3ab1e106-4f02-8355-b40b-3d832a3a638b",
+              "49a3e038-4f24-473a-adf2-e8838d253405": "633a8aad-a82f-8cb0-a3bc-32a7efd645e6",
+              "80b92221-5334-44be-9b85-14fab86ec3d1": "19d23677-0183-8d38-bb74-e1c1aded7430",
+              "160a3827-0835-4973-a7ab-e1220e701005": "b9cb8f73-6a54-84ce-a3f5-67dda3a9f84c",
+              "882e9e5f-cf80-4321-a63d-967fef63bd9a": "9116f8ab-ceec-8100-9657-d907a92362c9",
+              "c73c446e-8acb-41fe-b787-3adbe6abb75d": "1f1b720c-ece6-8ad3-be57-b087356d20d7",
+              "de2625a6-b4f9-4cd8-b085-1a6bc77e79ec": "ea39a7d3-c2c4-8528-b3b7-e3673be05434",
+              "f1deac4e-6669-406f-a601-a07655a64cd5": "bab91fc6-9c3b-8b44-9d38-acb4565a35d5",
+              "d500726c-c1a5-44ad-891a-11b23c5044f7": "c0fe7b93-36ad-8203-be12-18a7cbfd6901",
+              "145f7533-b3f0-43d5-86b2-b8490d5a1251": "f5bc93e9-895d-8f41-9c10-e10c513b903b",
+              "70f0d4f9-efbd-4a38-9d36-c9899b5d4e7e": "887a2bd5-a66d-83d8-993b-70651dec335a",
+              "98bd4786-2151-4d74-a6ec-bde17334b09f": "aff6d309-892d-8059-92ad-2067bbf1e4d3",
+              "7e5e27e3-fd2e-4505-99d1-8aed36b6f36e": "170a6d1b-83ab-8601-a5be-545fc583d0ed",
+              "3c506a5c-f30a-4978-9244-53b05084e409": "c639f660-c39c-8c4e-aa3f-b44b724e4601",
+              "da773c3d-18a0-4828-a9a7-e1d9b63d4ce2": "af6f2e9b-b61c-80a0-9f9d-d0acc3e04592",
+              "cda0305d-cf31-429f-a958-cafbb0afd155": "15283ffb-2874-8c60-8bfd-45288c0f3f94",
+              "42c40f53-1b67-4ea1-ad4a-84c0e7afef8f": "5e37515b-6318-8176-91e5-2ca4233710c7",
+              "f5492ff1-9cc1-41b9-917b-34cca9256a05": "ffd440fc-da87-887e-9845-8a0b34e9a3bd",
+              "2f7bda90-3691-46bc-8a70-57dc12a1230e": "07324f62-e67c-8c02-a6a8-798f650db6d8",
+              "c63c1178-a19e-4812-baae-913c70f6537f": "73054c50-de84-8bb7-bcca-35c526095de8",
+              "654354a6-aaaf-4012-9082-b9920a2e632f": "39b1e664-580f-8f18-afdd-406bab930f56",
+              "2ef5d023-8fda-4783-9484-e58513cc91ba": "4ba5c68f-d284-85d2-b770-f241104d820d",
+              "5bf581d4-0359-4503-bf8a-e401f8cb2e82": "af24c18c-2d81-84e1-8fa2-d43a7e035783"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "6fa13db4-e179-4c97-b9f5-ffa07201bd7d",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "DoorLightFixture",
+        "Position": "17,-1.00000095,49",
+        "Rotation": "0,0.99999994,0,-4.37113883E-08",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.MeshComponent",
+            "__guid": "cd538548-dae2-4ef2-bdaa-acd428709a34",
+            "__enabled": true,
+            "Flags": 0,
+            "ColliderFlags": 0,
+            "Collision": "Mesh",
+            "Color": "1,1,1,1",
+            "Elasticity": null,
+            "Friction": null,
+            "HideInGame": false,
+            "IsTrigger": false,
+            "Mesh": {
+              "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3nEAQAACAAAABgAAAAGAAAAAAAAAAIAAAAEAAAABgAAAAoAAAAMAAAADgAAABAAAAABAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAANAAAAAwAAAAIAAAADAAAABAAAAAAAAAABAAAAAgAAABIAAAACAAAAAwAAAAUAAAAGAAAAAAAAAAIAAAAEAAAAEQAAAAQAAAAAAAAABwAAAAAAAAAAAAAAAwAAAAYAAAAIAAAAAQAAAAQAAAAJAAAACgAAAAEAAAADAAAACAAAAAUAAAAEAAAABQAAAAsAAAAMAAAAAQAAAAQAAAAKAAAAFwAAAAUAAAAAAAAADQAAAAcAAAABAAAABQAAAAwAAAAUAAAAAwAAAAcAAAAPAAAAEAAAAAIAAAAGAAAADgAAABUAAAAFAAAAAgAAABEAAAADAAAAAgAAAAcAAAAQAAAAFgAAAAQAAAAGAAAAEwAAAA4AAAACAAAAAQAAABIAAAABAAAAAwAAAAYAAAAVAAAAEwAAAAMAAAAFAAAAFAAAAAsAAAAFAAAABAAAABcAAAAJAAAABAAAAAcAAAAWAAAADwAAAAUAAAAGAAAADAAAABIAAAATAAAAEQAAABUAAAAJAAAAcG9zaXRpb25zYAAAAAQAMMABACBBBgDAvwIAMEABACBBAgDAvwIAMEABACDBAgDAvwQAMMABACDB/P+/vwQAMMABACDBAgDAPwQAMMABACBBCgDAPwIAMEABACBBBgDAPwIAMEABACDBBgDAPwYAAABibGVuZHNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAGNvbG9yc2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAdGV4Y29vcmTAAAAAAAAoPwAAYD8AAGs/AACAPwAAAD8AAGA/AAAoPwAAgD8AAAA/AABrPwAAgL0AAIA/AAAoPwAAaz8AAAA/6P//vAAAAD8AAMAyAADYvQAAgD8AACg/AABAM////z4MANi9AAAoP+j//7wAAGs/AAB4PwAAAD8AAHg///8nPxgAgL0AAAA/AACAPwAAgL0AAHg/AAAoPwAAeD8AAGA/AACAPwAAYD8AAHg///8nPwwA2L0AANi9AAB4P/7//z4YAIC9DQAAAG1hdGVyaWFsaW5kZXgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAGVkZ2VmbGFnc2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+              "Materials": [
+                "materials/hotspots/metal_painted_black_a_hs.vmat"
+              ]
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RenderType": "Off",
+            "RollingResistance": null,
+            "SmoothingAngle": 40,
+            "Static": true,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "a3c399bb-0a49-42e7-99fa-9c7faf5cdeb8",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Block",
+            "Position": "-8.74227908E-08,-0.00327968691,1.00000024",
+            "Rotation": "0.707106948,2.32830644E-09,3.7252903E-09,0.707106888",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.MeshComponent",
+                "__guid": "7614f7c6-30bb-4ab2-9eaa-e7a07a9e308f",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Collision": "Mesh",
+                "Color": "0.09804,0.09804,0.09804,1",
+                "Elasticity": null,
+                "Friction": null,
+                "HideInGame": false,
+                "IsTrigger": false,
+                "Mesh": {
+                  "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3m8CAAAJAAAAHwAAAAYAAAAAAAAAAIAAAAEAAAABgAAAP////////////////////8mAAAAKQAAACAAAAArAAAA//////////8uAAAARwAAADIAAAAzAAAAOgAAAEkAAAA+AAAAPwAAAFgAAABbAAAAUgAAAF0AAAD//////////2AAAAB5AAAAZAAAAGUAAABsAAAAewAAAHAAAABxAAAAAQAAAAEAAAACAAAAAAAAAAAAAAAAAAAAEQAAABEAAAACAAAAAwAAAAQAAAAAAAAAAQAAAAIAAAAUAAAAEgAAAAMAAAAFAAAABgAAAAAAAAACAAAABAAAABcAAAAIAAAAAAAAAAcAAAAAAAAAAAAAAAMAAAAGAAAAEgAAABAAAAD//////////////////////////////////////////xYAAAALAAAATwAAAA8AAAAJAAAACgAAACkAAAASAAAA//////////////////////////////////////////8IAAAADwAAAB0AAAAPAAAAFwAAAA4AAABbAAAAEAAAAAAAAAARAAAABwAAABAAAAAYAAAAEAAAAFcAAAARAAAACwAAABMAAAArAAAAEAAAAAMAAAASAAAABQAAAAgAAAAZAAAAFQAAAF0AAAASAAAAAQAAABQAAAABAAAAEQAAAAIAAAAXAAAAAwAAABIAAAAKAAAAFgAAACUAAAAIAAAA/////////////////////////////////////////////////////////////////////////////////////wgAAAAdAAAAJgAAAAsAAAAJAAAAHAAAAAoAAAAPAAAA//////////////////////////////////////////8UAAAAIQAAAEMAAAANAAAACgAAACAAAAAWAAAAEgAAAP//////////////////////////////////////////CgAAACUAAAAgAAAADQAAAAsAAAAkAAAAEwAAAAgAAAAQAAAAJwAAADcAAAALAAAACAAAACYAAAAPAAAAEAAAAAkAAAApAAAAHAAAAAsAAAAOAAAAKAAAAC4AAAASAAAACwAAACsAAAAkAAAADQAAABIAAAAqAAAAOgAAABAAAAD//////////////////////////////////////////w8AAAAvAAAARwAAABIAAAAOAAAALgAAADYAAAAMAAAA//////////////////////////////////////////8RAAAAMwAAADkAAAAMAAAAEAAAADIAAAAnAAAAEAAAAP//////////////////////////////////////////EAAAADcAAAAyAAAADAAAAA4AAAA2AAAAKAAAAAsAAAARAAAAOQAAAEgAAAABAAAADwAAADgAAAAvAAAADAAAABMAAAA7AAAASQAAABAAAAASAAAAOgAAAEIAAAAOAAAA//////////////////////////////////////////8VAAAAPwAAAEUAAAAOAAAAFAAAAD4AAAAhAAAAEgAAAP//////////////////////////////////////////FAAAAEMAAAA+AAAADgAAABIAAABCAAAAKgAAAA0AAAAVAAAARQAAAEYAAAABAAAAEwAAAEQAAAA7AAAADgAAAA8AAABHAAAAOAAAAAEAAAAVAAAARgAAAD8AAAASAAAAEwAAAEkAAABEAAAAAQAAABEAAABIAAAAMwAAABAAAAD/////////////////////////////////////////////////////////////////////////////////////FgAAAE8AAABYAAAAFAAAABcAAABOAAAADgAAAA8AAAD//////////////////////////////////////////yIAAABTAAAAdQAAABYAAAAYAAAAUgAAABAAAAAQAAAA//////////////////////////////////////////8YAAAAVwAAAFIAAAAWAAAAGQAAAFYAAAAVAAAAEQAAAB4AAABZAAAAaQAAABQAAAAWAAAAWAAAAAsAAAASAAAAFwAAAFsAAABOAAAAFAAAABwAAABaAAAAYAAAABAAAAAZAAAAXQAAAFYAAAAWAAAAIAAAAFwAAABsAAAAEgAAAP//////////////////////////////////////////HQAAAGEAAAB5AAAAEAAAABwAAABgAAAAaAAAABUAAAD//////////////////////////////////////////x8AAABlAAAAawAAABUAAAAeAAAAZAAAAFkAAAASAAAA//////////////////////////////////////////8eAAAAaQAAAGQAAAAVAAAAHAAAAGgAAABaAAAAFAAAAB8AAABrAAAAegAAAAYAAAAdAAAAagAAAGEAAAAVAAAAIQAAAG0AAAB7AAAAEgAAACAAAABsAAAAdAAAABcAAAD//////////////////////////////////////////yMAAABxAAAAdwAAABcAAAAiAAAAcAAAAFMAAAAQAAAA//////////////////////////////////////////8iAAAAdQAAAHAAAAAXAAAAIAAAAHQAAABcAAAAFgAAACMAAAB3AAAAeAAAAAYAAAAhAAAAdgAAAG0AAAAXAAAAHQAAAHkAAABqAAAABgAAACMAAAB4AAAAcQAAABAAAAAhAAAAewAAAHYAAAAGAAAAHwAAAHoAAABlAAAAEgAAAAYAAABIAAAA/////////////////////3oAAAD/////JQAAAP//////////NwAAADkAAABDAAAARQAAAE8AAAB5AAAAVwAAAHsAAAD/////aQAAAGsAAAB1AAAAdwAAAAkAAABwb3NpdGlvbnOwAQAA/v+DvxwAQL8AAAxB/f+DvxgAQL/+/wvB7/+DPxgAQL/+/wvB7v+DPxwAQL8AAAxBAADcQQAAAMGE1iZCAADcQQAAAMEQWltBAADEQQAAAMEQWltBAADEQQAAAMGE1iZC+P+vPtj/Pz8AAAxB/v+vPtz/Pz/+/wvB7v+DPzAAgL7+/wvB7v+DP0AAgL4AAAxBAADYQQAACMEQWltBAADYQQAACMGE1iZCPmYeP9z/Pz/+/wvBvMxkP9z/Pz/+/wvBPGYeP9j/Pz8AAAxBucxkP9j/Pz8AAAxB7v+DPwCZGT4BAAxB7f+DP5jMDD///wtB7v+DP2CZGT7+/wvB7v+DP7DMDD/+/wvB+/+vvtz/Pz/+/wvBAACwvtj/Pz8BAAxB//+Dv0AAgL4AAAxB/v+DvzAAgL7+/wvBAADIQQAACMGE1iZCAADIQQAACMEQWltBfmYev9j/Pz8BAAxB3sxkv9j/Pz8BAAxBfGYev9z/Pz/+/wvB3cxkv9z/Pz/+/wvBDQCEv2CZGT7+/wvB/v+Dv7DMDD/+/wvBDgCEvwCZGT4BAAxB//+Dv5jMDD///wtBBgAAAGJsZW5kc/ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAGNvbG9yc/ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAHRleGNvb3Jk4AMAAAKBAz/mjuE+BgLBPgEAMz8CgQM/5k7ZPo04Dz/9/zI/BQLBPuZO2T78/fg+AQAzPwUCwT7mjuE+5k7ZPgAAMz8AABo/AADcPgAAHj8AADY/AoEDP+bO3j6N+BE//f81PwAAxD4AAOg+AAAaPwAANj8FAsE+5g7cPubO3j4AADY/5o7hPgAAMz8GAsE+AAA0P+ZO2T4AADQ//n4fPwAAMz+NOA8//f8zPwKBAz8BADM/jVgTP/3/Mj/8/fg+AQA0PwAAxD4AANw+AADgPgAANj8AABI/AAA2PwAAGj8AAOA+BALBPuYO3D4CgQM/5g7cPgAAzD4AADY/AAASPwAAND/8/fg+zMw0P41YEz/9/zM/AADcPgAANj8AAB4/AAA0P/z9+D4AADQ//n4fPwAAND8EAsE+TPXaPuYO3D4AADY/AoEDP+YO3D5ahRI//f81P/5+Hz8AADQ/5k7ZPs3MND8AAAA/AAASPwAAAD8AABI/JhITP/3/NT8CgQM/T/XaPgAAET8AADU/AAAAAAAAAAAEAsE+ttvZPk312j4AADY/AAAAAAAAAACrqt4+VVU1PwQCwT5P9do+AoEDP0z12j4hqgY/AoEoPwKBAz+229k+5k7ZPpqZNT/+fh8/zMw0PwAA3j4AADU/AAAAAAAAAAD8/fg+mZk1P41YEz/KzDQ/AAAAAAAAAABVVRE/qqo0P/z9+D7MzDQ//n4fP8zMND+7UwY/AoFLP/1+Hz+ZmTU/IaoGPwKBSz+NWBM/lpk1P7tTBj8CgSg/s9vZPgAANj8AABo/AADoPgAADj8AADY/AADoPgAANj8AAMQ+AADkPgSBAz/qzt4+BALBPubO3j4AAMQ+AAA2PwAA6D4AADQ/BALBPsvMND/mjuE+AAA0PwAADD8AADY/AAAaPwAAND8EAsE+AAA0PwKBAz8BADQ/A4EDP4Po3z6NmBA//f81PwYCwT7qzt4+gOjfPgAANj8CgQM/AAA0P404Dz/KzDQ/AAAaPwAAEz8AAMQ+AAATPxoC4T4AADY/AALBPnro3z4AAOY+AAA1PwAAAAAAAAAAAIEDPxUC4T7ACxA//f81PwAAAAAAAAAAVVUNP1VVNT8AgQM/eujfPgYCwT6D6N8+VQ0LPwKBSz8AAsE+FQLhPo04Dz+WmTU/AoEDP83MND8AAA0/AAA1PwAAAAAAAAAABgLBPpqZNT/mjuE+zcw0PwAAAAAAAAAAq6rmPqqqND8EAsE+zcw0PwKBAz/MzDQ/vGMLPwOBKD8CgQM/mpk1P1UNCz8CgSg/5o7hPpqZNT+8Yws/AoFLP/N+Dz/9/zU/DQAAAG1hdGVyaWFsaW5kZXhgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAGVkZ2VmbGFnc/ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "Materials": [
+                    "materials/dev/primary_white_emissive.vmat"
+                  ]
+                },
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RenderType": "On",
+                "RollingResistance": null,
+                "SmoothingAngle": 40,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "8e3e510c-fe7a-4bb4-bb67-dd19e4c89eba",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Spot Light",
+            "Position": "-0.00487358496,9.53674544E-07,3.5229311",
+            "Rotation": "0,-0.707106888,0,0.707106769",
+            "Scale": "1,1,1",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "08043278-82dc-4d3a-bee9-5149f5ddd09e",
+                "__enabled": true,
+                "Flags": 0,
+                "Attenuation": 5,
+                "ConeInner": 15,
+                "ConeOuter": 89,
+                "Contribution": "Diffuse, Specular, Transmissive",
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0,0,0,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 125,
+                "ShadowBias": 0,
+                "ShadowHardness": 1,
+                "Shadows": true
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "78de771b-74ba-4100-83c6-089181577db0",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Spot Light",
+            "Position": "-6.93066681E-07,9.53674544E-07,7.92775917",
+            "Rotation": "-0,-0.707106769,0,-0.707106888",
+            "Scale": "1,1,1",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "a4ae4cd2-baaa-47e7-8552-1b541a6c840b",
+                "__enabled": true,
+                "Flags": 0,
+                "Attenuation": 5,
+                "ConeInner": 15,
+                "ConeOuter": 80,
+                "Contribution": "Diffuse, Specular, Transmissive",
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0,0,0,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 50,
+                "ShadowBias": 0,
+                "ShadowHardness": 1,
+                "Shadows": true
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "fb2e5bb5-558a-4ede-ae88-c8615fe8d488",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "DoorLightFixture",
+        "Position": "-16,-1.00000095,49",
+        "Rotation": "0,0.99999994,0,-4.37113883E-08",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.MeshComponent",
+            "__guid": "761aa15a-b08f-42ff-801b-5a488864ddff",
+            "__enabled": true,
+            "Flags": 0,
+            "ColliderFlags": 0,
+            "Collision": "Mesh",
+            "Color": "1,1,1,1",
+            "Elasticity": null,
+            "Friction": null,
+            "HideInGame": false,
+            "IsTrigger": false,
+            "Mesh": {
+              "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3nEAQAACAAAABgAAAAGAAAAAAAAAAIAAAAEAAAABgAAAAoAAAAMAAAADgAAABAAAAABAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAANAAAAAwAAAAIAAAADAAAABAAAAAAAAAABAAAAAgAAABIAAAACAAAAAwAAAAUAAAAGAAAAAAAAAAIAAAAEAAAAEQAAAAQAAAAAAAAABwAAAAAAAAAAAAAAAwAAAAYAAAAIAAAAAQAAAAQAAAAJAAAACgAAAAEAAAADAAAACAAAAAUAAAAEAAAABQAAAAsAAAAMAAAAAQAAAAQAAAAKAAAAFwAAAAUAAAAAAAAADQAAAAcAAAABAAAABQAAAAwAAAAUAAAAAwAAAAcAAAAPAAAAEAAAAAIAAAAGAAAADgAAABUAAAAFAAAAAgAAABEAAAADAAAAAgAAAAcAAAAQAAAAFgAAAAQAAAAGAAAAEwAAAA4AAAACAAAAAQAAABIAAAABAAAAAwAAAAYAAAAVAAAAEwAAAAMAAAAFAAAAFAAAAAsAAAAFAAAABAAAABcAAAAJAAAABAAAAAcAAAAWAAAADwAAAAUAAAAGAAAADAAAABIAAAATAAAAEQAAABUAAAAJAAAAcG9zaXRpb25zYAAAAAQAMMABACBBBgDAvwIAMEABACBBAgDAvwIAMEABACDBAgDAvwQAMMABACDB/P+/vwQAMMABACDBAgDAPwQAMMABACBBCgDAPwIAMEABACBBBgDAPwIAMEABACDBBgDAPwYAAABibGVuZHNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAGNvbG9yc2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAdGV4Y29vcmTAAAAAAAAoPwAAYD8AAGs/AACAPwAAAD8AAGA/AAAoPwAAgD8AAAA/AABrPwAAgL0AAIA/AAAoPwAAaz8AAAA/6P//vAAAAD8AAMAyAADYvQAAgD8AACg/AABAM////z4MANi9AAAoP+j//7wAAGs/AAB4PwAAAD8AAHg///8nPxgAgL0AAAA/AACAPwAAgL0AAHg/AAAoPwAAeD8AAGA/AACAPwAAYD8AAHg///8nPwwA2L0AANi9AAB4P/7//z4YAIC9DQAAAG1hdGVyaWFsaW5kZXgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAGVkZ2VmbGFnc2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+              "Materials": [
+                "materials/hotspots/metal_painted_black_a_hs.vmat"
+              ]
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RenderType": "Off",
+            "RollingResistance": null,
+            "SmoothingAngle": 40,
+            "Static": true,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "44775d11-cbe7-4bcf-b02d-2ae48aa4a020",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Block",
+            "Position": "-8.74227908E-08,-0.00327968691,1.00000024",
+            "Rotation": "0.707106948,2.32830644E-09,3.7252903E-09,0.707106888",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.MeshComponent",
+                "__guid": "f5be3e38-1de7-477d-9ebc-7eebac204025",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Collision": "Mesh",
+                "Color": "1,1,1,1",
+                "Elasticity": null,
+                "Friction": null,
+                "HideInGame": false,
+                "IsTrigger": false,
+                "Mesh": {
+                  "Data": "AQAAAAcAAAAIAAAAdG9wb2xvZ3m8CAAAJAAAAHwAAAAYAAAAAAAAAAIAAAAEAAAABgAAAP////////////////////8mAAAAKQAAACAAAAArAAAA//////////8uAAAARwAAADIAAAAzAAAAOgAAAEkAAAA+AAAAPwAAAFgAAABbAAAAUgAAAF0AAAD//////////2AAAAB5AAAAZAAAAGUAAABsAAAAewAAAHAAAABxAAAAAQAAAAEAAAACAAAAAAAAAAAAAAAAAAAAEQAAABEAAAACAAAAAwAAAAQAAAAAAAAAAQAAAAIAAAAUAAAAEgAAAAMAAAAFAAAABgAAAAAAAAACAAAABAAAABcAAAAIAAAAAAAAAAcAAAAAAAAAAAAAAAMAAAAGAAAAEgAAABAAAAD//////////////////////////////////////////xYAAAALAAAATwAAAA8AAAAJAAAACgAAACkAAAASAAAA//////////////////////////////////////////8IAAAADwAAAB0AAAAPAAAAFwAAAA4AAABbAAAAEAAAAAAAAAARAAAABwAAABAAAAAYAAAAEAAAAFcAAAARAAAACwAAABMAAAArAAAAEAAAAAMAAAASAAAABQAAAAgAAAAZAAAAFQAAAF0AAAASAAAAAQAAABQAAAABAAAAEQAAAAIAAAAXAAAAAwAAABIAAAAKAAAAFgAAACUAAAAIAAAA/////////////////////////////////////////////////////////////////////////////////////wgAAAAdAAAAJgAAAAsAAAAJAAAAHAAAAAoAAAAPAAAA//////////////////////////////////////////8UAAAAIQAAAEMAAAANAAAACgAAACAAAAAWAAAAEgAAAP//////////////////////////////////////////CgAAACUAAAAgAAAADQAAAAsAAAAkAAAAEwAAAAgAAAAQAAAAJwAAADcAAAALAAAACAAAACYAAAAPAAAAEAAAAAkAAAApAAAAHAAAAAsAAAAOAAAAKAAAAC4AAAASAAAACwAAACsAAAAkAAAADQAAABIAAAAqAAAAOgAAABAAAAD//////////////////////////////////////////w8AAAAvAAAARwAAABIAAAAOAAAALgAAADYAAAAMAAAA//////////////////////////////////////////8RAAAAMwAAADkAAAAMAAAAEAAAADIAAAAnAAAAEAAAAP//////////////////////////////////////////EAAAADcAAAAyAAAADAAAAA4AAAA2AAAAKAAAAAsAAAARAAAAOQAAAEgAAAABAAAADwAAADgAAAAvAAAADAAAABMAAAA7AAAASQAAABAAAAASAAAAOgAAAEIAAAAOAAAA//////////////////////////////////////////8VAAAAPwAAAEUAAAAOAAAAFAAAAD4AAAAhAAAAEgAAAP//////////////////////////////////////////FAAAAEMAAAA+AAAADgAAABIAAABCAAAAKgAAAA0AAAAVAAAARQAAAEYAAAABAAAAEwAAAEQAAAA7AAAADgAAAA8AAABHAAAAOAAAAAEAAAAVAAAARgAAAD8AAAASAAAAEwAAAEkAAABEAAAAAQAAABEAAABIAAAAMwAAABAAAAD/////////////////////////////////////////////////////////////////////////////////////FgAAAE8AAABYAAAAFAAAABcAAABOAAAADgAAAA8AAAD//////////////////////////////////////////yIAAABTAAAAdQAAABYAAAAYAAAAUgAAABAAAAAQAAAA//////////////////////////////////////////8YAAAAVwAAAFIAAAAWAAAAGQAAAFYAAAAVAAAAEQAAAB4AAABZAAAAaQAAABQAAAAWAAAAWAAAAAsAAAASAAAAFwAAAFsAAABOAAAAFAAAABwAAABaAAAAYAAAABAAAAAZAAAAXQAAAFYAAAAWAAAAIAAAAFwAAABsAAAAEgAAAP//////////////////////////////////////////HQAAAGEAAAB5AAAAEAAAABwAAABgAAAAaAAAABUAAAD//////////////////////////////////////////x8AAABlAAAAawAAABUAAAAeAAAAZAAAAFkAAAASAAAA//////////////////////////////////////////8eAAAAaQAAAGQAAAAVAAAAHAAAAGgAAABaAAAAFAAAAB8AAABrAAAAegAAAAYAAAAdAAAAagAAAGEAAAAVAAAAIQAAAG0AAAB7AAAAEgAAACAAAABsAAAAdAAAABcAAAD//////////////////////////////////////////yMAAABxAAAAdwAAABcAAAAiAAAAcAAAAFMAAAAQAAAA//////////////////////////////////////////8iAAAAdQAAAHAAAAAXAAAAIAAAAHQAAABcAAAAFgAAACMAAAB3AAAAeAAAAAYAAAAhAAAAdgAAAG0AAAAXAAAAHQAAAHkAAABqAAAABgAAACMAAAB4AAAAcQAAABAAAAAhAAAAewAAAHYAAAAGAAAAHwAAAHoAAABlAAAAEgAAAAYAAABIAAAA/////////////////////3oAAAD/////JQAAAP//////////NwAAADkAAABDAAAARQAAAE8AAAB5AAAAVwAAAHsAAAD/////aQAAAGsAAAB1AAAAdwAAAAkAAABwb3NpdGlvbnOwAQAA/v+DvxwAQL8AAAxB/f+DvxgAQL/+/wvB7/+DPxgAQL/+/wvB7v+DPxwAQL8AAAxBAADcQQAAAMGE1iZCAADcQQAAAMEQWltBAADEQQAAAMEQWltBAADEQQAAAMGE1iZC+P+vPtj/Pz8AAAxB/v+vPtz/Pz/+/wvB7v+DPzAAgL7+/wvB7v+DP0AAgL4AAAxBAADYQQAACMEQWltBAADYQQAACMGE1iZCPmYeP9z/Pz/+/wvBvMxkP9z/Pz/+/wvBPGYeP9j/Pz8AAAxBucxkP9j/Pz8AAAxB7v+DPwCZGT4BAAxB7f+DP5jMDD///wtB7v+DP2CZGT7+/wvB7v+DP7DMDD/+/wvB+/+vvtz/Pz/+/wvBAACwvtj/Pz8BAAxB//+Dv0AAgL4AAAxB/v+DvzAAgL7+/wvBAADIQQAACMGE1iZCAADIQQAACMEQWltBfmYev9j/Pz8BAAxB3sxkv9j/Pz8BAAxBfGYev9z/Pz/+/wvB3cxkv9z/Pz/+/wvBDQCEv2CZGT7+/wvB/v+Dv7DMDD/+/wvBDgCEvwCZGT4BAAxB//+Dv5jMDD///wtBBgAAAGJsZW5kc/ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAGNvbG9yc/ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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",
+                  "Materials": [
+                    "materials/dev/primary_white_emissive.vmat"
+                  ]
+                },
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RenderType": "On",
+                "RollingResistance": null,
+                "SmoothingAngle": 40,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "de46ec06-b8a6-4499-8ba6-dc081579156e",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Spot Light",
+            "Position": "-0.00487358496,9.53674544E-07,3.5229311",
+            "Rotation": "0,-0.707106888,0,0.707106769",
+            "Scale": "1,1,1",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "3d831ba0-23da-4a3a-84f6-ab1ad5c32ea2",
+                "__enabled": true,
+                "Flags": 0,
+                "Attenuation": 5,
+                "ConeInner": 15,
+                "ConeOuter": 89,
+                "Contribution": "Diffuse, Specular, Transmissive",
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0.91373,0.98039,1,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 125,
+                "ShadowBias": 0,
+                "ShadowHardness": 1,
+                "Shadows": true
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "b4606fb3-ae44-4308-86eb-aecc95930ce1",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Spot Light",
+            "Position": "-6.93066681E-07,9.53674544E-07,7.92775917",
+            "Rotation": "-0,-0.707106769,0,-0.707106888",
+            "Scale": "1,1,1",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "48f71f66-4f3b-4b95-954d-3ce78302dd6f",
+                "__enabled": true,
+                "Flags": 0,
+                "Attenuation": 5,
+                "ConeInner": 15,
+                "ConeOuter": 80,
+                "Contribution": "Diffuse, Specular, Transmissive",
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0.91373,0.98039,1,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 50,
+                "ShadowBias": 0,
+                "ShadowHardness": 1,
+                "Shadows": true
+              }
+            ],
+            "Children": []
           }
         ]
       }
@@ -1771,6 +1694,7 @@
   "DontBreakAsTemplate": false,
   "__references": [
     "facepunch.explosionmedium#110500",
+    "facepunch.metal_painted_black_a_hs#291749",
     "facepunch.metal_trim_02#274120",
     "facepunch.metal_trim_painted_blend_01#344435",
     "facepunch.trim_a_metal#85432"

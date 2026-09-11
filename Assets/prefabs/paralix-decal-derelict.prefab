@@ -1,0 +1,221 @@
+{
+  "RootObject": {
+    "__guid": "dd654443-2df4-416a-a33d-31fe3fd45e39",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "paralix-decal-derelict",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.Decal",
+        "__guid": "daeb35d7-5e30-45b0-a50c-bda7538868be",
+        "__enabled": true,
+        "Flags": 0,
+        "__version": 3,
+        "AttenuationAngle": 1,
+        "ColorMix": 1,
+        "ColorTint": "1,1,1,1",
+        "CoverageAmount": 1,
+        "CoverageRange": 0.07,
+        "Decals": [
+          "decals/paralix-logo-derelict.decal"
+        ],
+        "Depth": 8,
+        "LifeTime": 0,
+        "Looped": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Parallax": 1,
+        "Rotation": 0,
+        "Scale": 2,
+        "SequenceId": 0,
+        "SheetSequence": false,
+        "Size": "1,1",
+        "SortLayer": 0,
+        "Transient": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "2590fdc7-9045-4618-a1c0-85dcb8e95560",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "PARALIX",
+        "Position": "0,0,-41",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "7b07a98b-4edc-44cd-95d1-207d855449f3",
+            "__enabled": true,
+            "Flags": 0,
+            "__version": 2,
+            "Billboard": "None",
+            "BlendMode": "Normal",
+            "FogStrength": 1,
+            "HorizontalAlignment": "Center",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Scale": 0.15,
+            "TextScope": {
+              "Text": "PARALIX",
+              "TextColor": "0.07907,0.07907,0.07907,1",
+              "FontName": "Inter",
+              "FontSize": 128,
+              "FontWeight": 800,
+              "FontItalic": false,
+              "FontVariantNumeric": "Normal",
+              "LineHeight": 1,
+              "LetterSpacing": 12,
+              "WordSpacing": 0,
+              "FilterMode": "Bilinear",
+              "FontSmooth": "Auto",
+              "Outline": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,1,1"
+              },
+              "Shadow": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              },
+              "OutlineUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,1,0,1"
+              },
+              "ShadowUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              }
+            },
+            "VerticalAlignment": "Center"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "f1445913-4b3b-410f-b1c3-ef6d44a100e3",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "RESEARCHFACILITY",
+        "Position": "0,0,-63",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "4b508577-593e-497f-a848-178a4e4a8eeb",
+            "__enabled": true,
+            "Flags": 0,
+            "__version": 2,
+            "Billboard": "None",
+            "BlendMode": "Normal",
+            "FogStrength": 1,
+            "HorizontalAlignment": "Center",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Scale": 0.1,
+            "TextScope": {
+              "Text": "Research Facility",
+              "TextColor": "0.07907,0.07907,0.07907,1",
+              "FontName": "Inter",
+              "FontSize": 64,
+              "FontWeight": 600,
+              "FontItalic": false,
+              "FontVariantNumeric": "Normal",
+              "LineHeight": 1,
+              "LetterSpacing": 18,
+              "WordSpacing": 0,
+              "FilterMode": "Bilinear",
+              "FontSmooth": "Auto",
+              "Outline": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,1,1"
+              },
+              "Shadow": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              },
+              "OutlineUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,1,0,1"
+              },
+              "ShadowUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              }
+            },
+            "VerticalAlignment": "Center"
+          }
+        ],
+        "Children": []
+      }
+    ]
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

@@ -1,3 +1,4 @@
+using System;
 using Sandbox.MovieMaker;
 
 namespace Causal;
@@ -11,6 +12,7 @@ public sealed class BlastDoor : Component
 	[Property] public float VfxSeconds { get; set; } = 2f;
 	[Property] public bool StartOpen { get; set; }
 	[Property] public bool AllowInterrupt { get; set; } = false;
+	[Property] public bool AdvanceWhileHidden { get; set; } = true;
 
 	public bool IsOpen { get; private set; }
 
@@ -25,6 +27,12 @@ public sealed class BlastDoor : Component
 	private bool _vfxShowing;
 	private float _storedPosition;
 	private bool _wasPlaying;
+	private MovieResource _savedMovie;
+	private float _savedPosition;
+	private float _savedTimeScale = 1f;
+	private bool _savedWasPlaying;
+	private bool _hasSaved;
+	private TimeSince _timeSinceHidden;
 
 	protected override void OnStart()
 	{
@@ -62,6 +70,51 @@ public sealed class BlastDoor : Component
 		{
 			Open();
 		}
+	}
+
+	protected override void OnDisabled()
+	{
+		if ( !_player.IsValid() )
+		{
+			return;
+		}
+
+		_savedMovie = _player.Resource as MovieResource;
+		if ( !_savedMovie.IsValid() )
+		{
+			_savedMovie = IsOpen ? OpenMovie : CloseMovie;
+		}
+
+		_savedPosition = _player.PositionSeconds;
+		_savedTimeScale = _player.TimeScale;
+		_savedWasPlaying = _player.IsPlaying || _storedPosition > 0.05f;
+		_timeSinceHidden = 0f;
+		_hasSaved = true;
+	}
+
+	protected override void OnEnabled()
+	{
+		if ( !_hasSaved )
+		{
+			return;
+		}
+
+		_hasSaved = false;
+
+		if ( !_savedWasPlaying || !_savedMovie.IsValid() || !_player.IsValid() )
+		{
+			return;
+		}
+
+		float end = MovieGate.MovieDurationSeconds( _savedMovie );
+		float target = AdvanceWhileHidden ? _savedPosition + (float)_timeSinceHidden * _savedTimeScale : _savedPosition;
+		target = end > 0f ? Math.Clamp( target, 0f, Math.Max( 0f, end - 0.05f ) ) : 0f;
+		_player.Play( _savedMovie );
+		_player.TimeScale = _savedTimeScale;
+		_player.PositionSeconds = target;
+		_player.IsPlaying = true;
+		_storedPosition = target;
+		_wasPlaying = true;
 	}
 
 	private void Play( MovieResource movie, bool targetState )

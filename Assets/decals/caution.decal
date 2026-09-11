@@ -1,0 +1,33 @@
+{
+  "ColorTexture": {
+    "$compiler": "texture",
+    "$source": "svgsource",
+    "data": {
+      "Size": "256,256",
+      "Source": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2048\" height=\"256\" viewBox=\"0 0 2048 256\">\n  <defs>\n    <pattern id=\"caution\" width=\"360\" height=\"256\" patternUnits=\"userSpaceOnUse\">\n      <!-- Transparent background; yellow hazard slashes only -->\n      <path d=\"M0 0H128L-32 256H-160Z\" fill=\"#FFC400\"/>\n      <path d=\"M180 0H308L148 256H20Z\" fill=\"#FFC400\"/>\n      <path d=\"M360 0H488L328 256H200Z\" fill=\"#FFC400\"/>\n    </pattern>\n  </defs>\n\n  <rect width=\"2048\" height=\"256\" fill=\"url(#caution)\"/>\n</svg>",
+      "Colorize": false,
+      "TargetColor": "1,1,1,1",
+      "Scale": 1,
+      "Offset": "0,0",
+      "Rotate": 0,
+      "FlipVertical": false,
+      "FlipHorizontal": false,
+      "FormatOverride": null
+    },
+    "compiled": null
+  },
+  "NormalTexture": null,
+  "RoughMetalOcclusionTexture": null,
+  "EmissiveTexture": null,
+  "EmissionEnergy": 1,
+  "HeightTexture": null,
+  "ParallaxStrength": 1,
+  "CoverageAmount": 1,
+  "Tint": "1,1,1,1",
+  "ColorMix": 1,
+  "Width": 16,
+  "Height": 16,
+  "FilterMode": "Anisotropic",
+  "__references": [],
+  "__version": 0
+}
