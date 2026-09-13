@@ -155,7 +155,10 @@ public sealed class BlastDoor : Component
 		_timeSinceAction = 0f;
 		_storedPosition = 0f;
 		IsOpen = targetState;
-		ShowVfx();
+		if ( targetState )
+		{
+			ShowVfx();
+		}
 	}
 
 	protected override void OnUpdate()

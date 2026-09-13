@@ -1,7 +1,7 @@
 {
   "Title": "Causal",
   "Type": "game",
-  "Org": "local",
+  "Org": "fss",
   "Ident": "causal",
   "Schema": 1,
   "IncludeSourceFiles": false,
@@ -17,6 +17,7 @@
       "Keyboard": false,
       "VR": false,
       "Gamepad": false
-    }
+    },
+    "StartupScene": "scenes/causal.scene"
   }
 }

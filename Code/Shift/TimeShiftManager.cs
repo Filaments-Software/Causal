@@ -13,8 +13,10 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 
 	[Property] public float SwitchCooldown { get; set; } = 2f;
 	[Property] public bool StartInCause { get; set; } = true;
+	[Property] public bool StartShiftUnlocked { get; set; } = false;
 
 	public bool IsCause { get; private set; } = true;
+	public bool ShiftUnlocked { get; private set; }
 
 	private readonly List<GameObject> _causeRoots = new();
 	private readonly List<GameObject> _effectRoots = new();
@@ -28,6 +30,7 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 	{
 		RefreshRoots();
 		IsCause = StartInCause;
+		ShiftUnlocked = StartShiftUnlocked;
 		_timeSinceShift = 99f;
 		WarmRoots();
 		ApplyState();
@@ -40,6 +43,11 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 
 	public void RequestShift()
 	{
+		if ( !ShiftUnlocked )
+		{
+			return;
+		}
+
 		float elapsed = _timeSinceShift;
 		if ( elapsed >= 0f && elapsed <= SwitchCooldown )
 		{
@@ -50,6 +58,24 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 		IsCause = !IsCause;
 		ApplyState();
 		ITimeShiftEvent.Post( x => x.OnTimeShifted( IsCause ) );
+	}
+
+	public void UnlockShift()
+	{
+		ShiftUnlocked = true;
+	}
+
+	[ConCmd( "unlock_shift", Help = "Debug: unlock time shifting before the device pickup exists." )]
+	public static void UnlockShiftCommand()
+	{
+		var manager = Game.ActiveScene?.GetSystem<TimeShiftManager>();
+		if ( manager is null )
+		{
+			Log.Warning( "causal_unlock_shift found no TimeShiftManager." );
+			return;
+		}
+
+		manager.UnlockShift();
 	}
 
 	private void RefreshRoots()

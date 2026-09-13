@@ -44,9 +44,15 @@ public sealed class ShiftController : Component
 			return;
 		}
 
+		var manager = GetManager();
+		if ( manager is not null && !manager.ShiftUnlocked )
+		{
+			return;
+		}
+
 		if ( !_shiftPlayer.IsValid() )
 		{
-			GetManager()?.RequestShift();
+			manager?.RequestShift();
 			return;
 		}
 

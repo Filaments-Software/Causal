@@ -9,7 +9,7 @@ CausalMenu {
 	pointer-events: all;
 	background-color: rgba(0, 0, 0, 0.55);
 	backdrop-filter: blur(8px);
-	z-index: 100;
+	z-index: 1;
 	// Keep in sync with CausalGameManager.MenuFadeSeconds.
 	transition: opacity 0.6s ease;
 
@@ -82,6 +82,45 @@ CausalMenu {
 	animation-iteration-count: infinite;
 }
 
+.newgame-row {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu-item.disabled {
+	color: rgba(255, 255, 255, 0.25);
+	text-shadow: none;
+	cursor: default;
+	animation: none;
+
+	&:hover {
+		color: rgba(255, 255, 255, 0.25);
+		text-shadow: none;
+		transform: none;
+	}
+
+	&:active {
+		transform: none;
+	}
+}
+
+.avatar-status {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: rgba(180, 230, 255, 0.8);
+	text-shadow: 0 0 8px rgba(120, 200, 255, 0.35);
+	white-space: nowrap;
+}
+
 @keyframes menu-enter {
 	0% {
 		opacity: 0;
@@ -106,4 +145,173 @@ CausalMenu {
 		color: rgba(255, 255, 255, 0.75);
 		text-shadow: 0 0 8px rgba(120, 200, 255, 0.4);
 	}
+}
+
+.about-link {
+	position: absolute;
+	top: 32px;
+	right: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 48px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: rgba(8, 18, 26, 0.55);
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(140, 210, 255, 0.35);
+	border-radius: 24px;
+	box-shadow: 0 0 16px rgba(120, 200, 255, 0.08);
+	color: rgba(190, 225, 255, 0.8);
+	cursor: pointer;
+	overflow: hidden;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, padding-left 0.25s ease, padding-right 0.25s ease;
+	z-index: 150;
+	pointer-events: all;
+
+	&:hover {
+		border-color: rgba(170, 220, 255, 0.9);
+		box-shadow: 0 0 24px rgba(140, 210, 255, 0.3);
+		padding-left: 4px;
+		padding-right: 20px;
+	}
+
+	&:active {
+		transform: scale(0.97);
+	}
+}
+
+.about-glyph {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 46px;
+	height: 46px;
+	font-size: 22px;
+	font-weight: 600;
+	text-shadow: 0 0 8px rgba(120, 200, 255, 0.35);
+}
+
+.about-expand {
+	max-width: 0;
+	opacity: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 0 0 14px rgba(170, 220, 255, 0.95);
+	transition: max-width 0.25s ease, opacity 0.2s ease;
+}
+
+.about-link:hover .about-expand {
+	max-width: 240px;
+	opacity: 1;
+}
+
+.about-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	opacity: 0;
+	pointer-events: none;
+	z-index: 200;
+
+	&.open {
+		pointer-events: all;
+	}
+}
+
+.about-panel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: min(520px, 92vw);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(270deg, rgba(8, 18, 26, 0.97) 0%, rgba(8, 16, 24, 0.92) 100%);
+	border-left: 1px solid rgba(140, 210, 255, 0.5);
+	box-shadow: -8px 0 48px rgba(120, 200, 255, 0.12);
+	padding: 48px 40px 32px;
+	z-index: 201;
+	pointer-events: all;
+}
+
+.about-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 0;
+}
+
+.about-title {
+	color: rgba(190, 225, 255, 0.95);
+	font-size: 28px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-shadow: 0 0 14px rgba(140, 210, 255, 0.6);
+}
+
+.about-close {
+	color: rgba(190, 225, 255, 0.6);
+	font-size: 24px;
+	cursor: pointer;
+	padding: 8px;
+	transition: color 0.2s ease, transform 0.18s ease;
+
+	&:hover {
+		color: #fff;
+		text-shadow: 0 0 14px rgba(170, 220, 255, 0.95);
+		transform: scale(1.1);
+	}
+}
+
+.about-body {
+	flex-shrink: 1;
+	flex-grow: 1;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 26px;
+	padding-top: 8px;
+	padding-right: 12px;
+
+	label {
+		margin: 0;
+	}
+
+	.about-para {
+		color: rgba(220, 235, 245, 0.88);
+		font-size: 23px;
+		line-height: 1.75;
+	}
+
+	.about-quote {
+		color: rgba(190, 225, 255, 0.95);
+		font-style: italic;
+		font-size: 23px;
+		border-left: 2px solid rgba(140, 210, 255, 0.5);
+		padding-left: 16px;
+		text-shadow: 0 0 10px rgba(140, 210, 255, 0.4);
+	}
+}
+
+.about-footer {
+	margin-top: 24px;
+	padding-top: 20px;
+	border-top: 1px solid rgba(140, 210, 255, 0.2);
+	color: rgba(170, 210, 240, 0.5);
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }

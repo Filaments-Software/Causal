@@ -104,7 +104,7 @@
                 {
                   "Time": 0,
                   "Value": 0,
-                  "Interpolation": "Cubic"
+                  "Interpolation": "Step"
                 },
                 {
                   "Time": 1800,
@@ -113,7 +113,7 @@
                 },
                 {
                   "Time": 3600,
-                  "Value": 1,
+                  "Value": 10,
                   "Interpolation": "Cubic"
                 },
                 {
@@ -124,7 +124,7 @@
                 {
                   "Time": 7560,
                   "Value": 0,
-                  "Interpolation": "Cubic"
+                  "Interpolation": "Step"
                 }
               ]
             }
@@ -186,7 +186,7 @@
         "ParentId": "9111837d-4486-4031-83d0-287358b05293",
         "Blocks": [
           {
-            "TimeRange": "0,1800",
+            "TimeRange": "0,7560",
             "Signal": {
               "$id": 1,
               "$type": "Keyframes",
@@ -198,6 +198,11 @@
                 },
                 {
                   "Time": 1800,
+                  "Value": "-1.42964351,0.820137262,-4.8610692",
+                  "Interpolation": "Cubic"
+                },
+                {
+                  "Time": 7560,
                   "Value": "-1.42964351,0.820137262,-4.8610692",
                   "Interpolation": "Cubic"
                 }
@@ -214,7 +219,7 @@
         "ParentId": "9111837d-4486-4031-83d0-287358b05293",
         "Blocks": [
           {
-            "TimeRange": "0,1800",
+            "TimeRange": "0,7560",
             "Signal": {
               "$id": 1,
               "$type": "Keyframes",
@@ -226,6 +231,11 @@
                 },
                 {
                   "Time": 1800,
+                  "Value": "-0.697210491,-0.707069874,0.11684186,0.0172409285",
+                  "Interpolation": "Step"
+                },
+                {
+                  "Time": 7560,
                   "Value": "-0.697210491,-0.707069874,0.11684186,0.0172409285",
                   "Interpolation": "Step"
                 }
@@ -292,7 +302,7 @@
                 },
                 {
                   "Time": 3600,
-                  "Value": 1.2,
+                  "Value": 1.05,
                   "Interpolation": "Cubic"
                 },
                 {

@@ -10,26 +10,126 @@
 			<img class="logo-image" src="textures/causal-logo.png" alt="CAUSAL" />
 		</div>
 		<div class="buttons-section">
-			<div class="menu-item primary" @onclick=@EnterGame onmouseover=@PlayHoverSound>
-				<span>New Game</span>
+			<div class="newgame-row">
+				<div class="menu-item primary @NewGameClass" @onclick=@EnterGame onmouseover=@PlayHoverSound>
+					<span>New Game</span>
+				</div>
+				@if ( IsApplyingClothing )
+				{
+					<label class="avatar-status">Applying avatar clothing...</label>
+				}
 			</div>
 			<div class="menu-item" @onclick=@QuitGame onmouseover=@PlayHoverSound>
 				<span>Quit</span>
 			</div>
 		</div>
 	</div>
+	<div class="about-link" @onclick=@ShowAbout onmouseover=@PlayHoverSound>
+		<span class="about-glyph">?</span>
+		<span class="about-expand">About Causal</span>
+	</div>
+	<div class="about-backdrop" @ref="_aboutBackdrop" @onclick=@HideAbout></div>
+	<aside class="about-panel" @ref="_aboutPanel">
+		<div class="about-header">
+			<div class="about-close" @onclick=@HideAbout onmouseover=@PlayHoverSound>
+				<span>&#10005;</span>
+			</div>
+		</div>
+		<div class="about-body">
+			<label class="about-para">You have been chosen to be a Causal Agent.</label>
+			<label class="about-para">The Paralix Research Facility, a remote research station, has sent you there.</label>
+			<label class="about-para">The facility has been left abandoned with its systems becoming unstable since something went wrong, but the deeper you investigate the more you come to realize that the facility exists in more than one state.</label>
+			<label class="about-para">A construct located here is capable of slipgating time. In order to get to it, you will have to explore the facility, discover histories, and with some hope; to stop it from operating.</label>
+			<label class="about-quote">"Playing with causality comes at a price..."</label>
+		</div>
+		<div class="about-footer">
+			<span>Good luck!</span>
+		</div>
+	</aside>
 </root>
 
 @code
 {
+	[Property] public float AboutSlideSeconds { get; set; } = 0.25f;
+
+	private bool _showAbout;
+	private bool _aboutClassesOpen;
+	private float _slideT;
+	private float _lastAppliedRight = float.MaxValue;
+	private float _lastAppliedOpacity = -1f;
+
+	private Panel _aboutBackdrop;
+	private Panel _aboutPanel;
+
+	private TimeSince _timeSinceHover = 10f;
+
 	private bool IsMenuVisible => !CausalGameManager.Instance.IsValid() || !CausalGameManager.Instance.IsActive;
+
+	private bool IsApplyingClothing => FirstPersonCosmetics.IsLoadingClothing;
+
+	private string NewGameClass => IsApplyingClothing ? "disabled" : "";
 
 	private bool IsFading => CausalGameManager.Instance.IsValid() && CausalGameManager.Instance.IsInIntro;
 
 	private string MenuClass => !IsMenuVisible ? "hidden" : (IsFading ? "fading" : "");
 
+	protected override void OnStart()
+	{
+		TickAboutSlide();
+	}
+
+	protected override void OnUpdate()
+	{
+		TickAboutSlide();
+
+		if ( _showAbout && Input.EscapePressed )
+		{
+			HideAbout();
+		}
+	}
+
+	private void TickAboutSlide()
+	{
+		float duration = AboutSlideSeconds <= 0.01f ? 0.01f : AboutSlideSeconds;
+		_slideT = MathX.Clamp( _slideT + ( _showAbout ? Time.Delta : -Time.Delta ) / duration, 0f, 1f );
+		float eased = _slideT * _slideT * ( 3f - 2f * _slideT );
+
+		if ( _aboutPanel.IsValid() )
+		{
+			// Percent of screen width: the panel can never exceed 92vw, so
+			// -120% is always fully off-screen with room for the border and
+			// shadow tail. No measurement, nothing to go stale on resize.
+			float offset = -120f * ( 1f - eased );
+			if ( MathF.Abs( offset - _lastAppliedRight ) > 0.1f )
+			{
+				_aboutPanel.Style.Right = Length.Percent( offset );
+				_lastAppliedRight = offset;
+			}
+		}
+
+		if ( _aboutBackdrop.IsValid() )
+		{
+			float opacity = 0.45f * eased;
+			if ( MathF.Abs( opacity - _lastAppliedOpacity ) > 0.005f )
+			{
+				_aboutBackdrop.Style.Opacity = opacity;
+				_lastAppliedOpacity = opacity;
+			}
+		}
+
+		if ( _aboutClassesOpen != _showAbout )
+		{
+			ApplyAboutClasses();
+		}
+	}
+
 	private void EnterGame()
 	{
+		if ( IsApplyingClothing )
+		{
+			return;
+		}
+
 		var manager = CausalGameManager.Instance;
 		if ( !manager.IsValid() )
 		{
@@ -37,8 +137,33 @@
 			return;
 		}
 
+		_showAbout = false;
+		ApplyAboutClasses();
 		manager.BeginIntro();
 		StateHasChanged();
+	}
+
+	private void ShowAbout()
+	{
+		_showAbout = true;
+		ApplyAboutClasses();
+	}
+
+	private void HideAbout()
+	{
+		if ( !_showAbout )
+		{
+			return;
+		}
+
+		_showAbout = false;
+		ApplyAboutClasses();
+	}
+
+	private void ApplyAboutClasses()
+	{
+		_aboutBackdrop?.SetClass( "open", _showAbout );
+		_aboutClassesOpen = _showAbout;
 	}
 
 	private void QuitGame()
@@ -48,8 +173,16 @@
 
 	private void PlayHoverSound()
 	{
+		// onmouseover refires as the cursor crosses child elements and panel
+		// rebuilds, so debounce to a single tick per hover.
+		if ( _timeSinceHover < 0.15f )
+		{
+			return;
+		}
+
+		_timeSinceHover = 0f;
 		Sound.Play( "audio/ui/menuhover.sound" );
 	}
 
-	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading );
+	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading, IsApplyingClothing );
 }
