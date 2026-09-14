@@ -1,0 +1,386 @@
+{
+  "EditorData": {
+    "SampleRate": 30,
+    "Duration": 7200,
+    "ExportConfig": null,
+    "Tracks": {
+      "7fedaeab-eedb-4cd3-ab5b-fa8f4673cf3c": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "460b6c98-e4fb-459d-b8f2-b5a8d01e1520"
+        },
+        "Name": "Block",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "c3afbae1-171f-4a27-a83a-986bd23fc685"
+      },
+      "9222001a-4ff3-4569-b829-8edb0f202685": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "edc99813-5f63-47a0-88f0-5c7bef776298"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6758585c-bfb3-45b2-bb30-8cb299868655"
+      },
+      "094b00b6-5a48-4c8f-9c95-6c5c7364b586": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "07290739-2623-41f2-aa71-cfd52e0ca8f1",
+        "Blocks": [
+          {
+            "TimeRange": "0,7200",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,-31.75,-14",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0,-33.75,-14",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 7200,
+                  "Value": "0,-88.75,-14",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "14aebfbc-338a-4957-aaa0-c34ec076c8a0": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "58662191-2631-4740-8fff-90833a837c13"
+        },
+        "Name": "Block",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6758585c-bfb3-45b2-bb30-8cb299868655"
+      },
+      "f9c2467d-e173-48c8-b651-10553f0f625e": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "829294d7-3d5c-4d77-a3e7-af02aed13b8e"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "9222001a-4ff3-4569-b829-8edb0f202685"
+      },
+      "6758585c-bfb3-45b2-bb30-8cb299868655": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "3730ba10-8121-4645-bf58-3c8efa73c621"
+        },
+        "Name": "DoorLightFixture",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "347ce450-3e50-47d7-81ff-9437e2587082": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LocalPosition",
+        "TargetType": "Vector3",
+        "ParentId": "1a707534-254e-4c7d-86cd-b4096cc20e2b",
+        "Blocks": [
+          {
+            "TimeRange": "0,7200",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,32.25,-14",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0,34.25,-14",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 7200,
+                  "Value": "0,88.25,-14",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "a73bb7be-5d57-45f4-9d53-276ff0da445b": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "b7f08c07-3b56-47b9-9556-fcf21aaaa2db",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "b7f08c07-3b56-47b9-9556-fcf21aaaa2db": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "d719da57-6ebe-42ab-b3d7-8054ac0bdfbe"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "bb2f9e9c-3397-4bdf-ac99-081a5e23d00c"
+      },
+      "bb2f9e9c-3397-4bdf-ac99-081a5e23d00c": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "860bb835-b6ea-4f16-88e2-b09fe0472519"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "c3afbae1-171f-4a27-a83a-986bd23fc685"
+      },
+      "86fcc788-1518-4f6a-829c-2ed1fd2a40f1": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "0178234d-ef60-4b84-8e70-b92e647caa46",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "890b0956-2284-4a9b-95d4-55b905fc3d8c": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "89e9b9a2-eddd-4f77-b670-69734b2d2c68"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "6758585c-bfb3-45b2-bb30-8cb299868655"
+      },
+      "c102301e-7675-4cbe-b739-52225562a855": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "0de8843d-61ae-4f6d-b103-dcb333796564"
+        },
+        "Name": "MeshComponent",
+        "TargetType": "Sandbox.MeshComponent",
+        "ParentId": "14aebfbc-338a-4957-aaa0-c34ec076c8a0"
+      },
+      "8a6ea999-8966-4d86-aba6-5ec0ff2d4409": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "ff1183ac-22a7-4dd5-9925-42eb9b12a7e7"
+        },
+        "Name": "MeshComponent",
+        "TargetType": "Sandbox.MeshComponent",
+        "ParentId": "7fedaeab-eedb-4cd3-ab5b-fa8f4673cf3c"
+      },
+      "682ffe2f-47a3-4978-acfc-80fa9fe7d6c7": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Color",
+        "TargetType": "Color",
+        "ParentId": "8a6ea999-8966-4d86-aba6-5ec0ff2d4409",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "1,1,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "2b623c82-7262-4841-9511-d17260a2ec0d": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "f9c2467d-e173-48c8-b651-10553f0f625e",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "80f364b0-a44e-4879-b9b4-e97448d7699d": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "LightColor",
+        "TargetType": "Color",
+        "ParentId": "3be71a80-6b63-4bb0-829f-bba89fbf99ba",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0,0,0,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "0.91373,0.98039,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "0178234d-ef60-4b84-8e70-b92e647caa46": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "e813e7c3-839b-4647-b985-e8042b3937a4"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "890b0956-2284-4a9b-95d4-55b905fc3d8c"
+      },
+      "0d2f5004-0e45-4b0b-b55b-29cd9a29e7b9": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "3ddaf7a0-e7b3-4679-a75a-35e680a08618"
+        },
+        "Name": "Spot Light",
+        "TargetType": "Sandbox.GameObject",
+        "ParentId": "c3afbae1-171f-4a27-a83a-986bd23fc685"
+      },
+      "5438bce1-4fe2-4783-86c7-d763993e634a": {
+        "$type": "Property",
+        "Format": "Editor",
+        "Name": "Color",
+        "TargetType": "Color",
+        "ParentId": "c102301e-7675-4cbe-b739-52225562a855",
+        "Blocks": [
+          {
+            "TimeRange": "0,2160",
+            "Signal": {
+              "$id": 1,
+              "$type": "Keyframes",
+              "Keyframes": [
+                {
+                  "Time": 0,
+                  "Value": "0.09804,0.09804,0.09804,1",
+                  "Interpolation": "Quadratic"
+                },
+                {
+                  "Time": 2160,
+                  "Value": "1,1,1,1",
+                  "Interpolation": "Quadratic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "3be71a80-6b63-4bb0-829f-bba89fbf99ba": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "98b7840c-1cf4-46ee-87dc-79f89a77c308"
+        },
+        "Name": "SpotLight",
+        "TargetType": "Sandbox.SpotLight",
+        "ParentId": "0d2f5004-0e45-4b0b-b55b-29cd9a29e7b9"
+      },
+      "07290739-2623-41f2-aa71-cfd52e0ca8f1": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "a8184bf3-6477-4acc-90f9-e8817728cae9"
+        },
+        "Name": "blastdoorright",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "c3afbae1-171f-4a27-a83a-986bd23fc685": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "83bca0ef-c181-4ccf-a432-7b4f506eb652"
+        },
+        "Name": "DoorLightFixture",
+        "TargetType": "Sandbox.GameObject"
+      },
+      "1a707534-254e-4c7d-86cd-b4096cc20e2b": {
+        "$type": "Reference",
+        "Metadata": {
+          "ReferenceId": "cc676200-e7a9-4fae-919d-fa430d995601"
+        },
+        "Name": "blastdoorleft",
+        "TargetType": "Sandbox.GameObject"
+      }
+    },
+    "References": []
+  },
+  "__references": [],
+  "__version": 0
+}

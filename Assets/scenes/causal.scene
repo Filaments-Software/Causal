@@ -884,7 +884,7 @@
                           "IdValue": "d5708a1d-0325-459d-a67a-aeb1502f552a"
                         },
                         "Property": "Position",
-                        "Value": "-190.791016,-82.0661926,-9.27395248"
+                        "Value": "-222.791016,-82.0661926,-9.27395248"
                       },
                       {
                         "Target": {
@@ -952,27 +952,164 @@
                       },
                       {
                         "Target": {
-                          "Type": "GameObject",
-                          "IdValue": "8f0edbc2-bb27-4273-9895-7bf51518fad1"
+                          "Type": "Component",
+                          "IdValue": "bf326b41-31e8-8385-8d15-2898b4d6c537"
                         },
-                        "Property": "Position",
-                        "Value": "0,0,69"
+                        "Property": "Binder",
+                        "Value": {
+                          "GameObjects": [
+                            {
+                              "Track": "5123f1b4-41b0-4167-b625-754ddd46fbea",
+                              "Reference": "95829f44-3fe1-4fcb-9cc8-0e487fff8244"
+                            },
+                            {
+                              "Track": "b5dfd3f8-0500-4e67-bd3e-8a5a29b8b155",
+                              "Reference": "8f0edbc2-bb27-4273-9895-7bf51518fad1"
+                            },
+                            {
+                              "Track": "180326e2-afde-4d4b-880c-7b8b0ac6e856",
+                              "Reference": "bab19c47-28de-45ad-a6ed-79cfdd08d733"
+                            },
+                            {
+                              "Track": "6560f614-f679-4451-832c-b07d1c8ee086",
+                              "Reference": "ed6ae89e-a4d0-428b-9a55-de51bfc816a3"
+                            },
+                            {
+                              "Track": "4d5b0cc6-a9f7-4513-9b47-7d73c46b4e69",
+                              "Reference": "a0b3afc4-5773-84f8-b9fc-ded9283fcabc"
+                            },
+                            {
+                              "Track": "6c617ee1-a9de-4b1a-b93c-ba59a8195c49",
+                              "Reference": "e35def43-1c9b-8a6d-92e5-cac802aaff13"
+                            },
+                            {
+                              "Track": "94072858-7abd-4c0c-b727-d7983ddca132",
+                              "Reference": "51e3ada7-b00e-89a4-af26-b4b662015db9"
+                            },
+                            {
+                              "Track": "c15af3cb-aa00-4e6d-8e5e-d3319aee80fa",
+                              "Reference": "7c70cc22-a481-855d-b5db-fc88d2b6e3da"
+                            },
+                            {
+                              "Track": "3655b366-8243-4fdc-a746-4d85d331d8fa",
+                              "Reference": "c64afa21-0fe9-80f6-aa70-511435f4fba2"
+                            },
+                            {
+                              "Track": "e1dc04ae-0a37-4a05-832a-c626feb366c2",
+                              "Reference": "b99d1aaf-3ef4-8649-95c8-7d613499c14c"
+                            },
+                            {
+                              "Track": "5a4ecf45-7ed3-4cf8-9473-e40152db898a",
+                              "Reference": "19a68bdd-e5c7-8636-a56a-fe05d3ef3397"
+                            },
+                            {
+                              "Track": "1a707534-254e-4c7d-86cd-b4096cc20e2b",
+                              "Reference": "cc676200-e7a9-4fae-919d-fa430d995601"
+                            },
+                            {
+                              "Track": "07290739-2623-41f2-aa71-cfd52e0ca8f1",
+                              "Reference": "a8184bf3-6477-4acc-90f9-e8817728cae9"
+                            },
+                            {
+                              "Track": "31029ff9-283f-4541-b658-456bc1f1d5a7",
+                              "Reference": "19bf8745-a294-431b-9513-6e1b8549b4d5"
+                            },
+                            {
+                              "Track": "36528858-3ccf-4692-adea-e67caf944422",
+                              "Reference": "9d117661-e118-4c15-b1f6-660fce472bb7"
+                            },
+                            {
+                              "Track": "64ac0f0d-baae-4751-a45b-ec86a1e02faa",
+                              "Reference": "e117888b-303c-4960-8e1f-e43006c0739f"
+                            },
+                            {
+                              "Track": "5fe43596-1556-4ed7-96b6-c6c6cb249b18",
+                              "Reference": "708de98c-75dd-4f05-8277-5234f248e68e"
+                            },
+                            {
+                              "Track": "80b3996b-9fff-4a01-83b6-560259e77336",
+                              "Reference": "4e12f61b-dec9-4044-99ab-3c631c9c9d0e"
+                            },
+                            {
+                              "Track": "3ddc9576-e2dc-469f-8f33-2f687caf221b",
+                              "Reference": "75cd7bf9-78ad-404a-ab33-a78e57ba0a21"
+                            },
+                            {
+                              "Track": "653c349f-000d-4508-a4fb-9e6333e613a5",
+                              "Reference": "fa1b90b3-103d-4139-a1a9-024a1e609352"
+                            },
+                            {
+                              "Track": "81ec7f82-c58c-4172-91d9-d08235a98fb7",
+                              "Reference": "c9e41ad0-7693-406c-8807-13ea9dd81c7b"
+                            },
+                            {
+                              "Track": "0cb6b658-cbba-4b1b-be0a-391930fe4cf3",
+                              "Reference": "79e5a357-eabd-4613-a19f-a829363ae6a1"
+                            },
+                            {
+                              "Track": "78487463-9849-459b-ab5b-96eef2616a40",
+                              "Reference": "921ae3e6-3d49-48dd-85d6-549520c94a95"
+                            }
+                          ],
+                          "Components": [
+                            {
+                              "Track": "188477ca-1cbd-40e0-8257-57a7fd2a8b70",
+                              "Reference": "2d57a687-da6a-8e08-90ed-3846af2ccc95"
+                            },
+                            {
+                              "Track": "f2dbb7b7-42f7-4726-b7e7-a81e08e6dc59",
+                              "Reference": "90a1552f-cdc8-8d23-9a6f-97c2d3f80825"
+                            },
+                            {
+                              "Track": "5daa4c7a-64ac-410c-b950-fdd741a00118",
+                              "Reference": "fd6ceb73-9707-86a0-b0fe-b7d9971ffffb"
+                            },
+                            {
+                              "Track": "c3a64219-8350-4494-b684-f679ebd525ae",
+                              "Reference": "ae7f219d-6e1d-8211-9249-2f714fb95b0e"
+                            },
+                            {
+                              "Track": "6d73a70e-c9ff-408c-9985-d4682aa9d22f",
+                              "Reference": "15b58b4a-31c7-8808-896d-e5253831bb34"
+                            },
+                            {
+                              "Track": "50418a12-6682-4822-939f-aec14bc89be9",
+                              "Reference": "063b554e-ced5-81ca-96ad-5cc1b5c0410c"
+                            },
+                            {
+                              "Track": "77dac993-e955-47e6-91df-4c12880dffae",
+                              "Reference": "86d50bef-c8cd-46d8-968a-5056298bb3f6"
+                            },
+                            {
+                              "Track": "ad213ad7-c427-4c3e-b55d-aec652aa8262",
+                              "Reference": "c584566e-4b1a-4ed0-8b52-da403ee72a64"
+                            },
+                            {
+                              "Track": "704021b4-f77a-4d2a-8eba-878008087b86",
+                              "Reference": "eff3d0e1-f59a-4d78-a620-345ca7133427"
+                            },
+                            {
+                              "Track": "0feea427-dd41-4d91-9abb-3ff9b478ce40",
+                              "Reference": "1c2f7bb7-3267-4adc-8a6e-0b6c79ebb1c2"
+                            },
+                            {
+                              "Track": "dad9932b-ec3b-4b59-a8ad-6531f7a3f264",
+                              "Reference": "5c2ed4fa-6218-4bd6-aa01-8690afa31020"
+                            },
+                            {
+                              "Track": "ea0fc3f5-189f-4727-8336-8230cf2fca8c",
+                              "Reference": "75849472-9ce9-475b-814f-aadcb6ef58d1"
+                            }
+                          ]
+                        }
                       },
                       {
                         "Target": {
-                          "Type": "GameObject",
-                          "IdValue": "95829f44-3fe1-4fcb-9cc8-0e487fff8244"
+                          "Type": "Component",
+                          "IdValue": "bf326b41-31e8-8385-8d15-2898b4d6c537"
                         },
-                        "Property": "Position",
-                        "Value": "0,0,-88"
-                      },
-                      {
-                        "Target": {
-                          "Type": "GameObject",
-                          "IdValue": "bab19c47-28de-45ad-a6ed-79cfdd08d733"
-                        },
-                        "Property": "Rotation",
-                        "Value": "0,-0.130528733,0,0.991444767"
+                        "Property": "Resource",
+                        "Value": "prefabs/movies/doors/blastdoor-derelict-anim-open.movie"
                       },
                       {
                         "Target": {
@@ -980,7 +1117,7 @@
                           "IdValue": "ed6ae89e-a4d0-428b-9a55-de51bfc816a3"
                         },
                         "Property": "Rotation",
-                        "Value": "-0.130528733,5.705592E-09,-0.991444767,-4.33374261E-08"
+                        "Value": "-2.57790066E-06,1.12683625E-13,-1.00000012,-4.37113989E-08"
                       },
                       {
                         "Target": {
@@ -1434,7 +1571,7 @@
                           "IdValue": "186dbabd-6587-4c10-905f-507e0f94a403"
                         },
                         "Property": "Position",
-                        "Value": "-190.791016,-82.0661926,-9.27395248"
+                        "Value": "-222.791016,-82.0661926,-9.27395248"
                       },
                       {
                         "Target": {
@@ -1752,6 +1889,585 @@
                     "fa6cef3e-3249-4b54-8178-b2ab92bcddf0": "fe0c2abf-be33-8de5-93ee-20f7c1715e13",
                     "67c9863c-20cf-4b6b-8e48-220418671835": "5942d069-0b77-827f-87e7-709e45feeec9"
                   }
+                },
+                {
+                  "__guid": "6da3d4e6-f8d7-43c3-8bdb-f20cf6a6ff84",
+                  "__version": 2,
+                  "Flags": 0,
+                  "Name": "Reception",
+                  "Position": "0,0,0",
+                  "Rotation": "0,0,0,1",
+                  "Scale": "1,1,1",
+                  "Tags": "",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkFlags": 0,
+                  "NetworkOrphaned": 0,
+                  "NetworkTransmit": true,
+                  "OwnerTransfer": 1,
+                  "Components": [],
+                  "Children": [
+                    {
+                      "__guid": "69835394-6ae5-4734-8e86-743d05c4842d",
+                      "__version": 2,
+                      "Flags": 0,
+                      "Name": "Geometry",
+                      "Position": "0,0,0",
+                      "Rotation": "0,0,0,1",
+                      "Scale": "1,1,1",
+                      "Tags": "",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkFlags": 0,
+                      "NetworkOrphaned": 0,
+                      "NetworkTransmit": true,
+                      "OwnerTransfer": 1,
+                      "Components": [],
+                      "Children": [
+                        {
+                          "__guid": "5b0724f3-8f67-4d2e-9dda-d3b3e1446ad9",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "Block",
+                          "Position": "601.208984,-338.066193,86.7260437",
+                          "Rotation": "0,0,0,1",
+                          "Scale": "1,1,1",
+                          "Tags": "world",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "dc32e2b3-b5dc-4da8-b486-4eea36a7d8e6",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "aae30533-6912-8a8a-9d70-b0aca96adb6d"
+                                },
+                                "Materials": [
+                                  "materials/generic/concrete_simple.vmat",
+                                  "materials/generic/wall_concrete_painted_a.vmat"
+                                ]
+                              },
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "9a5d07e3-84cd-4e95-8fa7-f72807affc21",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "Block",
+                          "Position": "577.208984,77.9338074,86.9907227",
+                          "Rotation": "0,0,0,1",
+                          "Scale": "1,1,1",
+                          "Tags": "world",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "f5ee5777-cd3b-4076-ac29-93aabcf23e86",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "04f5e861-e9d4-8ca2-ab0c-6b4a23fe2209"
+                                },
+                                "Materials": [
+                                  "materials/generic/wall_concrete_painted_a.vmat"
+                                ]
+                              },
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "10a3d9a1-51c2-4a53-b5c6-b4979d2b813b",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "Block (3)",
+                          "Position": "121.208984,77.9338074,86.9907227",
+                          "Rotation": "0,0,0,1",
+                          "Scale": "1,1,1",
+                          "Tags": "world",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "de8e2726-a5b4-4921-a7f9-52f4832a842d",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "04f5e861-e9d4-8ca2-ab0c-6b4a23fe2209"
+                                },
+                                "Materials": [
+                                  "materials/generic/wall_concrete_painted_a.vmat"
+                                ]
+                              },
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "e14ec7f1-4e64-419b-80af-e27503c3c500",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "Block (2)",
+                          "Position": "1089.20898,77.9338074,86.9907227",
+                          "Rotation": "0,0,0,1",
+                          "Scale": "1,1,1",
+                          "Tags": "world",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "93e51534-4e2f-4e98-b823-5c3ed4b93963",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "04f5e861-e9d4-8ca2-ab0c-6b4a23fe2209"
+                                },
+                                "Materials": [
+                                  "materials/generic/wall_concrete_painted_a.vmat"
+                                ]
+                              },
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "3d4632af-0ce2-437a-bad6-7e16d70af3a7",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "public_bench_chairs_300",
+                          "Position": "449.208984,77.9338074,-9.25813007",
+                          "Rotation": "0,0,-0.707106829,0.707106769",
+                          "Scale": "1,1,1",
+                          "Tags": "",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.Prop",
+                              "__guid": "b26ba359-9106-480c-871e-9c8c4efc9c0e",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "BodyGroups": 18446744073709551615,
+                              "Health": 0,
+                              "IsStatic": false,
+                              "MaterialGroup": null,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnGibsCreated": null,
+                              "OnPropBreak": null,
+                              "OnPropTakeDamage": null,
+                              "StartAsleep": false,
+                              "Tint": "1,1,1,1"
+                            },
+                            {
+                              "__type": "Sandbox.ModelRenderer",
+                              "__guid": "ff7754dd-887e-4b2d-a0b9-e38a0f7bf6e5",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "BodyGroups": 18446744073709551615,
+                              "CreateAttachments": false,
+                              "LodOverride": null,
+                              "MaterialGroup": null,
+                              "MaterialOverride": null,
+                              "Materials": null,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "RenderOptions": {
+                                "GameLayer": true,
+                                "OverlayLayer": false,
+                                "BloomLayer": false,
+                                "AfterUILayer": false
+                              },
+                              "RenderType": "On",
+                              "Tint": "1,1,1,1"
+                            },
+                            {
+                              "__type": "Sandbox.ModelCollider",
+                              "__guid": "ca7cf902-c188-497f-ac30-2de80da30076",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Elasticity": null,
+                              "Friction": null,
+                              "IsTrigger": false,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RollingResistance": null,
+                              "Static": false,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            },
+                            {
+                              "__type": "Sandbox.Rigidbody",
+                              "__guid": "b572aef1-2bf6-4e76-80f5-4bc2ec91c8b9",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "AngularDamping": 0,
+                              "EnableImpactDamage": true,
+                              "EnhancedCcd": false,
+                              "Gravity": true,
+                              "GravityScale": 1,
+                              "ImpactDamage": 0,
+                              "LinearDamping": 0,
+                              "Locking": {
+                                "X": false,
+                                "Y": false,
+                                "Z": false,
+                                "Pitch": false,
+                                "Yaw": false,
+                                "Roll": false
+                              },
+                              "MassCenterOverride": "0,0,0",
+                              "MassOverride": 0,
+                              "MinImpactDamageSpeed": 500,
+                              "MotionEnabled": true,
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OverrideMassCenter": false,
+                              "RigidbodyFlags": 0,
+                              "SleepThreshold": 2,
+                              "StartAsleep": false
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "cee89a1d-d17d-42b9-9080-96d6e00b1100",
+                          "__version": 2,
+                          "Flags": 0,
+                          "Name": "public_bench_chairs_300 (1)",
+                          "Position": "697.208984,77.9338074,-9.25813007",
+                          "Rotation": "0,0,-0.707106829,0.707106769",
+                          "Scale": "1,1,1",
+                          "Tags": "",
+                          "Enabled": true,
+                          "NetworkMode": 2,
+                          "NetworkFlags": 0,
+                          "NetworkOrphaned": 0,
+                          "NetworkTransmit": true,
+                          "OwnerTransfer": 1,
+                          "Components": [
+                            {
+                              "__type": "Sandbox.Prop",
+                              "__guid": "7342f65d-9dd6-4474-a094-ea5c511626b7",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "BodyGroups": 18446744073709551615,
+                              "Health": 0,
+                              "IsStatic": false,
+                              "MaterialGroup": null,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnGibsCreated": null,
+                              "OnPropBreak": null,
+                              "OnPropTakeDamage": null,
+                              "StartAsleep": false,
+                              "Tint": "1,1,1,1"
+                            },
+                            {
+                              "__type": "Sandbox.ModelRenderer",
+                              "__guid": "2d3d5cd5-7314-4ea8-bdd0-02d3828eaceb",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "BodyGroups": 18446744073709551615,
+                              "CreateAttachments": false,
+                              "LodOverride": null,
+                              "MaterialGroup": null,
+                              "MaterialOverride": null,
+                              "Materials": null,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "RenderOptions": {
+                                "GameLayer": true,
+                                "OverlayLayer": false,
+                                "BloomLayer": false,
+                                "AfterUILayer": false
+                              },
+                              "RenderType": "On",
+                              "Tint": "1,1,1,1"
+                            },
+                            {
+                              "__type": "Sandbox.ModelCollider",
+                              "__guid": "06e1c679-57ed-408f-a3e1-9dcea8ae82b7",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "ColliderFlags": 0,
+                              "Elasticity": null,
+                              "Friction": null,
+                              "IsTrigger": false,
+                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RollingResistance": null,
+                              "Static": false,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
+                            },
+                            {
+                              "__type": "Sandbox.Rigidbody",
+                              "__guid": "6944c388-4e65-460e-9caa-987906bac1c3",
+                              "__enabled": true,
+                              "Flags": 0,
+                              "AngularDamping": 0,
+                              "EnableImpactDamage": true,
+                              "EnhancedCcd": false,
+                              "Gravity": true,
+                              "GravityScale": 1,
+                              "ImpactDamage": 0,
+                              "LinearDamping": 0,
+                              "Locking": {
+                                "X": false,
+                                "Y": false,
+                                "Z": false,
+                                "Pitch": false,
+                                "Yaw": false,
+                                "Roll": false
+                              },
+                              "MassCenterOverride": "0,0,0",
+                              "MassOverride": 0,
+                              "MinImpactDamageSpeed": 500,
+                              "MotionEnabled": true,
+                              "OnComponentDestroy": null,
+                              "OnComponentDisabled": null,
+                              "OnComponentEnabled": null,
+                              "OnComponentFixedUpdate": null,
+                              "OnComponentStart": null,
+                              "OnComponentUpdate": null,
+                              "OverrideMassCenter": false,
+                              "RigidbodyFlags": 0,
+                              "SleepThreshold": 2,
+                              "StartAsleep": false
+                            }
+                          ],
+                          "Children": []
+                        },
+                        {
+                          "__guid": "348869f9-417a-4072-adea-fc71a5031614",
+                          "__version": 2,
+                          "__Prefab": "prefabs/objects/flowerbed.prefab",
+                          "__PrefabInstancePatch": {
+                            "AddedObjects": [],
+                            "RemovedObjects": [],
+                            "PropertyOverrides": [
+                              {
+                                "Target": {
+                                  "Type": "GameObject",
+                                  "IdValue": "d0dd7276-88b1-488d-bb26-4b681d79db05"
+                                },
+                                "Property": "Position",
+                                "Value": "833.208984,93.9338074,22.7260475"
+                              }
+                            ],
+                            "MovedObjects": []
+                          },
+                          "__PrefabIdToInstanceId": {
+                            "d0dd7276-88b1-488d-bb26-4b681d79db05": "348869f9-417a-4072-adea-fc71a5031614",
+                            "a5cbe43d-3dfc-4f02-80da-9a60c727063c": "b007e8c7-9e33-42e7-b0ae-498a70f89ae7",
+                            "d31c41d1-41f4-48aa-a1fe-30ed6d711e9d": "ce629d7a-a378-422b-b746-c1bb4f62c24c",
+                            "0bf3c4e1-79df-420e-b4a4-880ff8c65394": "174cedc9-18ae-4713-b53e-6a81e6d00a99",
+                            "0cc38df8-1385-4833-bd1b-805734ecced7": "2dd5912d-a6df-4168-aea8-af5fa82dfda6",
+                            "16f8dfb1-ce9e-4947-97a1-d0d2d60b83c3": "1666a761-b9c4-41ef-8c89-236d7ec77183",
+                            "c5224d67-41cc-467a-8dfe-81dc9ede00a4": "9198a791-61e6-427c-8e0a-de38661a5d4f",
+                            "c41ee570-a032-4f70-b222-b06f1d4445ff": "08ad6554-d4d5-4401-8e0b-9027b82578f3"
+                          }
+                        },
+                        {
+                          "__guid": "cb08da39-4479-4759-871e-b8b2af4fde24",
+                          "__version": 2,
+                          "__Prefab": "prefabs/objects/flowerbed.prefab",
+                          "__PrefabInstancePatch": {
+                            "AddedObjects": [],
+                            "RemovedObjects": [],
+                            "PropertyOverrides": [
+                              {
+                                "Target": {
+                                  "Type": "GameObject",
+                                  "IdValue": "d0dd7276-88b1-488d-bb26-4b681d79db05"
+                                },
+                                "Property": "Position",
+                                "Value": "321.208984,93.9338074,22.7260475"
+                              }
+                            ],
+                            "MovedObjects": []
+                          },
+                          "__PrefabIdToInstanceId": {
+                            "d0dd7276-88b1-488d-bb26-4b681d79db05": "cb08da39-4479-4759-871e-b8b2af4fde24",
+                            "a5cbe43d-3dfc-4f02-80da-9a60c727063c": "e11955a7-1e1f-4854-ada0-f43018bf391b",
+                            "d31c41d1-41f4-48aa-a1fe-30ed6d711e9d": "06e4a1e5-bff6-4db1-8cc7-5413fd99f3a4",
+                            "0bf3c4e1-79df-420e-b4a4-880ff8c65394": "88233355-5336-499b-a4ea-4b72b08a23b9",
+                            "0cc38df8-1385-4833-bd1b-805734ecced7": "324da738-d6dc-49a2-b18c-aad4d97a232f",
+                            "16f8dfb1-ce9e-4947-97a1-d0d2d60b83c3": "e4c83b8d-ecb4-424e-af18-e3aea15499c7",
+                            "c5224d67-41cc-467a-8dfe-81dc9ede00a4": "2dff1e78-27fa-423f-9b51-333443a5f09b",
+                            "c41ee570-a032-4f70-b222-b06f1d4445ff": "cc78b371-9593-4d48-a409-5e2afcbc88aa"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -1795,8 +2511,8 @@
                   "__version": 2,
                   "Flags": 0,
                   "Name": "CDA-Core",
-                  "Position": "18.5,-82.0661926,884.069031",
-                  "Rotation": "0,0,0.928583205,-0.405981064",
+                  "Position": "18.5,-82.0661926,926.778503",
+                  "Rotation": "0,0,0.365096003,-0.951201737",
                   "Scale": "1,1,1",
                   "Tags": "world",
                   "Enabled": true,
@@ -2128,11 +2844,11 @@
               "__enabled": true,
               "Flags": 0,
               "ColliderFlags": 0,
-              "Collision": "Mesh",
+              "Collision": "None",
               "Color": "1,1,1,1",
               "Elasticity": null,
               "Friction": null,
-              "HideInGame": false,
+              "HideInGame": true,
               "IsTrigger": false,
               "Mesh": {
                 "Data": {
@@ -2155,7 +2871,7 @@
               "RenderType": "On",
               "RollingResistance": null,
               "SmoothingAngle": 40,
-              "Static": true,
+              "Static": false,
               "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
@@ -2178,26 +2894,100 @@
               "IdValue": "d76e54e7-bb2a-48ce-a637-aef31fcfb9bc"
             },
             "Property": "Position",
-            "Value": "201.318024,20.9128494,63.7905083"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "d76e54e7-bb2a-48ce-a637-aef31fcfb9bc"
-            },
-            "Property": "Enabled",
-            "Value": false
+            "Value": "155,-10,69"
           }
         ],
         "MovedObjects": []
       },
       "__PrefabIdToInstanceId": {
         "d76e54e7-bb2a-48ce-a637-aef31fcfb9bc": "9a37b339-b40d-422d-9662-27a8e6646fc2",
+        "813a41cb-ee78-8617-b7f8-40f77c8c0316": "60aed3eb-772e-4d75-a4f2-27f84e350e73",
         "997fc5f5-4a8c-457d-a6fa-8fcbd84bdd9e": "cc676200-e7a9-4fae-919d-fa430d995601",
         "6c031b4f-e394-49a2-86d7-d422da6f8535": "a8184bf3-6477-4acc-90f9-e8817728cae9",
+        "c4d92911-b81d-831c-957b-76f45ead09ab": "6aff2950-a910-46ad-ae8c-d2f18443f89c",
+        "63f126ed-b8f3-82ac-ab87-f2e192b6620e": "87855b2c-d424-41b1-96d6-2d8e77886b3f",
+        "4af63c7e-ea87-846b-b32a-82a803359803": "0ad7f5a0-36ad-4ed7-9bee-3d7f3f49cc75",
+        "2fb94b1c-ad84-8b4a-a445-b5e8a36b3904": "c9cd013b-6557-4a70-a2fb-e57b2cb94823",
+        "e7ea374a-3b04-890c-b3c8-eeeca910636d": "a22da898-973d-4f4e-a071-c54c3bab83e7",
+        "e4d50d41-7e94-85ff-9d41-53d20d2baf1a": "9f5f0e82-1c8b-439b-be24-aed35ccdb671",
+        "e746d108-4383-84b8-8e70-da39707f4473": "ab97d0bb-86b4-4339-88d4-32e12e3f0334",
+        "6712d24a-4ea6-88de-8362-6559965eb997": "8a132be3-76ce-4ab7-a43a-a7b3b03945b8",
+        "2906f7a0-c135-8d38-9f19-306675f54b53": "d8639cbc-bce4-8e98-82ec-03cbe14b6029",
+        "9adfc1ec-a3e3-8b3e-a755-99617ceff352": "ee0ec766-ca5b-8a5d-9799-ee20d1622d57",
+        "5c2a675a-e3ef-8529-b909-e29b0e5c6341": "893f229c-8983-8f8b-8169-f6c92057dacb",
+        "a39b934d-bea8-8f99-bcd6-aa96cd79020d": "2fc26b58-24d1-8375-bfa2-eeda2eb97de2",
+        "23a7fe85-8cca-8325-aa78-bcc2685e1b5d": "1e0cfd49-df58-475f-abc7-3aec544bdcc1",
+        "ea6240e6-73ae-862f-91ad-32a29c471ae5": "9d09d845-8c1d-443d-a36c-74649e1bb447",
+        "645a0cf8-e6ed-811a-99b8-bc58781e156a": "64d0ccee-1a0d-8adc-aaa7-73ac960dca39",
         "6d06e654-5a37-4ebb-aa05-4cb914a2cc15": "4d6508a6-46e6-47f6-bf76-c8600d4319c6",
+        "b70c4649-0148-8076-a34e-beca44e24332": "7dd1226b-02b3-4fd3-a018-e70ff488301a",
+        "909ffc7b-1452-83d0-b1a8-d16fec85d862": "ed7f0ee3-04b6-4b22-ab7a-ffb05930a41f",
+        "55e7fb65-6aa6-884f-b082-dcc2c9e03ebb": "2909b987-af36-4d36-ba2f-484c11bdc747",
+        "18ff3b46-740a-8121-b86a-29f41c118e73": "2d070c38-3a71-4b45-9fbc-3256fde22df6",
         "078c5082-4562-4ddc-b1d5-325e90dc0a96": "a3f9a746-81f8-4eca-bbf3-bf44b1749e3a",
-        "d3599de8-95b6-42c7-b1c7-6e005a760b57": "b4f0fe9e-5e38-4d61-a22e-71e5f42a487c"
+        "67ed9667-0dfe-8e09-ba80-bfe8645bfa75": "eb068b66-ab84-49d9-96a1-dc29626f754b",
+        "d3599de8-95b6-42c7-b1c7-6e005a760b57": "b4f0fe9e-5e38-4d61-a22e-71e5f42a487c",
+        "fba9c239-02c0-8fdc-b45a-1414be516db5": "006b6a68-fa77-4dd8-ae19-98f86ed6b404",
+        "abe79d39-4d81-8345-b04a-b313b9a2ca3d": "9c1956aa-6f8c-4509-b0f5-59c385e2b8db",
+        "3bd07ccb-06ff-8513-b101-4c4a105bbf1e": "1f3efcdd-47cd-40ef-931c-5a0c9e515730",
+        "006ba3be-449b-88d0-9be8-30b61fc73785": "69f91bde-3481-8ace-94cf-72063cc084ce",
+        "221e27ad-8689-8d1b-ae40-71574642a63b": "af915f64-2948-8814-bb5a-3f587f42e716",
+        "36f7930c-0bd3-86a6-884c-29db34d8d951": "0f540a69-7944-8f1f-b8ea-8357697f4e80"
+      }
+    },
+    {
+      "__guid": "6e93831c-d83a-4720-8eea-c2dc8df61f5f",
+      "__version": 2,
+      "__Prefab": "prefabs/objects/blastdoorframe-small.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "d76e54e7-bb2a-48ce-a637-aef31fcfb9bc"
+            },
+            "Property": "Position",
+            "Value": "1313,-54,64"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "d76e54e7-bb2a-48ce-a637-aef31fcfb9bc": "6e93831c-d83a-4720-8eea-c2dc8df61f5f",
+        "813a41cb-ee78-8617-b7f8-40f77c8c0316": "9b81a8b7-b2f4-4192-bf00-fc71d6c7a547",
+        "997fc5f5-4a8c-457d-a6fa-8fcbd84bdd9e": "353adf5f-ea3e-4f27-bbac-361e645842f7",
+        "6c031b4f-e394-49a2-86d7-d422da6f8535": "47ad3482-de82-4c9e-b5bb-cebdb0d3afa3",
+        "c4d92911-b81d-831c-957b-76f45ead09ab": "76989073-3aba-46c7-bb3e-caf2aa22c087",
+        "63f126ed-b8f3-82ac-ab87-f2e192b6620e": "121c3929-a29c-455c-bd7f-72ece2cc508b",
+        "4af63c7e-ea87-846b-b32a-82a803359803": "f1e78f08-3269-4353-bced-4b1778174c29",
+        "2fb94b1c-ad84-8b4a-a445-b5e8a36b3904": "f543d7a0-046e-4df3-bb85-0fe9d3351369",
+        "e7ea374a-3b04-890c-b3c8-eeeca910636d": "de142c98-45f1-49aa-bd15-1dcbbb6e7db3",
+        "e4d50d41-7e94-85ff-9d41-53d20d2baf1a": "525e4e6d-1a75-48f9-8a35-308920ca2b16",
+        "e746d108-4383-84b8-8e70-da39707f4473": "01aca2f4-1e88-47f2-bfe8-1ef9017bc085",
+        "6712d24a-4ea6-88de-8362-6559965eb997": "83c15a5f-3ace-4d5d-9cd6-59977578af20",
+        "2906f7a0-c135-8d38-9f19-306675f54b53": "3d34fb36-20b4-4351-bbd7-d75d36eb9ed5",
+        "9adfc1ec-a3e3-8b3e-a755-99617ceff352": "8da5de7e-b436-4461-af75-67e3a0746dba",
+        "5c2a675a-e3ef-8529-b909-e29b0e5c6341": "9d7251b5-30a7-4fbd-b64e-b4d10056eaf0",
+        "a39b934d-bea8-8f99-bcd6-aa96cd79020d": "dc7513ed-1a51-440c-9521-6fa21ad72b46",
+        "23a7fe85-8cca-8325-aa78-bcc2685e1b5d": "1676f68e-aeb2-4311-a7c8-f7fca6b9cc04",
+        "ea6240e6-73ae-862f-91ad-32a29c471ae5": "a31b6762-076d-4ec5-91c6-8346e514ac23",
+        "645a0cf8-e6ed-811a-99b8-bc58781e156a": "de1a9261-b946-4af7-85c0-9ed06f829750",
+        "6d06e654-5a37-4ebb-aa05-4cb914a2cc15": "589fdb5d-61bf-4477-9a71-af96966c320e",
+        "b70c4649-0148-8076-a34e-beca44e24332": "ef3e6583-8165-494f-b275-8039dabd0eb2",
+        "909ffc7b-1452-83d0-b1a8-d16fec85d862": "2f6f8997-5be8-430d-ac3a-2f55d87f7009",
+        "55e7fb65-6aa6-884f-b082-dcc2c9e03ebb": "f24e38ff-b2d0-4854-b3fc-b3ce896e10c0",
+        "18ff3b46-740a-8121-b86a-29f41c118e73": "c504fd48-b421-4e49-a855-ff9e0ff531fa",
+        "078c5082-4562-4ddc-b1d5-325e90dc0a96": "cc66c027-2982-4b2c-9547-ad90a8eed932",
+        "67ed9667-0dfe-8e09-ba80-bfe8645bfa75": "991475be-0843-4864-8c08-b3645237f68a",
+        "d3599de8-95b6-42c7-b1c7-6e005a760b57": "1c4f8fc7-e315-4505-b222-9b8e07a7da63",
+        "fba9c239-02c0-8fdc-b45a-1414be516db5": "23fa2192-d999-48be-93d5-ad96c45440f9",
+        "abe79d39-4d81-8345-b04a-b313b9a2ca3d": "c8631192-6574-44d9-bba9-e606bf2c0441",
+        "3bd07ccb-06ff-8513-b101-4c4a105bbf1e": "588e637d-7ceb-4973-8e3f-52821571696b",
+        "006ba3be-449b-88d0-9be8-30b61fc73785": "37985672-b10a-4bb8-84d4-477e70cd6b89",
+        "221e27ad-8689-8d1b-ae40-71574642a63b": "443ce0ef-f9ec-46a4-bb7a-6e1296cbeb71",
+        "36f7930c-0bd3-86a6-884c-29db34d8d951": "954e45ef-88eb-46b2-b79c-5e85098ab90a"
       }
     },
     {
@@ -2214,7 +3004,7 @@
               "IdValue": "b684fd3d-b7ea-4b06-9c5a-735852b3d4de"
             },
             "Property": "Position",
-            "Value": "107.318024,1.91284943,63.7905083"
+            "Value": "64,-10,68"
           },
           {
             "Target": {
@@ -2223,17 +3013,52 @@
             },
             "Property": "Enabled",
             "Value": false
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "2a8e121b-bfab-4ed0-9b96-1e617a37cce8"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Data": "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lQAAABIAAAA8AAAAlQAAAOQAAAAjAAAAOwAAAJQAAAANAAAAEgAAACgAAACXAAAAYAAAABMAAAA9AAAAlgAAAJkAAAAYAAAAPQAAAJkAAADdAAAA/////zwAAACYAAAAkgAAABgAAAA+AAAAmwAAANkAAAAhAAAAPQAAAJoAAACWAAAAEwAAAD8AAACdAAAA4QAAAP////8+AAAAnAAAAGMAAAAWAAAAOAAAAJ8AAADiAAAAIgAAAD8AAACeAAAATQAAABQAAABBAAAAoQAAAOAAAAAiAAAAQAAAAKAAAAAFAAAAFQAAADYAAACjAAAAeAAAABcAAABCAAAAogAAAKUAAAAWAAAAQgAAAKUAAADVAAAA/////0EAAACkAAAAXQAAABYAAABDAAAApwAAANoAAAAfAAAAQgAAAKYAAACiAAAAFwAAAEQAAACpAAAA5QAAAP////9DAAAAqAAAAHsAAAAYAAAABAAAAKsAAAAIAAAAGgAAAEUAAACqAAAArQAAABkAAABFAAAArQAAAOYAAAAjAAAARAAAAKwAAABfAAAAGQAAAB8AAACvAAAAPAAAABsAAABGAAAArgAAALEAAAAaAAAARgAAALEAAAC0AAAA/////0UAAACwAAAAqgAAABoAAAAeAAAAswAAADoAAAAQAAAARwAAALIAAAC1AAAAGwAAAEcAAAC1AAAAtgAAAP////9GAAAAtAAAAK4AAAAbAAAAQAAAALcAAADjAAAA/////0cAAAC2AAAAsgAAABAAAAAYAAAAuQAAADAAAAAaAAAAEwAAALgAAAAoAAAADQAAABIAAAC7AAAAJgAAABAAAAAZAAAAugAAADIAAAANAAAAAQAAAL0AAAAUAAAADAAAAAIAAAC8AAAAAgAAABAAAAAxAAAAvwAAAH8AAAAYAAAALgAAAL4AAABsAAAADwAAACIAAADBAAAATwAAABYAAAAkAAAAwAAAABMAAAAMAAAALwAAAMMAAACFAAAAFgAAADAAAADCAAAAbgAAAA8AAAAjAAAAxQAAAFAAAAAOAAAAJQAAAMQAAABaAAAAGAAAAAUAAADHAAAAVQAAAA4AAAAGAAAAxgAAAAoAAAAaAAAA////////////////////////////////////////////////////////////////////////////////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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAABjb2xvcnOgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAQAAAAEAAAAAAAAAAwAAAAAAAAACAAAAAAAAAAIAAAADAAAAAwAAAAkAAABlZGdlZmxhZ3OgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Materials": [
+                "materials/hotspots/metal_painted_c_rust_hs.vmat",
+                "materials/generic/metal_painted_c_rust.vmat",
+                "materials/dev/reflectivity_30.vmat",
+                "materials/generic/trim_a_metal.vmat"
+              ]
+            }
           }
         ],
         "MovedObjects": []
       },
       "__PrefabIdToInstanceId": {
         "b684fd3d-b7ea-4b06-9c5a-735852b3d4de": "26737028-91ea-4bb3-a9f5-96b57864aa82",
+        "3b2cb66e-8637-82d0-85d8-249216d7f511": "bc48a490-da7f-48c1-807b-443dc3d03b1c",
         "aeb44e65-cb96-4904-9f87-e4a126f4d377": "19bf8745-a294-431b-9513-6e1b8549b4d5",
         "62268c89-ae7a-4ca0-80dc-ff2485ccd8d1": "9d117661-e118-4c15-b1f6-660fce472bb7",
+        "7b3c1a19-a8c6-82d6-84d9-b8a316c2cb06": "e117888b-303c-4960-8e1f-e43006c0739f",
+        "6b55b708-9b64-8564-81d0-b996a95a5e88": "921ae3e6-3d49-48dd-85d6-549520c94a95",
+        "28313b6b-0698-8114-9ea0-cb94f5deddf4": "c9e41ad0-7693-406c-8807-13ea9dd81c7b",
+        "992f26b5-b0a1-8d8a-9cce-a57d4e651236": "79e5a357-eabd-4613-a19f-a829363ae6a1",
+        "f9229a44-dafe-8030-a734-d388f8558a0e": "fa1b90b3-103d-4139-a1a9-024a1e609352",
+        "7ddd27e7-06dc-849e-99f7-c1b7c6abe150": "708de98c-75dd-4f05-8277-5234f248e68e",
+        "f09f778f-3d6e-8fae-86e8-02f456667992": "4e12f61b-dec9-4044-99ab-3c631c9c9d0e",
+        "8a48362f-0c83-891e-9a4c-500966694e3f": "75cd7bf9-78ad-404a-ab33-a78e57ba0a21",
         "2a8e121b-bfab-4ed0-9b96-1e617a37cce8": "4f6a77fc-e3c7-40fd-af31-3f06ba3dbf9b",
+        "046b4fc6-1e1d-8e8a-92f6-fa7452173781": "6457944e-e840-4caf-9257-f70823c5c4c6",
+        "dc4a70b9-0d1d-8e44-bba2-1a185f8cb848": "d60600e1-cde5-4609-97e5-18cf938b51b3",
         "e0cb037c-6c0b-4079-b721-748199cae3a8": "fadd45db-3b64-4d98-82c9-a1087cb03ab9",
-        "e4c236f2-3979-43ee-ba44-761748cf9f8d": "e0ac14cf-2440-495a-96b0-0949779e2271"
+        "e4c236f2-3979-43ee-ba44-761748cf9f8d": "e0ac14cf-2440-495a-96b0-0949779e2271",
+        "5d799186-0410-849f-aa1f-1bfa74da84ef": "5d1768d6-34a4-4936-b26c-f63df7be79f1",
+        "c14f2150-3bfe-8e17-9616-c55c38a6978f": "75849472-9ce9-475b-814f-aadcb6ef58d1",
+        "8d10ad0f-72dc-8644-a6a3-b5ea212f02dc": "1c2f7bb7-3267-4adc-8a6e-0b6c79ebb1c2",
+        "601bb4ed-94cd-8ea0-ad8d-5a7d5449979d": "5c2ed4fa-6218-4bd6-aa01-8690afa31020",
+        "84623c9e-9e02-8d9e-b7d7-acecaefea24d": "bb78c694-8eae-4b50-b18e-0c55904156bb",
+        "c44aa057-5d38-8e48-8e36-d0de50b47da2": "eff3d0e1-f59a-4d78-a620-345ca7133427",
+        "05317f39-ce3b-8807-bf9a-2a793cbcc68d": "c584566e-4b1a-4ed0-8b52-da403ee72a64",
+        "f0f3e412-2976-8f54-be75-f4fcad8fa6a6": "86d50bef-c8cd-46d8-968a-5056298bb3f6"
       }
     },
     {
@@ -5902,6 +6727,46 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "a8c624d7-9021-4451-b0f1-edbfb067bb8c",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Point Light",
+      "Position": "1245,-51,104",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "light_point,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.PointLight",
+          "__guid": "97d8c0c1-44b6-49c8-80c1-6b5cd907ba83",
+          "__enabled": true,
+          "Flags": 0,
+          "Attenuation": 1,
+          "Contribution": "Diffuse, Specular, Transmissive",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Radius": 400,
+          "ShadowBias": 0,
+          "ShadowHardness": 0,
+          "Shadows": true
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
@@ -5942,9 +6807,15 @@
   "Title": null,
   "Description": null,
   "__references": [
+    "facepunch.concrete_simple#85373",
+    "facepunch.metal_painted_c_rust_hs#344489",
+    "facepunch.metal_painted_c_rust2#313943",
     "facepunch.metal_trim_02#274120",
     "facepunch.pipe_a_64#280320",
-    "facepunch.v_first_person_arms_human#205798"
+    "facepunch.trim_a_metal#85432",
+    "facepunch.v_first_person_arms_human#205798",
+    "facepunch.wall_concrete_painted_a#85470",
+    "rust.publicbenchchairs300#285258"
   ],
   "__version": 3
 }

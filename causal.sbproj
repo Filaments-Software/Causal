@@ -5,7 +5,7 @@
   "Ident": "causal",
   "Schema": 1,
   "IncludeSourceFiles": false,
-  "Resources": null,
+  "Resources": "textures/causal-logo.png\ntextures/paralix-logo-derelict.png\ntextures/paralix-logo.png",
   "PackageReferences": [],
   "EditorReferences": null,
   "Mounts": null,
