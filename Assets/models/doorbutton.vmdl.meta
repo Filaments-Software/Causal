@@ -11,14 +11,13 @@
       "Resources": null,
       "PackageReferences": null,
       "EditorReferences": [
-        "facepunch.metal_painted_black_a_hs#291749",
-        "facepunch.glass_a#293147"
+        "facepunch.glass_a#293147",
+        "facepunch.metal_painted_black_a_hs#291749"
       ],
       "Mounts": null,
       "IsStandaloneOnly": false,
       "Metadata": {
-        "SingleAssetSource": "models/doorbutton.vmdl",
-        "ParentPackage": "fss.causal"
+        "SingleAssetSource": "models/doorbutton.vmdl"
       }
     }
   }
