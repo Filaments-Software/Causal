@@ -63,7 +63,20 @@
 
 	private TimeSince _timeSinceHover = 10f;
 
-	private bool IsMenuVisible => !CausalGameManager.Instance.IsValid() || !CausalGameManager.Instance.IsActive;
+	private bool IsMenuVisible
+	{
+		get
+		{
+			var manager = CausalGameManager.Instance;
+			if ( !manager.IsValid() )
+			{
+				return true;
+			}
+
+			return manager.State == CausalGameManager.GameState.Menu
+				|| manager.State == CausalGameManager.GameState.Intro;
+		}
+	}
 
 	private bool IsApplyingClothing => FirstPersonCosmetics.IsLoadingClothing;
 

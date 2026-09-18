@@ -55,7 +55,10 @@
                 {
                   "__guid": "8e8cc127-7a9c-4480-b4b6-5faed8af21a6",
                   "__version": 2,
-                  "__Prefab": "prefabs/sectors/entryroom.prefab",
+                  "__Prefab": {
+                    "Id": "c2847253-1a2c-47ad-879e-8e5e479a7583",
+                    "Path": "prefabs/sectors/entryroom.prefab"
+                  },
                   "__PrefabInstancePatch": {
                     "AddedObjects": [
                       {
@@ -84,7 +87,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -125,7 +131,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -168,7 +177,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -209,7 +221,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -252,7 +267,10 @@
                           "MaterialGroup": "default",
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -293,7 +311,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -336,7 +357,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -377,7 +401,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -420,7 +447,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -461,7 +491,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -504,7 +537,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -545,7 +581,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -588,7 +627,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -629,7 +671,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -672,7 +717,10 @@
                           "MaterialGroup": null,
                           "MaterialOverride": null,
                           "Materials": null,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -713,7 +761,10 @@
                           "Elasticity": null,
                           "Friction": null,
                           "IsTrigger": false,
-                          "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                          "Model": {
+                            "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                            "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                          },
                           "OnComponentDestroy": null,
                           "OnComponentDisabled": null,
                           "OnComponentEnabled": null,
@@ -885,6 +936,14 @@
                         },
                         "Property": "Position",
                         "Value": "-222.791016,-82.0661926,-9.27395248"
+                      },
+                      {
+                        "Target": {
+                          "Type": "GameObject",
+                          "IdValue": "d5708a1d-0325-459d-a67a-aeb1502f552a"
+                        },
+                        "Property": "Tags",
+                        "Value": "cause,intro"
                       },
                       {
                         "Target": {
@@ -1415,7 +1474,10 @@
                 {
                   "__guid": "a4138a38-6e0e-43f6-a281-5eb6a69909a8",
                   "__version": 2,
-                  "__Prefab": "prefabs/sectors/entryroom-derelict.prefab",
+                  "__Prefab": {
+                    "Id": "d0606491-80e8-4869-82dc-ef93c46a2bd5",
+                    "Path": "prefabs/sectors/entryroom-derelict.prefab"
+                  },
                   "__PrefabInstancePatch": {
                     "AddedObjects": [],
                     "RemovedObjects": [
@@ -1584,6 +1646,14 @@
                         },
                         "Property": "Position",
                         "Value": "-222.791016,-82.0661926,-9.27395248"
+                      },
+                      {
+                        "Target": {
+                          "Type": "GameObject",
+                          "IdValue": "186dbabd-6587-4c10-905f-507e0f94a403"
+                        },
+                        "Property": "Tags",
+                        "Value": "effect,intro"
                       },
                       {
                         "Target": {
@@ -2841,7 +2911,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -2865,7 +2938,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -2890,7 +2966,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -2934,7 +3013,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -2958,7 +3040,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -2983,7 +3068,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -3027,7 +3115,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -3051,7 +3142,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -3076,7 +3170,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/rust_props/seating/public_bench_chairs_300.vmdl",
+                              "Model": {
+                                "Id": "3b90c571-109d-47f3-bd11-e8b81b34b7a0",
+                                "Path": "models/rust_props/seating/public_bench_chairs_300.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -3098,7 +3195,10 @@
                         {
                           "__guid": "348869f9-417a-4072-adea-fc71a5031614",
                           "__version": 2,
-                          "__Prefab": "prefabs/objects/flowerbed.prefab",
+                          "__Prefab": {
+                            "Id": "36773385-61a4-49a9-96f4-96099aa109aa",
+                            "Path": "prefabs/objects/flowerbed.prefab"
+                          },
                           "__PrefabInstancePatch": {
                             "AddedObjects": [],
                             "RemovedObjects": [],
@@ -3142,7 +3242,10 @@
                         {
                           "__guid": "cb08da39-4479-4759-871e-b8b2af4fde24",
                           "__version": 2,
-                          "__Prefab": "prefabs/objects/flowerbed.prefab",
+                          "__Prefab": {
+                            "Id": "36773385-61a4-49a9-96f4-96099aa109aa",
+                            "Path": "prefabs/objects/flowerbed.prefab"
+                          },
                           "__PrefabInstancePatch": {
                             "AddedObjects": [],
                             "RemovedObjects": [],
@@ -3186,7 +3289,10 @@
                         {
                           "__guid": "6e93831c-d83a-4720-8eea-c2dc8df61f5f",
                           "__version": 2,
-                          "__Prefab": "prefabs/objects/blastdoorframe-small.prefab",
+                          "__Prefab": {
+                            "Id": "79253164-e3db-4ffc-ac6b-d6f8093bfa09",
+                            "Path": "prefabs/objects/blastdoorframe-small.prefab"
+                          },
                           "__PrefabInstancePatch": {
                             "AddedObjects": [],
                             "RemovedObjects": [],
@@ -3343,7 +3449,10 @@
                         {
                           "__guid": "9de7ef85-2316-4fa5-8fcf-652d57a2021a",
                           "__version": 2,
-                          "__Prefab": "prefabs/objects/blastdoorframe-small.prefab",
+                          "__Prefab": {
+                            "Id": "79253164-e3db-4ffc-ac6b-d6f8093bfa09",
+                            "Path": "prefabs/objects/blastdoorframe-small.prefab"
+                          },
                           "__PrefabInstancePatch": {
                             "AddedObjects": [],
                             "RemovedObjects": [],
@@ -5024,7 +5133,10 @@
                                   "MaterialGroup": null,
                                   "MaterialOverride": null,
                                   "Materials": null,
-                                  "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                                  "Model": {
+                                    "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                    "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                                  },
                                   "OnComponentDestroy": null,
                                   "OnComponentDisabled": null,
                                   "OnComponentEnabled": null,
@@ -5070,7 +5182,10 @@
                                   "MaterialGroup": null,
                                   "MaterialOverride": null,
                                   "Materials": null,
-                                  "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                                  "Model": {
+                                    "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                    "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                                  },
                                   "OnComponentDestroy": null,
                                   "OnComponentDisabled": null,
                                   "OnComponentEnabled": null,
@@ -5116,7 +5231,10 @@
                                   "MaterialGroup": null,
                                   "MaterialOverride": null,
                                   "Materials": null,
-                                  "Model": "models/props/nature/weeds/dock_weed_clump.vmdl",
+                                  "Model": {
+                                    "Id": "f7c8498a-d8b3-4a65-b361-8899de6ecd16",
+                                    "Path": "models/props/nature/weeds/dock_weed_clump.vmdl"
+                                  },
                                   "OnComponentDestroy": null,
                                   "OnComponentDisabled": null,
                                   "OnComponentEnabled": null,
@@ -5162,7 +5280,10 @@
                               "Health": 400,
                               "IsStatic": true,
                               "MaterialGroup": "tint",
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5189,7 +5310,10 @@
                               "MaterialGroup": "tint",
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "Morphs": {},
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
@@ -5229,7 +5353,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5273,7 +5400,10 @@
                               "Health": 400,
                               "IsStatic": true,
                               "MaterialGroup": "tint",
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5300,7 +5430,10 @@
                               "MaterialGroup": "tint",
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "Morphs": {},
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
@@ -5340,7 +5473,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/sbox_props/office_chair/office_chair.vmdl",
+                              "Model": {
+                                "Id": "f8b00672-98a1-4a90-8abd-c36f0d02eeff",
+                                "Path": "models/sbox_props/office_chair/office_chair.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5384,7 +5520,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5408,7 +5547,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5433,7 +5575,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5477,7 +5622,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5501,7 +5649,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5526,7 +5677,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5570,7 +5724,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5594,7 +5751,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5619,7 +5779,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_wall_support_a.vmdl",
+                              "Model": {
+                                "Id": "8c3ca614-6e99-4460-acba-2f7e0c91043a",
+                                "Path": "models/props/pipe_a/pipe_wall_support_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5663,7 +5826,10 @@
                               "Health": 0,
                               "IsStatic": false,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5687,7 +5853,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5712,7 +5881,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5791,7 +5963,10 @@
                               "Health": 0,
                               "IsStatic": false,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5815,7 +5990,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5840,7 +6018,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5919,7 +6100,10 @@
                               "Health": 0,
                               "IsStatic": false,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5943,7 +6127,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -5968,7 +6155,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6047,7 +6237,10 @@
                               "Health": 0,
                               "IsStatic": false,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6071,7 +6264,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6096,7 +6292,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_constraint_a.vmdl",
+                              "Model": {
+                                "Id": "d2c8732d-9d12-41cf-bfef-27ff00c399a1",
+                                "Path": "models/props/pipe_a/pipe_constraint_a.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6175,7 +6374,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6199,7 +6401,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6224,7 +6429,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6268,7 +6476,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6292,7 +6503,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6317,7 +6531,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6361,7 +6578,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6385,7 +6605,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6410,7 +6633,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6454,7 +6680,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6478,7 +6707,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6503,7 +6735,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6547,7 +6782,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6571,7 +6809,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6596,7 +6837,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6640,7 +6884,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6664,7 +6911,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6689,7 +6939,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6733,7 +6986,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6757,7 +7013,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6782,7 +7041,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6826,7 +7088,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6850,7 +7115,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6875,7 +7143,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6919,7 +7190,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6943,7 +7217,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -6968,7 +7245,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7012,7 +7292,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7036,7 +7319,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7061,7 +7347,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7105,7 +7394,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7129,7 +7421,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7154,7 +7449,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7198,7 +7496,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7222,7 +7523,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7247,7 +7551,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7291,7 +7598,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7315,7 +7625,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7340,7 +7653,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7384,7 +7700,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7408,7 +7727,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7433,7 +7755,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7477,7 +7802,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7501,7 +7829,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7526,7 +7857,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7570,7 +7904,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7594,7 +7931,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7619,7 +7959,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7663,7 +8006,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7687,7 +8033,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7712,7 +8061,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7756,7 +8108,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7780,7 +8135,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7805,7 +8163,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7849,7 +8210,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7873,7 +8237,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7898,7 +8265,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7942,7 +8312,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7966,7 +8339,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -7991,7 +8367,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8035,7 +8414,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8059,7 +8441,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8084,7 +8469,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8128,7 +8516,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8152,7 +8543,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8177,7 +8571,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8221,7 +8618,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8245,7 +8645,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8270,7 +8673,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8314,7 +8720,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8338,7 +8747,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8363,7 +8775,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8407,7 +8822,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8431,7 +8849,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8456,7 +8877,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8500,7 +8924,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8524,7 +8951,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8549,7 +8979,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8593,7 +9026,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8617,7 +9053,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8642,7 +9081,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8686,7 +9128,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8710,7 +9155,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8735,7 +9183,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8779,7 +9230,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8803,7 +9257,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8828,7 +9285,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8872,7 +9332,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8896,7 +9359,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8921,7 +9387,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8965,7 +9434,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -8989,7 +9461,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9014,7 +9489,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9058,7 +9536,10 @@
                               "Health": 0,
                               "IsStatic": true,
                               "MaterialGroup": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9082,7 +9563,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9107,7 +9591,10 @@
                               "Elasticity": null,
                               "Friction": null,
                               "IsTrigger": false,
-                              "Model": "models/props/pipe_a/pipe_a_64.vmdl",
+                              "Model": {
+                                "Id": "5950d1e7-f5c7-4145-9a8e-4e978b431b40",
+                                "Path": "models/props/pipe_a/pipe_a_64.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9153,7 +9640,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                              "Model": {
+                                "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9199,7 +9689,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                              "Model": {
+                                "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9245,7 +9738,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/dock_weed_clump.vmdl",
+                              "Model": {
+                                "Id": "f7c8498a-d8b3-4a65-b361-8899de6ecd16",
+                                "Path": "models/props/nature/weeds/dock_weed_clump.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9291,7 +9787,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                              "Model": {
+                                "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9337,7 +9836,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/ground_weed.vmdl",
+                              "Model": {
+                                "Id": "82ab0ea4-e90f-4fae-9c2b-af1c02b2f868",
+                                "Path": "models/props/nature/weeds/ground_weed.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9383,7 +9885,10 @@
                               "MaterialGroup": null,
                               "MaterialOverride": null,
                               "Materials": null,
-                              "Model": "models/props/nature/weeds/dock_weed_clump.vmdl",
+                              "Model": {
+                                "Id": "f7c8498a-d8b3-4a65-b361-8899de6ecd16",
+                                "Path": "models/props/nature/weeds/dock_weed_clump.vmdl"
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
@@ -9398,454 +9903,6 @@
                               },
                               "RenderType": "On",
                               "Tint": "1,1,1,1"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "8efa5c2e-967e-4d5c-9ec8-6eebb20be1e9",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block",
-                          "Position": "1105.20898,-326.066193,126.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "82dd2e77-9121-4d9c-9d17-f71c2c1e1223",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
-                                },
-                                "Materials": [
-                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "2a940fc0-c570-4806-8b99-f7a9fef28b99",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block",
-                          "Position": "1105.20898,-326.066193,124.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "8ae9ce17-65c4-45f7-98a4-0939a5a38eca",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "fce34ed7-00b1-88dd-8313-3dbe01ae866c"
-                                },
-                                "Materials": [
-                                  "materials/dev/primary_white_emissive.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "9aeaf141-a0d7-43ae-89d8-fcf1209351f3",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (2)",
-                          "Position": "1105.20898,-374.066193,126.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "2bf1e58e-b581-416c-b2f7-bbad302b3eed",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
-                                },
-                                "Materials": [
-                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "eb921528-41a7-4f0f-ae11-b828b25b42bb",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (1)",
-                          "Position": "1105.20898,-374.066193,124.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "eda1074c-1eec-4044-9e7a-b0e3d1bc2327",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "f3871af2-3f90-8b5e-a846-10de010fb63d"
-                                },
-                                "Materials": [
-                                  "materials/dev/primary_white_emissive.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "eacc3b92-c08c-4269-8b6b-147ca78fd098",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (4)",
-                          "Position": "1105.20898,-422.066193,126.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "6c803cf3-1591-4229-a796-27d1f22f3b02",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
-                                },
-                                "Materials": [
-                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "532f644f-e040-4837-a890-cea6dfa19a2b",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (3)",
-                          "Position": "1105.20898,-422.066193,124.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "6651a215-2ef6-4c91-8d8b-e033eb5696e6",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "3d15aaec-1278-8972-8a56-efe29fe58fb6"
-                                },
-                                "Materials": [
-                                  "materials/dev/primary_white_emissive.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "596d24a4-bb5e-4db4-821c-3ee9182a9487",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (6)",
-                          "Position": "1105.20898,-470.066193,126.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "d119bfd7-72c4-4fd0-82bc-f409a3c393a7",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
-                                },
-                                "Materials": [
-                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "0f514b1a-4260-4a88-93e0-9a6c40338fd9",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Block (5)",
-                          "Position": "1105.20898,-470.066193,124.726044",
-                          "Rotation": "0,0,0,1",
-                          "Scale": "1,1,1",
-                          "Tags": "world",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.MeshComponent",
-                              "__guid": "364f6145-19d6-4aa9-a518-e31b6c7d75cd",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "ColliderFlags": 0,
-                              "Collision": "Mesh",
-                              "Color": "1,1,1,1",
-                              "Elasticity": null,
-                              "Friction": null,
-                              "HideInGame": false,
-                              "IsTrigger": false,
-                              "Mesh": {
-                                "Data": {
-                                  "$blob": "18b3280e-ef2d-8707-9c93-d0cc9a9fe128"
-                                },
-                                "Materials": [
-                                  "materials/dev/primary_white_emissive.vmat"
-                                ]
-                              },
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "OnObjectTriggerEnter": null,
-                              "OnObjectTriggerExit": null,
-                              "OnTriggerEnter": null,
-                              "OnTriggerExit": null,
-                              "RenderType": "On",
-                              "RollingResistance": null,
-                              "SmoothingAngle": 40,
-                              "Static": true,
-                              "Surface": null,
-                              "SurfaceVelocity": "0,0,0"
                             }
                           ],
                           "Children": []
@@ -9895,9 +9952,15 @@
                                 "Maxs": "540,479,130"
                               },
                               "Contrast": 1,
-                              "DistanceTexture": "scenes/causal_scene_data/ddgi/indirect light volume_distance_5fed284e-54d5-4103-8316-bd789ed37eca.vtex",
+                              "DistanceTexture": {
+                                "Id": "36231cd2-e23b-4b17-8307-8f2fa21669e3",
+                                "Path": "scenes/causal_scene_data/ddgi/indirect light volume_distance_5fed284e-54d5-4103-8316-bd789ed37eca.vtex"
+                              },
                               "InsideGeometry": "Relocate",
-                              "IrradianceTexture": "scenes/causal_scene_data/ddgi/indirect light volume_irradiance_5fed284e-54d5-4103-8316-bd789ed37eca.vtex",
+                              "IrradianceTexture": {
+                                "Id": "608b2bde-c01b-4e6e-92e2-6ffbe152c39c",
+                                "Path": "scenes/causal_scene_data/ddgi/indirect light volume_irradiance_5fed284e-54d5-4103-8316-bd789ed37eca.vtex"
+                              },
                               "NormalBias": 5,
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
@@ -9906,7 +9969,10 @@
                               "OnComponentStart": null,
                               "OnComponentUpdate": null,
                               "ProbeDensity": 20,
-                              "RelocationTexture": "scenes/causal_scene_data/ddgi/indirect light volume_relocation_5fed284e-54d5-4103-8316-bd789ed37eca.vtex",
+                              "RelocationTexture": {
+                                "Id": "260e7834-6029-4d60-b93f-cc75f53deecd",
+                                "Path": "scenes/causal_scene_data/ddgi/indirect light volume_relocation_5fed284e-54d5-4103-8316-bd789ed37eca.vtex"
+                              },
                               "RenderExcludeTags": ""
                             }
                           ],
@@ -9955,7 +10021,10 @@
                               "Projection": "Box",
                               "RenderExcludeTags": "",
                               "Resolution": "Small",
-                              "Texture": "textures/cubemaps/default2.vtex",
+                              "Texture": {
+                                "Id": "3aeed5d1-5c5d-42ce-b308-b44fe2fab4e3",
+                                "Path": "textures/cubemaps/default2.vtex"
+                              },
                               "TintColor": "1,1,1,1",
                               "UpdateStrategy": "OnEnabled",
                               "ZFar": 4096,
@@ -14080,14 +14149,14 @@
                           ]
                         },
                         {
-                          "__guid": "f764ab97-791c-42cc-9147-8788542f5876",
+                          "__guid": "8efa5c2e-967e-4d5c-9ec8-6eebb20be1e9",
                           "__version": 2,
                           "Flags": 0,
-                          "Name": "Spot Light",
-                          "Position": "1105.03467,-326.066193,123.726044",
-                          "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                          "Name": "SmallLight",
+                          "Position": "1105.20898,-320.066193,126.726044",
+                          "Rotation": "0,0,0,1",
                           "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
+                          "Tags": "world",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkFlags": 0,
@@ -14096,41 +14165,197 @@
                           "OwnerTransfer": 1,
                           "Components": [
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "04ebbfa3-1926-4de4-b5d2-66104b7f0b1f",
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "82dd2e77-9121-4d9c-9d17-f71c2c1e1223",
                               "__enabled": true,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 85,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
+                                },
+                                "Materials": [
+                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
+                                ]
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
                               "OnComponentFixedUpdate": null,
                               "OnComponentStart": null,
                               "OnComponentUpdate": null,
-                              "Radius": 100,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
                             }
                           ],
-                          "Children": []
+                          "Children": [
+                            {
+                              "__guid": "f764ab97-791c-42cc-9147-8788542f5876",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light",
+                              "Position": "-0.174316406,0,-3",
+                              "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "04ebbfa3-1926-4de4-b5d2-66104b7f0b1f",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 85,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 100,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "a14c5875-e1f8-4fc5-8926-eb0bacc8b25f",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light (1)",
+                              "Position": "0,0,-7",
+                              "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "511ee07b-fb6c-4446-bc4d-1d8e3f8274e9",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 73.298965,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 20,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "2a940fc0-c570-4806-8b99-f7a9fef28b99",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Block",
+                              "Position": "0,0,-2",
+                              "Rotation": "0,0,0,1",
+                              "Scale": "1,1,1",
+                              "Tags": "world",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.MeshComponent",
+                                  "__guid": "8ae9ce17-65c4-45f7-98a4-0939a5a38eca",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "ColliderFlags": 0,
+                                  "Collision": "Mesh",
+                                  "Color": "1,1,1,1",
+                                  "Elasticity": null,
+                                  "Friction": null,
+                                  "HideInGame": false,
+                                  "IsTrigger": false,
+                                  "Mesh": {
+                                    "Data": {
+                                      "$blob": "fce34ed7-00b1-88dd-8313-3dbe01ae866c"
+                                    },
+                                    "Materials": [
+                                      "materials/dev/primary_white_emissive.vmat"
+                                    ]
+                                  },
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "OnObjectTriggerEnter": null,
+                                  "OnObjectTriggerExit": null,
+                                  "OnTriggerEnter": null,
+                                  "OnTriggerExit": null,
+                                  "RenderType": "On",
+                                  "RollingResistance": null,
+                                  "SmoothingAngle": 40,
+                                  "Static": true,
+                                  "Surface": null,
+                                  "SurfaceVelocity": "0,0,0"
+                                }
+                              ],
+                              "Children": []
+                            }
+                          ]
                         },
                         {
-                          "__guid": "a14c5875-e1f8-4fc5-8926-eb0bacc8b25f",
+                          "__guid": "9aeaf141-a0d7-43ae-89d8-fcf1209351f3",
                           "__version": 2,
                           "Flags": 0,
-                          "Name": "Spot Light (1)",
-                          "Position": "1105.20898,-326.066193,119.726044",
-                          "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                          "Name": "SmallLight",
+                          "Position": "1105.20898,-368.066193,126.726044",
+                          "Rotation": "0,0,0,1",
                           "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
+                          "Tags": "world",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkFlags": 0,
@@ -14139,41 +14364,197 @@
                           "OwnerTransfer": 1,
                           "Components": [
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "511ee07b-fb6c-4446-bc4d-1d8e3f8274e9",
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "2bf1e58e-b581-416c-b2f7-bbad302b3eed",
                               "__enabled": true,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 73.298965,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
+                                },
+                                "Materials": [
+                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
+                                ]
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
                               "OnComponentFixedUpdate": null,
                               "OnComponentStart": null,
                               "OnComponentUpdate": null,
-                              "Radius": 20,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
                             }
                           ],
-                          "Children": []
+                          "Children": [
+                            {
+                              "__guid": "eb921528-41a7-4f0f-ae11-b828b25b42bb",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Block (1)",
+                              "Position": "0,0,-2",
+                              "Rotation": "0,0,0,1",
+                              "Scale": "1,1,1",
+                              "Tags": "world",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.MeshComponent",
+                                  "__guid": "eda1074c-1eec-4044-9e7a-b0e3d1bc2327",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "ColliderFlags": 0,
+                                  "Collision": "Mesh",
+                                  "Color": "1,1,1,1",
+                                  "Elasticity": null,
+                                  "Friction": null,
+                                  "HideInGame": false,
+                                  "IsTrigger": false,
+                                  "Mesh": {
+                                    "Data": {
+                                      "$blob": "f3871af2-3f90-8b5e-a846-10de010fb63d"
+                                    },
+                                    "Materials": [
+                                      "materials/dev/primary_white_emissive.vmat"
+                                    ]
+                                  },
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "OnObjectTriggerEnter": null,
+                                  "OnObjectTriggerExit": null,
+                                  "OnTriggerEnter": null,
+                                  "OnTriggerExit": null,
+                                  "RenderType": "On",
+                                  "RollingResistance": null,
+                                  "SmoothingAngle": 40,
+                                  "Static": true,
+                                  "Surface": null,
+                                  "SurfaceVelocity": "0,0,0"
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "231a7e6a-ead3-4384-9841-325aa9d8901a",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light",
+                              "Position": "-0.174316406,0,-3",
+                              "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "32079c35-37c6-42ea-b078-dd7b61c4a207",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 85,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 100,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "c574c04b-bfd3-4dc9-a9c6-07965bb2e353",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light (1)",
+                              "Position": "0,0,-7",
+                              "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "c79352c4-d297-433f-9f92-3c7ed81eb350",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 73.298965,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 20,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            }
+                          ]
                         },
                         {
-                          "__guid": "231a7e6a-ead3-4384-9841-325aa9d8901a",
+                          "__guid": "eacc3b92-c08c-4269-8b6b-147ca78fd098",
                           "__version": 2,
                           "Flags": 0,
-                          "Name": "Spot Light",
-                          "Position": "1105.03467,-374.066193,123.726044",
-                          "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                          "Name": "SmallLight",
+                          "Position": "1105.20898,-416.066193,126.726044",
+                          "Rotation": "0,0,0,1",
                           "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
+                          "Tags": "world",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkFlags": 0,
@@ -14182,41 +14563,197 @@
                           "OwnerTransfer": 1,
                           "Components": [
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "32079c35-37c6-42ea-b078-dd7b61c4a207",
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "6c803cf3-1591-4229-a796-27d1f22f3b02",
                               "__enabled": true,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 85,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
+                                },
+                                "Materials": [
+                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
+                                ]
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
                               "OnComponentFixedUpdate": null,
                               "OnComponentStart": null,
                               "OnComponentUpdate": null,
-                              "Radius": 100,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
                             }
                           ],
-                          "Children": []
+                          "Children": [
+                            {
+                              "__guid": "532f644f-e040-4837-a890-cea6dfa19a2b",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Block (3)",
+                              "Position": "0,0,-2",
+                              "Rotation": "0,0,0,1",
+                              "Scale": "1,1,1",
+                              "Tags": "world",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.MeshComponent",
+                                  "__guid": "6651a215-2ef6-4c91-8d8b-e033eb5696e6",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "ColliderFlags": 0,
+                                  "Collision": "Mesh",
+                                  "Color": "1,1,1,1",
+                                  "Elasticity": null,
+                                  "Friction": null,
+                                  "HideInGame": false,
+                                  "IsTrigger": false,
+                                  "Mesh": {
+                                    "Data": {
+                                      "$blob": "3d15aaec-1278-8972-8a56-efe29fe58fb6"
+                                    },
+                                    "Materials": [
+                                      "materials/dev/primary_white_emissive.vmat"
+                                    ]
+                                  },
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "OnObjectTriggerEnter": null,
+                                  "OnObjectTriggerExit": null,
+                                  "OnTriggerEnter": null,
+                                  "OnTriggerExit": null,
+                                  "RenderType": "On",
+                                  "RollingResistance": null,
+                                  "SmoothingAngle": 40,
+                                  "Static": true,
+                                  "Surface": null,
+                                  "SurfaceVelocity": "0,0,0"
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "5f261747-52b8-42fd-9f99-1f7e1b68bebf",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light",
+                              "Position": "-0.174316406,0,-3",
+                              "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "ff47605c-c828-439c-a730-1a33295a5431",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 85,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 100,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            },
+                            {
+                              "__guid": "100091d7-9289-447b-a893-3b2467329f2b",
+                              "__version": 2,
+                              "Flags": 0,
+                              "Name": "Spot Light (1)",
+                              "Position": "0,0,-7",
+                              "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "e8d10e9b-b247-491d-9da4-f3e4bdaef579",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 73.298965,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 20,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            }
+                          ]
                         },
                         {
-                          "__guid": "c574c04b-bfd3-4dc9-a9c6-07965bb2e353",
+                          "__guid": "596d24a4-bb5e-4db4-821c-3ee9182a9487",
                           "__version": 2,
                           "Flags": 0,
-                          "Name": "Spot Light (1)",
-                          "Position": "1105.20898,-374.066193,119.726044",
-                          "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                          "Name": "SmallLight",
+                          "Position": "1105.20898,-464.066193,126.726044",
+                          "Rotation": "0,0,0,1",
                           "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
+                          "Tags": "world",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkFlags": 0,
@@ -14225,203 +14762,187 @@
                           "OwnerTransfer": 1,
                           "Components": [
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "c79352c4-d297-433f-9f92-3c7ed81eb350",
+                              "__type": "Sandbox.MeshComponent",
+                              "__guid": "d119bfd7-72c4-4fd0-82bc-f409a3c393a7",
                               "__enabled": true,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 73.298965,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
+                              "ColliderFlags": 0,
+                              "Collision": "Mesh",
+                              "Color": "1,1,1,1",
+                              "Elasticity": null,
+                              "Friction": null,
+                              "HideInGame": false,
+                              "IsTrigger": false,
+                              "Mesh": {
+                                "Data": {
+                                  "$blob": "d28d90cc-be28-8222-ba2e-29b9f1bd8b2d"
+                                },
+                                "Materials": [
+                                  "materials/hotspots/metal_painted_black_a_hs.vmat"
+                                ]
+                              },
                               "OnComponentDestroy": null,
                               "OnComponentDisabled": null,
                               "OnComponentEnabled": null,
                               "OnComponentFixedUpdate": null,
                               "OnComponentStart": null,
                               "OnComponentUpdate": null,
-                              "Radius": 20,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
+                              "OnObjectTriggerEnter": null,
+                              "OnObjectTriggerExit": null,
+                              "OnTriggerEnter": null,
+                              "OnTriggerExit": null,
+                              "RenderType": "On",
+                              "RollingResistance": null,
+                              "SmoothingAngle": 40,
+                              "Static": true,
+                              "Surface": null,
+                              "SurfaceVelocity": "0,0,0"
                             }
                           ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "5f261747-52b8-42fd-9f99-1f7e1b68bebf",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Spot Light",
-                          "Position": "1105.03467,-422.066193,123.726044",
-                          "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
-                          "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
+                          "Children": [
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "ff47605c-c828-439c-a730-1a33295a5431",
-                              "__enabled": true,
+                              "__guid": "0f514b1a-4260-4a88-93e0-9a6c40338fd9",
+                              "__version": 2,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 85,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "Radius": 100,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "100091d7-9289-447b-a893-3b2467329f2b",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Spot Light (1)",
-                          "Position": "1105.20898,-422.066193,119.726044",
-                          "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
-                          "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
+                              "Name": "Block (5)",
+                              "Position": "0,0,-2",
+                              "Rotation": "0,0,0,1",
+                              "Scale": "1,1,1",
+                              "Tags": "world",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.MeshComponent",
+                                  "__guid": "364f6145-19d6-4aa9-a518-e31b6c7d75cd",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "ColliderFlags": 0,
+                                  "Collision": "Mesh",
+                                  "Color": "1,1,1,1",
+                                  "Elasticity": null,
+                                  "Friction": null,
+                                  "HideInGame": false,
+                                  "IsTrigger": false,
+                                  "Mesh": {
+                                    "Data": {
+                                      "$blob": "18b3280e-ef2d-8707-9c93-d0cc9a9fe128"
+                                    },
+                                    "Materials": [
+                                      "materials/dev/primary_white_emissive.vmat"
+                                    ]
+                                  },
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "OnObjectTriggerEnter": null,
+                                  "OnObjectTriggerExit": null,
+                                  "OnTriggerEnter": null,
+                                  "OnTriggerExit": null,
+                                  "RenderType": "On",
+                                  "RollingResistance": null,
+                                  "SmoothingAngle": 40,
+                                  "Static": true,
+                                  "Surface": null,
+                                  "SurfaceVelocity": "0,0,0"
+                                }
+                              ],
+                              "Children": []
+                            },
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "e8d10e9b-b247-491d-9da4-f3e4bdaef579",
-                              "__enabled": true,
+                              "__guid": "b415b132-433d-431c-ac7a-383b1d7ff6be",
+                              "__version": 2,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 73.298965,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "Radius": 20,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
-                            }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "b415b132-433d-431c-ac7a-383b1d7ff6be",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Spot Light",
-                          "Position": "1105.03467,-470.066193,123.726044",
-                          "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
-                          "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
+                              "Name": "Spot Light",
+                              "Position": "-0.174316406,0,-3",
+                              "Rotation": "0.503776968,-0.496194243,-0.503776968,-0.496194243",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "0eabae56-273d-4918-85be-70f7399289b4",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 85,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 100,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
+                            },
                             {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "0eabae56-273d-4918-85be-70f7399289b4",
-                              "__enabled": true,
+                              "__guid": "9552ccc1-7b3e-4de9-92a6-cdd96942cb63",
+                              "__version": 2,
                               "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 85,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "Radius": 100,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
+                              "Name": "Spot Light (1)",
+                              "Position": "0,0,-7",
+                              "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
+                              "Scale": "1,1,1",
+                              "Tags": "light_spot,light",
+                              "Enabled": true,
+                              "NetworkMode": 2,
+                              "NetworkFlags": 0,
+                              "NetworkOrphaned": 0,
+                              "NetworkTransmit": true,
+                              "OwnerTransfer": 1,
+                              "Components": [
+                                {
+                                  "__type": "Sandbox.SpotLight",
+                                  "__guid": "703c6882-37f5-4d7a-8be3-d4402751cd1b",
+                                  "__enabled": true,
+                                  "Flags": 0,
+                                  "Attenuation": 4,
+                                  "ConeInner": 15,
+                                  "ConeOuter": 73.298965,
+                                  "Contribution": "Diffuse, Specular, Transmissive",
+                                  "Cookie": null,
+                                  "FogMode": "Enabled",
+                                  "FogStrength": 1,
+                                  "LightColor": "0.91373,0.98039,1,1",
+                                  "OnComponentDestroy": null,
+                                  "OnComponentDisabled": null,
+                                  "OnComponentEnabled": null,
+                                  "OnComponentFixedUpdate": null,
+                                  "OnComponentStart": null,
+                                  "OnComponentUpdate": null,
+                                  "Radius": 20,
+                                  "ShadowBias": 0,
+                                  "ShadowHardness": 1,
+                                  "Shadows": true
+                                }
+                              ],
+                              "Children": []
                             }
-                          ],
-                          "Children": []
-                        },
-                        {
-                          "__guid": "9552ccc1-7b3e-4de9-92a6-cdd96942cb63",
-                          "__version": 2,
-                          "Flags": 0,
-                          "Name": "Spot Light (1)",
-                          "Position": "1105.20898,-470.066193,119.726044",
-                          "Rotation": "0.49999997,0.50000006,0.5,-0.50000006",
-                          "Scale": "1,1,1",
-                          "Tags": "light_spot,light",
-                          "Enabled": true,
-                          "NetworkMode": 2,
-                          "NetworkFlags": 0,
-                          "NetworkOrphaned": 0,
-                          "NetworkTransmit": true,
-                          "OwnerTransfer": 1,
-                          "Components": [
-                            {
-                              "__type": "Sandbox.SpotLight",
-                              "__guid": "703c6882-37f5-4d7a-8be3-d4402751cd1b",
-                              "__enabled": true,
-                              "Flags": 0,
-                              "Attenuation": 4,
-                              "ConeInner": 15,
-                              "ConeOuter": 73.298965,
-                              "Contribution": "Diffuse, Specular, Transmissive",
-                              "Cookie": null,
-                              "FogMode": "Enabled",
-                              "FogStrength": 1,
-                              "LightColor": "0.91373,0.98039,1,1",
-                              "OnComponentDestroy": null,
-                              "OnComponentDisabled": null,
-                              "OnComponentEnabled": null,
-                              "OnComponentFixedUpdate": null,
-                              "OnComponentStart": null,
-                              "OnComponentUpdate": null,
-                              "Radius": 20,
-                              "ShadowBias": 0,
-                              "ShadowHardness": 1,
-                              "Shadows": true
-                            }
-                          ],
-                          "Children": []
+                          ]
                         }
                       ]
                     },
@@ -14533,7 +15054,10 @@
                           "CoverageAmount": 1,
                           "CoverageRange": 0.07,
                           "Decals": [
-                            "decals/paralix-logo.decal"
+                            {
+                              "Id": "a2ca1fca-5fd2-4ac2-9cd2-38085e18c17a",
+                              "Path": "decals/paralix-logo.decal"
+                            }
                           ],
                           "Depth": 8,
                           "LifeTime": 0,
@@ -14584,7 +15108,10 @@
                           "CoverageAmount": 1,
                           "CoverageRange": 0.07,
                           "Decals": [
-                            "decals/paralix-logo.decal"
+                            {
+                              "Id": "a2ca1fca-5fd2-4ac2-9cd2-38085e18c17a",
+                              "Path": "decals/paralix-logo.decal"
+                            }
                           ],
                           "Depth": 8,
                           "LifeTime": 0,
@@ -14851,7 +15378,10 @@
                               "CoverageAmount": 1,
                               "CoverageRange": 0.07,
                               "Decals": [
-                                "decals/maplayout.decal"
+                                {
+                                  "Id": "0401d8d0-f28c-429a-9ae9-5b09e4162fde",
+                                  "Path": "decals/maplayout.decal"
+                                }
                               ],
                               "Depth": 8,
                               "LifeTime": 0,
@@ -14877,7 +15407,10 @@
                         {
                           "__guid": "1975accc-7334-4992-ac07-15d85e4dabe7",
                           "__version": 2,
-                          "__Prefab": "prefabs/paralix-decal.prefab",
+                          "__Prefab": {
+                            "Id": "1015597a-9298-439c-97ec-29d0d0234681",
+                            "Path": "prefabs/paralix-decal.prefab"
+                          },
                           "__PrefabInstancePatch": {
                             "AddedObjects": [],
                             "RemovedObjects": [],
@@ -15454,7 +15987,10 @@
     {
       "__guid": "26737028-91ea-4bb3-a9f5-96b57864aa82",
       "__version": 2,
-      "__Prefab": "prefabs/objects/blastdoorframe-small-derelict.prefab",
+      "__Prefab": {
+        "Id": "61a2e855-dea1-481d-8730-e24e3a1d6be9",
+        "Path": "prefabs/objects/blastdoorframe-small-derelict.prefab"
+      },
       "__PrefabInstancePatch": {
         "AddedObjects": [],
         "RemovedObjects": [],
@@ -15699,7 +16235,10 @@
               "MaterialGroup": null,
               "MaterialOverride": null,
               "Materials": null,
-              "Model": "models/first_person/v_first_person_arms_human.vmdl",
+              "Model": {
+                "Id": "d4da293e-50f5-4711-94fe-28fe1df15f25",
+                "Path": "models/first_person/v_first_person_arms_human.vmdl"
+              },
               "Morphs": {},
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
@@ -15767,7 +16306,10 @@
                   "MaterialGroup": null,
                   "MaterialOverride": null,
                   "Materials": null,
-                  "Model": "models/citizen_human/citizen_human_male.vmdl",
+                  "Model": {
+                    "Id": "161d0b00-c517-4044-989d-b679dab75a28",
+                    "Path": "models/citizen_human/citizen_human_male.vmdl"
+                  },
                   "Morphs": {},
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
@@ -18736,7 +19278,10 @@
                                               "MaterialGroup": null,
                                               "MaterialOverride": null,
                                               "Materials": null,
-                                              "Model": "models/cdalinkdevice.vmdl",
+                                              "Model": {
+                                                "Id": "9d302bcb-f909-4c09-a08a-d57675470c55",
+                                                "Path": "models/cdalinkdevice.vmdl"
+                                              },
                                               "OnComponentDestroy": null,
                                               "OnComponentDisabled": null,
                                               "OnComponentEnabled": null,

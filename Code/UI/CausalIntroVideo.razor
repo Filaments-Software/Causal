@@ -1,0 +1,147 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits PanelComponent
+@namespace Causal
+
+<root class="@VideoClass" @onclick=@Finish>
+	<div class="video-frame" @ref="_frame"></div>
+	<label class="skip-hint">Left click to skip intro</label>
+</root>
+
+@code
+{
+	[Property] public string VideoPath { get; set; } = "videos/filamentsintro.mp4";
+	[Property] public float FadeSeconds { get; set; } = 0.4f;
+	[Property] public float CleanupDelay { get; set; } = 0.5f;
+	[Property] public float Volume { get; set; } = 1f;
+	[Property] public float LoadGraceSeconds { get; set; } = 2f;
+
+	private VideoPlayer _player;
+	private Panel _frame;
+	private bool _finished;
+	private bool _textureSet;
+	private bool _missingScheduled;
+	private TimeSince _timeSinceStart;
+	private int _generation;
+
+	private string VideoClass => _finished ? "done" : "";
+
+	protected override void OnStart()
+	{
+		_generation++;
+		_timeSinceStart = 0;
+
+		if ( string.IsNullOrWhiteSpace( VideoPath ) || !FileSystem.Mounted.FileExists( VideoPath ) )
+		{
+			Log.Warning( $"CausalIntroVideo found no video at '{VideoPath}', skipping to menu." );
+			_missingScheduled = true;
+			return;
+		}
+
+		_player = new VideoPlayer();
+		_player.Audio.Volume = Volume;
+		_player.OnFinished += Finish;
+		_player.Play( FileSystem.Mounted, VideoPath );
+	}
+
+	protected override void OnUpdate()
+	{
+		if ( _missingScheduled )
+		{
+			_missingScheduled = false;
+			Finish();
+			return;
+		}
+
+		if ( _finished || _player is null )
+		{
+			return;
+		}
+
+		_player.Present();
+
+		if ( !_textureSet )
+		{
+			if ( _player.Width > 4 && _frame.IsValid() )
+			{
+				_frame.Style.SetBackgroundImage( _player.Texture );
+				_textureSet = true;
+			}
+			else if ( _timeSinceStart > LoadGraceSeconds )
+			{
+				Log.Warning( $"CausalIntroVideo failed to decode '{VideoPath}', skipping to menu." );
+				Finish();
+				return;
+			}
+		}
+
+		if ( Input.Pressed( "Jump" ) || Input.Pressed( "Attack1" ) || Input.Pressed( "Use" ) || Input.EscapePressed )
+		{
+			Finish();
+		}
+	}
+
+	protected override void OnDestroy()
+	{
+		_generation++;
+		TeardownPlayer();
+	}
+
+	private void Finish()
+	{
+		if ( _finished )
+		{
+			return;
+		}
+
+		_finished = true;
+		StateHasChanged();
+
+		var manager = CausalGameManager.Instance;
+		if ( manager.IsValid() )
+		{
+			manager.EnterMenu();
+		}
+
+		int gen = _generation;
+		float delay = (FadeSeconds <= 0f ? 0f : FadeSeconds) + (CleanupDelay <= 0f ? 0f : CleanupDelay);
+		HideAfterDelay( gen, delay );
+	}
+
+	private async void HideAfterDelay( int gen, float delay )
+	{
+		if ( delay > 0f )
+		{
+			await GameTask.DelaySeconds( delay );
+		}
+
+		if ( _generation != gen )
+		{
+			return;
+		}
+
+		if ( !GameObject.IsValid() )
+		{
+			return;
+		}
+
+		TeardownPlayer();
+		GameObject.Enabled = false;
+	}
+
+	private void TeardownPlayer()
+	{
+		if ( _player is null )
+		{
+			return;
+		}
+
+		_player.OnFinished -= Finish;
+		_player.Stop();
+		_player.Dispose();
+		_player = null;
+	}
+
+	protected override int BuildHash() => HashCode.Combine( _finished );
+}

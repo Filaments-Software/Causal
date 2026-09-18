@@ -8,7 +8,6 @@ CausalMenu {
 	justify-content: center;
 	pointer-events: all;
 	background-color: rgba(0, 0, 0, 0.55);
-	backdrop-filter: blur(8px);
 	z-index: 1;
 	// Keep in sync with CausalGameManager.MenuFadeSeconds.
 	transition: opacity 0.6s ease;

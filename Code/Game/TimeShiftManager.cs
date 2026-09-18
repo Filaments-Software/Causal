@@ -10,6 +10,7 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 {
 	public const string CauseTag = "cause";
 	public const string EffectTag = "effect";
+	public const string IntroTag = "intro";
 
 	[Property] public float SwitchCooldown { get; set; } = 2f;
 	[Property] public bool StartInCause { get; set; } = true;
@@ -20,6 +21,9 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 
 	private readonly List<GameObject> _causeRoots = new();
 	private readonly List<GameObject> _effectRoots = new();
+	private readonly List<GameObject> _introCauseRoots = new();
+	private readonly List<GameObject> _introEffectRoots = new();
+	private bool _menuDichotomy;
 	private TimeSince _timeSinceShift = 99f;
 
 	public TimeShiftManager( Scene scene ) : base( scene )
@@ -34,6 +38,7 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 		_timeSinceShift = 99f;
 		WarmRoots();
 		ApplyState();
+		RestoreMenuDichotomy();
 	}
 
 	void ITimeShiftEvent.OnTimeShiftRequested()
@@ -65,6 +70,25 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 		ShiftUnlocked = true;
 	}
 
+	public void SetMenuDichotomy( bool menu )
+	{
+		if ( (_causeRoots.Count == 0 && _introCauseRoots.Count == 0)
+			|| (_effectRoots.Count == 0 && _introEffectRoots.Count == 0) )
+		{
+			RefreshRoots();
+		}
+
+		_menuDichotomy = menu;
+		if ( menu )
+		{
+			ApplyDichotomy();
+		}
+		else
+		{
+			ApplyState();
+		}
+	}
+
 	[ConCmd( "unlock_shift", Help = "Debug: unlock time shifting before the device pickup exists." )]
 	public static void UnlockShiftCommand()
 	{
@@ -82,10 +106,21 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 	{
 		_causeRoots.Clear();
 		_effectRoots.Clear();
+		_introCauseRoots.Clear();
+		_introEffectRoots.Clear();
 
 		foreach ( var go in Scene.FindAllWithTag( CauseTag ) )
 		{
-			if ( IsTopmostTagged( go, CauseTag ) )
+			if ( !IsTopmostTagged( go, CauseTag ) )
+			{
+				continue;
+			}
+
+			if ( go.Tags.Has( IntroTag, false ) )
+			{
+				_introCauseRoots.Add( go );
+			}
+			else
 			{
 				_causeRoots.Add( go );
 			}
@@ -93,7 +128,16 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 
 		foreach ( var go in Scene.FindAllWithTag( EffectTag ) )
 		{
-			if ( IsTopmostTagged( go, EffectTag ) )
+			if ( !IsTopmostTagged( go, EffectTag ) )
+			{
+				continue;
+			}
+
+			if ( go.Tags.Has( IntroTag, false ) )
+			{
+				_introEffectRoots.Add( go );
+			}
+			else
 			{
 				_effectRoots.Add( go );
 			}
@@ -123,13 +167,86 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 				go.Enabled = true;
 			}
 		}
+
+		foreach ( var go in _introCauseRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
+
+		foreach ( var go in _introEffectRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
+	}
+
+	private void RestoreMenuDichotomy()
+	{
+		// Host init can land after CausalGameManager.OnStart, which would
+		// clobber the menu dichotomy with the exclusive state above.
+		var manager = CausalGameManager.Instance;
+		bool menu = !manager.IsValid()
+			|| manager.State == CausalGameManager.GameState.Menu
+			|| manager.State == CausalGameManager.GameState.PreVideo;
+
+		if ( menu )
+		{
+			SetMenuDichotomy( true );
+		}
+	}
+
+	private void ApplyDichotomy()
+	{
+		foreach ( var go in _introCauseRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
+
+		foreach ( var go in _introEffectRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = true;
+			}
+		}
+
+		foreach ( var go in _causeRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = false;
+			}
+		}
+
+		foreach ( var go in _effectRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = false;
+			}
+		}
 	}
 
 	private void ApplyState()
 	{
-		if ( _causeRoots.Count == 0 || _effectRoots.Count == 0 )
+		if ( (_causeRoots.Count == 0 && _introCauseRoots.Count == 0)
+			|| (_effectRoots.Count == 0 && _introEffectRoots.Count == 0) )
 		{
 			RefreshRoots();
+		}
+
+		if ( _menuDichotomy )
+		{
+			ApplyDichotomy();
+			return;
 		}
 
 		foreach ( var go in _causeRoots )
@@ -141,6 +258,22 @@ public sealed class TimeShiftManager : GameObjectSystem<TimeShiftManager>, ITime
 		}
 
 		foreach ( var go in _effectRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = !IsCause;
+			}
+		}
+
+		foreach ( var go in _introCauseRoots )
+		{
+			if ( go.IsValid() )
+			{
+				go.Enabled = IsCause;
+			}
+		}
+
+		foreach ( var go in _introEffectRoots )
 		{
 			if ( go.IsValid() )
 			{

@@ -8,12 +8,14 @@ public sealed class CausalGameManager : Component
 
 	public static CausalGameManager Instance { get; private set; }
 
-	public GameState State { get; private set; } = GameState.Menu;
+	public GameState State { get; private set; } = GameState.PreVideo;
 
 	public bool IsActive => State == GameState.Active;
 	public bool IsInIntro => State == GameState.Intro;
 
 	private PlayerController _controller;
+	private CameraComponent _menuCam;
+	private MenuDichotomyRig _rig;
 	private TimeSince _timeSinceIntro;
 	private Vector3 _flightFromPosition;
 	private Rotation _flightFromRotation;
@@ -26,7 +28,7 @@ public sealed class CausalGameManager : Component
 	protected override void OnStart()
 	{
 		ResolvePlayer();
-		EnterMenu();
+		EnterPreVideo();
 	}
 
 	protected override void OnUpdate()
@@ -47,10 +49,18 @@ public sealed class CausalGameManager : Component
 		}
 	}
 
+	public void EnterPreVideo()
+	{
+		State = GameState.PreVideo;
+		ApplyInputState();
+		SetMenuDichotomy( true );
+	}
+
 	public void EnterMenu()
 	{
 		State = GameState.Menu;
 		ApplyInputState();
+		SetMenuDichotomy( true );
 	}
 
 	public void BeginIntro()
@@ -66,14 +76,40 @@ public sealed class CausalGameManager : Component
 			return;
 		}
 
-		if ( !Scene.Camera.IsValid() )
+		_menuCam = FindMenuCamera();
+		_rig = FindRig();
+
+		if ( _rig.IsValid() && _rig.MenuCam.IsValid() )
+		{
+			_menuCam = _rig.MenuCam;
+		}
+
+		if ( !_menuCam.IsValid() )
 		{
 			EnterGame();
 			return;
 		}
 
-		_flightFromPosition = Scene.Camera.WorldPosition;
-		_flightFromRotation = Scene.Camera.WorldRotation;
+		if ( _rig.IsValid() && _rig.IsSplitActive )
+		{
+			// Split wipe flight: the rig stays up and mirrors the menu
+			// camera while the line rotates vertical and sweeps to Cause.
+		}
+		else
+		{
+			// Legacy single-state flight from the real menu camera.
+			SetMenuDichotomy( false );
+			DisableEffectIntroRoots();
+
+			if ( !Scene.Camera.IsValid() )
+			{
+				EnterGame();
+				return;
+			}
+		}
+
+		_flightFromPosition = _menuCam.WorldPosition;
+		_flightFromRotation = _menuCam.WorldRotation;
 		_timeSinceIntro = 0;
 		State = GameState.Intro;
 		ApplyInputState();
@@ -88,11 +124,13 @@ public sealed class CausalGameManager : Component
 
 		State = GameState.Active;
 		ApplyInputState();
+		SetMenuDichotomy( false );
+		DisableEffectIntroRoots();
 	}
 
 	private void TickIntro()
 	{
-		if ( !_controller.IsValid() || !Scene.Camera.IsValid() )
+		if ( !_controller.IsValid() || !_menuCam.IsValid() )
 		{
 			EnterGame();
 			return;
@@ -113,8 +151,23 @@ public sealed class CausalGameManager : Component
 		float eased = t * t * (3f - 2f * t);
 
 		Transform target = _controller.EyeTransform;
-		Scene.Camera.WorldPosition = Vector3.Lerp( _flightFromPosition, target.Position, eased );
-		Scene.Camera.WorldRotation = Rotation.Slerp( _flightFromRotation, target.Rotation, eased );
+		_menuCam.WorldPosition = Vector3.Lerp( _flightFromPosition, target.Position, eased );
+		_menuCam.WorldRotation = Rotation.Slerp( _flightFromRotation, target.Rotation, eased );
+
+		if ( _rig.IsValid() )
+		{
+			float rotateT = MenuFadeSeconds <= 0.01f ? 1f : _timeSinceIntro / MenuFadeSeconds;
+			if ( rotateT < 0f )
+			{
+				rotateT = 0f;
+			}
+			if ( rotateT > 1f )
+			{
+				rotateT = 1f;
+			}
+
+			_rig.DriveIntroSplit( rotateT, eased );
+		}
 
 		if ( t >= 1f )
 		{
@@ -145,6 +198,44 @@ public sealed class CausalGameManager : Component
 		}
 	}
 
+	private CameraComponent FindMenuCamera()
+	{
+		var scene = Scene;
+		if ( !scene.IsValid() )
+		{
+			return null;
+		}
+
+		foreach ( var cam in scene.GetAllComponents<CameraComponent>() )
+		{
+			if ( cam.IsValid() && cam.IsMainCamera )
+			{
+				return cam;
+			}
+		}
+
+		return scene.Camera;
+	}
+
+	private MenuDichotomyRig FindRig()
+	{
+		var scene = Scene;
+		if ( !scene.IsValid() )
+		{
+			return null;
+		}
+
+		foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
+		{
+			if ( rig.IsValid() )
+			{
+				return rig;
+			}
+		}
+
+		return null;
+	}
+
 	private void ApplyInputState()
 	{
 		if ( !_controller.IsValid() )
@@ -159,10 +250,63 @@ public sealed class CausalGameManager : Component
 		_controller.UseLookControls = active;
 	}
 
+	private void DisableEffectIntroRoots()
+	{
+		// Game start is always Cause with shifting locked, so kill the
+		// effect intro roots directly instead of relying on bucket state.
+		var scene = Scene;
+		if ( !scene.IsValid() )
+		{
+			return;
+		}
+
+		foreach ( var go in scene.FindAllWithTag( TimeShiftManager.EffectTag ) )
+		{
+			if ( !go.IsValid() || !go.Tags.Has( TimeShiftManager.IntroTag, false ) )
+			{
+				continue;
+			}
+
+			var parent = go.Parent;
+			if ( parent.IsValid() && parent.Tags.Has( TimeShiftManager.EffectTag ) )
+			{
+				continue;
+			}
+
+			go.Enabled = false;
+		}
+	}
+
+	private void SetMenuDichotomy( bool menu )
+	{
+		var scene = Scene;
+		if ( !scene.IsValid() )
+		{
+			return;
+		}
+
+		var shift = scene.GetSystem<TimeShiftManager>();
+		if ( shift is not null )
+		{
+			shift.SetMenuDichotomy( menu );
+		}
+
+		foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
+		{
+			if ( !rig.IsValid() )
+			{
+				continue;
+			}
+
+			rig.SetMenuActive( menu );
+		}
+	}
+
 	public enum GameState
 	{
 		Menu,
 		Intro,
-		Active
+		Active,
+		PreVideo
 	}
 }

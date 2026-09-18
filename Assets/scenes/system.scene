@@ -4,7 +4,10 @@
     {
       "__guid": "a028cc9f-0156-46a9-8465-34bf240576c0",
       "__version": 2,
-      "__Prefab": "prefabs/player.prefab",
+      "__Prefab": {
+        "Id": "384febb8-da59-4635-b947-1dd2ed5ef27a",
+        "Path": "prefabs/player.prefab"
+      },
       "__PrefabInstancePatch": {
         "AddedObjects": [
           {
@@ -176,7 +179,44 @@
           "OnComponentUpdate": null
         }
       ],
-      "Children": []
+      "Children": [
+        {
+          "__guid": "82b6d44a-7131-4988-adc9-32a78cdd4858",
+          "__version": 2,
+          "Flags": 0,
+          "Name": "Intro Video",
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkFlags": 0,
+          "NetworkOrphaned": 0,
+          "NetworkTransmit": true,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Causal.CausalIntroVideo",
+              "__guid": "bf1d1b5c-238b-4c25-9b18-70f90aadfe20",
+              "__enabled": true,
+              "Flags": 0,
+              "CleanupDelay": 0.5,
+              "FadeSeconds": 0.4,
+              "LoadGraceSeconds": 2,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "VideoPath": "videos/filamentsintro.mp4",
+              "Volume": 1
+            }
+          ],
+          "Children": []
+        }
+      ]
     },
     {
       "__guid": "e28da393-53a4-4d9a-9f95-7d2391759cfe",
@@ -211,6 +251,42 @@
             "_type": "gameobject",
             "go": "a028cc9f-0156-46a9-8465-34bf240576c0"
           }
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "7663631d-8584-4e8d-b03a-82bdbbe177ab",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Menu Dichotomy Rig",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Causal.MenuDichotomyRig",
+          "__guid": "04eb05a5-eb07-424c-a873-abcdd61e8c9b",
+          "__enabled": true,
+          "Flags": 0,
+          "DichotomyMaterialPath": "materials/menu_dichotomy.vmat",
+          "DichotomyOffset": 0,
+          "DichotomySeamWidth": 0.006,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SplitSweepOffset": -0.8,
+          "SplitVerticalAngle": -1.5708
         }
       ],
       "Children": []
