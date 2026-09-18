@@ -10,6 +10,9 @@ public sealed class DichotomyComposite : BasePostProcess
 	public float Angle { get; set; } = -0.7f;
 	public float Offset { get; set; }
 	public float SeamWidth { get; set; } = 0.006f;
+	public float WavePhase { get; set; }
+	public float WaveAmplitude { get; set; }
+	public float WaveFrequency { get; set; }
 	public int Order { get; set; }
 
 	public override void Render()
@@ -24,6 +27,9 @@ public sealed class DichotomyComposite : BasePostProcess
 		Attributes.Set( "DichotomyAngle", Angle );
 		Attributes.Set( "DichotomyOffset", Offset );
 		Attributes.Set( "DichotomySeamWidth", SeamWidth );
+		Attributes.Set( "DichotomyWavePhase", WavePhase );
+		Attributes.Set( "DichotomyWaveAmplitude", WaveAmplitude );
+		Attributes.Set( "DichotomyWaveFrequency", WaveFrequency );
 		Attributes.Set( "blend", 1f );
 		Attributes.SetComboEnum( "D_BLENDMODE", BlendMode.Normal );
 

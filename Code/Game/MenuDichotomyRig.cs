@@ -9,6 +9,10 @@ public sealed class MenuDichotomyRig : Component
 	[Property] public float DichotomySeamWidth { get; set; } = 0.006f;
 	[Property] public float SplitVerticalAngle { get; set; } = -1.5708f;
 	[Property] public float SplitSweepOffset { get; set; } = -0.8f;
+	[Property] public bool WaveEnabled { get; set; } = true;
+	[Property] public float WaveAmplitude { get; set; } = 0.008f;
+	[Property] public float WaveCount { get; set; } = 2.5f;
+	[Property] public float WaveSpeed { get; set; } = 1.5f;
 
 	private GameObject _causeCamGo;
 	private GameObject _effectCamGo;
@@ -24,6 +28,7 @@ public sealed class MenuDichotomyRig : Component
 	private float _baseAngle;
 	private float _splitAngle;
 	private float _splitOffset;
+	private float _introSweepT;
 	private bool _introDrive;
 	private readonly List<ScreenPanel> _retargetedPanels = new();
 	private readonly List<CameraComponent> _panelTargets = new();
@@ -66,6 +71,7 @@ public sealed class MenuDichotomyRig : Component
 
 		_menuActive = menu;
 		_introDrive = false;
+		_introSweepT = 0f;
 		if ( menu )
 		{
 			Activate();
@@ -88,6 +94,7 @@ public sealed class MenuDichotomyRig : Component
 		}
 
 		_introDrive = true;
+		_introSweepT = sweepT;
 		float a = rotateT * rotateT * (3f - 2f * rotateT);
 		_splitAngle = _baseAngle + (SplitVerticalAngle - _baseAngle) * a;
 		_splitOffset = SplitSweepOffset * sweepT;
@@ -145,6 +152,7 @@ public sealed class MenuDichotomyRig : Component
 		_baseAngle = DiagonalAngle( Screen.Size );
 		_splitAngle = _baseAngle;
 		_splitOffset = 0f;
+		_introSweepT = 0f;
 		_introDrive = false;
 		_pushedAngle = float.MaxValue;
 		_pushedOffset = float.MaxValue;
@@ -180,6 +188,26 @@ public sealed class MenuDichotomyRig : Component
 		}
 
 		_menuCam = null;
+	}
+
+	private void TickWave( Vector2 size )
+	{
+		float amplitude = 0f;
+		float frequency = 0f;
+		float phase = 0f;
+
+		float diagonal = MathF.Sqrt( size.x * size.x + size.y * size.y );
+		if ( WaveEnabled && diagonal > 0f && WaveCount > 0f )
+		{
+			float damp = _introDrive ? Math.Clamp( 1f - _introSweepT, 0f, 1f ) : 1f;
+			amplitude = WaveAmplitude * size.x * damp;
+			frequency = WaveCount * (MathF.PI * 2f) / diagonal;
+			phase = Time.Now * WaveSpeed;
+		}
+
+		_composite.WaveAmplitude = amplitude;
+		_composite.WaveFrequency = frequency;
+		_composite.WavePhase = phase;
 	}
 
 	private static float DiagonalAngle( Vector2 size )
@@ -295,6 +323,7 @@ public sealed class MenuDichotomyRig : Component
 		causeCam.RenderTarget = _causeFeed;
 		_composite.CauseFeed = _causeFeed;
 		_composite.Bounds = size;
+		TickWave( size );
 
 		float wantAngle = _introDrive ? _splitAngle : _baseAngle;
 		float wantOffset = _introDrive ? _splitOffset : DichotomyOffset;

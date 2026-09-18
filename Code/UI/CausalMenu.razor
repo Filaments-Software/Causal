@@ -51,6 +51,8 @@
 @code
 {
 	[Property] public float AboutSlideSeconds { get; set; } = 0.25f;
+	[Property] public string MenuMusicPath { get; set; } = "audio/ui/menumusic.sound";
+	[Property] public float MusicFadeInSeconds { get; set; } = 1.5f;
 
 	private bool _showAbout;
 	private bool _aboutClassesOpen;
@@ -62,6 +64,10 @@
 	private Panel _aboutPanel;
 
 	private TimeSince _timeSinceHover = 10f;
+
+	private SoundHandle _music;
+	private SoundEvent _menuTrack;
+	private bool _musicPlaying;
 
 	private bool IsMenuVisible
 	{
@@ -94,6 +100,7 @@
 	protected override void OnUpdate()
 	{
 		TickAboutSlide();
+		TickMenuMusic();
 
 		if ( _showAbout && Input.EscapePressed )
 		{
@@ -177,6 +184,65 @@
 	{
 		_aboutBackdrop?.SetClass( "open", _showAbout );
 		_aboutClassesOpen = _showAbout;
+	}
+
+	private void TickMenuMusic()
+	{
+		if ( IsMenuVisible && !_musicPlaying )
+		{
+			_musicPlaying = true;
+			_menuTrack ??= ResourceLibrary.Get<SoundEvent>( MenuMusicPath );
+			if ( _menuTrack is null )
+			{
+				Log.Warning( $"CausalMenu found no music at '{MenuMusicPath}'." );
+				_musicPlaying = false;
+				return;
+			}
+
+			_music = Sound.Play( _menuTrack );
+			if ( _music is not null )
+			{
+				_music.Volume = 0f;
+			}
+		}
+		else if ( !IsMenuVisible && _musicPlaying )
+		{
+			_musicPlaying = false;
+			_music?.Stop();
+			_music = null;
+		}
+
+		if ( !_musicPlaying || _music is null )
+		{
+			return;
+		}
+
+		if ( _music.Finished )
+		{
+			float volume = _music.Volume;
+			_music = Sound.Play( _menuTrack );
+			if ( _music is null )
+			{
+				return;
+			}
+
+			_music.Volume = volume;
+		}
+
+		var manager = CausalGameManager.Instance;
+		bool fadingOut = manager.IsValid() && manager.IsInIntro;
+		float duration = fadingOut
+			? manager.MenuFadeSeconds + manager.CameraFlightSeconds
+			: MusicFadeInSeconds;
+		if ( duration <= 0.01f )
+		{
+			duration = 0.01f;
+		}
+
+		float step = Time.Delta / duration;
+		_music.Volume = fadingOut
+			? Math.Max( 0f, _music.Volume - step )
+			: Math.Min( 1f, _music.Volume + step );
 	}
 
 	private void QuitGame()

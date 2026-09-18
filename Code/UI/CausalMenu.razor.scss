@@ -7,7 +7,7 @@ CausalMenu {
 	align-items: center;
 	justify-content: center;
 	pointer-events: all;
-	background-color: rgba(0, 0, 0, 0.55);
+	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 1;
 	// Keep in sync with CausalGameManager.MenuFadeSeconds.
 	transition: opacity 0.6s ease;

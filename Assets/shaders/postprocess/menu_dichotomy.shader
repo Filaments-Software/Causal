@@ -68,6 +68,9 @@ PS
 	float g_flSeamWidth < Attribute( "DichotomySeamWidth" ); Default( 0.006 ); >;
 	float4 g_vCauseTint < Attribute( "DichotomyCauseTint" ); Default4( 1.0, 0.72, 0.42, 1.0 ); >;
 	float4 g_vEffectTint < Attribute( "DichotomyEffectTint" ); Default4( 0.55, 0.82, 1.0, 1.0 ); >;
+	float g_flWavePhase < Attribute( "DichotomyWavePhase" ); Default( 0.0 ); >;
+	float g_flWaveAmp < Attribute( "DichotomyWaveAmplitude" ); Default( 0.0 ); >;
+	float g_flWaveFreq < Attribute( "DichotomyWaveFrequency" ); Default( 0.0 ); >;
 
 	float4 MainPs( PixelInput i ) : SV_Target0
 	{
@@ -82,6 +85,13 @@ PS
 		float2 lineDir = normalize( float2( cos( g_flAngle ), sin( g_flAngle ) ) );
 		float2 lineNormal = float2( -lineDir.y, lineDir.x );
 		float dist = dot( centered, lineNormal );
+
+		// Traveling sine along the line axis. The envelope pins both
+		// corners so the split stays corner to corner while waving.
+		float along = dot( centered, lineDir );
+		float halfDiag = length( g_vBounds ) * 0.5;
+		float envelope = 1.0 - smoothstep( halfDiag * 0.55, halfDiag, abs( along ) );
+		dist -= sin( along * g_flWaveFreq + g_flWavePhase ) * g_flWaveAmp * envelope;
 
 		float halfSeam = g_flSeamWidth * 0.5 * g_vBounds.x;
 		float causeMask = smoothstep( -halfSeam, halfSeam, dist );

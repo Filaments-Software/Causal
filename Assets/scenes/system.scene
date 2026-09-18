@@ -210,7 +210,7 @@
               "OnComponentFixedUpdate": null,
               "OnComponentStart": null,
               "OnComponentUpdate": null,
-              "VideoPath": "videos/filamentsintro.mp4",
+              "VideoPath": "videos/filamentsintro.webm",
               "Volume": 1
             }
           ],
@@ -286,7 +286,11 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "SplitSweepOffset": -0.8,
-          "SplitVerticalAngle": -1.5708
+          "SplitVerticalAngle": -1.5708,
+          "WaveAmplitude": 0.01,
+          "WaveCount": 1.2,
+          "WaveEnabled": true,
+          "WaveSpeed": 1.5
         }
       ],
       "Children": []
