@@ -13,6 +13,15 @@ public sealed class MenuDichotomyRig : Component
 	[Property] public float WaveAmplitude { get; set; } = 0.008f;
 	[Property] public float WaveCount { get; set; } = 2.5f;
 	[Property] public float WaveSpeed { get; set; } = 1.5f;
+	[Property] public bool VoronoiEnabled { get; set; } = true;
+	[Property] public float VoronoiCellSize { get; set; } = 120f;
+	[Property, Range( 0f, 1f )] public float VoronoiPatchCoverage { get; set; } = 0.15f;
+	[Property, Range( 0f, 1f )] public float VoronoiEmptyFraction { get; set; } = 0f;
+	[Property, Range( 0f, 1f )] public float VoronoiShadowStrength { get; set; } = 0.45f;
+	[Property] public float VoronoiShadowWidth { get; set; } = 0.25f;
+	[Property] public float VoronoiPatchPulse { get; set; } = 0.08f;
+	[Property] public float VoronoiRotationSpeed { get; set; } = 0.05f;
+	[Property] public float VoronoiDriftSpeed { get; set; } = 0.05f;
 
 	private GameObject _causeCamGo;
 	private GameObject _effectCamGo;
@@ -25,9 +34,18 @@ public sealed class MenuDichotomyRig : Component
 	private float _pushedAngle = float.MaxValue;
 	private float _pushedOffset = float.MaxValue;
 	private float _pushedSeam = float.MaxValue;
+	private float _pushedVoronoiCell = float.MaxValue;
+	private float _pushedVoronoiCover = float.MaxValue;
+	private float _pushedVoronoiEmpty = float.MaxValue;
+	private float _pushedVoronoiPulse = float.MaxValue;
+	private float _pushedVoronoiShadow = float.MaxValue;
+	private float _pushedVoronoiShadowWidth = float.MaxValue;
+	private float _pushedSplitMix = float.MaxValue;
+	private float _pushedIntroWave = float.MaxValue;
 	private float _baseAngle;
 	private float _splitAngle;
 	private float _splitOffset;
+	private float _splitMix;
 	private float _introSweepT;
 	private bool _introDrive;
 	private readonly List<ScreenPanel> _retargetedPanels = new();
@@ -72,6 +90,7 @@ public sealed class MenuDichotomyRig : Component
 		_menuActive = menu;
 		_introDrive = false;
 		_introSweepT = 0f;
+		_splitMix = 0f;
 		if ( menu )
 		{
 			Activate();
@@ -98,6 +117,7 @@ public sealed class MenuDichotomyRig : Component
 		float a = rotateT * rotateT * (3f - 2f * rotateT);
 		_splitAngle = _baseAngle + (SplitVerticalAngle - _baseAngle) * a;
 		_splitOffset = SplitSweepOffset * sweepT;
+		_splitMix = Math.Clamp( a, 0f, 1f );
 	}
 
 	private void Activate()
@@ -152,11 +172,20 @@ public sealed class MenuDichotomyRig : Component
 		_baseAngle = DiagonalAngle( Screen.Size );
 		_splitAngle = _baseAngle;
 		_splitOffset = 0f;
+		_splitMix = 0f;
 		_introSweepT = 0f;
 		_introDrive = false;
 		_pushedAngle = float.MaxValue;
 		_pushedOffset = float.MaxValue;
 		_pushedSeam = float.MaxValue;
+		_pushedVoronoiCell = float.MaxValue;
+		_pushedVoronoiCover = float.MaxValue;
+		_pushedVoronoiEmpty = float.MaxValue;
+		_pushedVoronoiPulse = float.MaxValue;
+		_pushedVoronoiShadow = float.MaxValue;
+		_pushedVoronoiShadowWidth = float.MaxValue;
+		_pushedSplitMix = float.MaxValue;
+		_pushedIntroWave = float.MaxValue;
 		_feedSize = new Vector2( -1f, -1f );
 		TickFeed();
 	}
@@ -190,16 +219,16 @@ public sealed class MenuDichotomyRig : Component
 		_menuCam = null;
 	}
 
-	private void TickWave( Vector2 size )
+	private void TickEdge( Vector2 size )
 	{
 		float amplitude = 0f;
 		float frequency = 0f;
 		float phase = 0f;
 
 		float diagonal = MathF.Sqrt( size.x * size.x + size.y * size.y );
+		float damp = _introDrive ? Math.Clamp( 1f - _introSweepT, 0f, 1f ) : 1f;
 		if ( WaveEnabled && diagonal > 0f && WaveCount > 0f )
 		{
-			float damp = _introDrive ? Math.Clamp( 1f - _introSweepT, 0f, 1f ) : 1f;
 			amplitude = WaveAmplitude * size.x * damp;
 			frequency = WaveCount * (MathF.PI * 2f) / diagonal;
 			phase = Time.Now * WaveSpeed;
@@ -208,6 +237,62 @@ public sealed class MenuDichotomyRig : Component
 		_composite.WaveAmplitude = amplitude;
 		_composite.WaveFrequency = frequency;
 		_composite.WavePhase = phase;
+
+		float cellSize = VoronoiCellSize <= 1f ? 1f : VoronoiCellSize;
+		float cover = VoronoiEnabled ? Math.Clamp( VoronoiPatchCoverage, 0f, 1f ) : 0f;
+		float wave = _introDrive ? Math.Clamp( _introSweepT, 0f, 1f ) : -1f;
+
+		if ( cellSize != _pushedVoronoiCell )
+		{
+			_pushedVoronoiCell = cellSize;
+			_composite.VoronoiCellSize = cellSize;
+		}
+
+		if ( cover != _pushedVoronoiCover )
+		{
+			_pushedVoronoiCover = cover;
+			_composite.VoronoiCoverage = cover;
+		}
+
+		if ( VoronoiEmptyFraction != _pushedVoronoiEmpty )
+		{
+			_pushedVoronoiEmpty = VoronoiEmptyFraction;
+			_composite.VoronoiEmpty = VoronoiEmptyFraction;
+		}
+
+		if ( VoronoiShadowStrength != _pushedVoronoiShadow )
+		{
+			_pushedVoronoiShadow = VoronoiShadowStrength;
+			_composite.VoronoiShadow = VoronoiShadowStrength;
+		}
+
+		if ( VoronoiShadowWidth != _pushedVoronoiShadowWidth )
+		{
+			_pushedVoronoiShadowWidth = VoronoiShadowWidth;
+			_composite.VoronoiShadowWidth = VoronoiShadowWidth;
+		}
+
+		if ( VoronoiPatchPulse != _pushedVoronoiPulse )
+		{
+			_pushedVoronoiPulse = VoronoiPatchPulse;
+			_composite.VoronoiPulse = VoronoiPatchPulse;
+		}
+
+		if ( wave != _pushedIntroWave )
+		{
+			_pushedIntroWave = wave;
+			_composite.IntroWave = wave;
+		}
+
+		float splitMix = _introDrive ? Math.Clamp( _splitMix, 0f, 1f ) : 0f;
+		if ( splitMix != _pushedSplitMix )
+		{
+			_pushedSplitMix = splitMix;
+			_composite.SplitMix = splitMix;
+		}
+
+		_composite.VoronoiAngle = Time.Now * VoronoiRotationSpeed;
+		_composite.VoronoiDrift = Time.Now * VoronoiDriftSpeed;
 	}
 
 	private static float DiagonalAngle( Vector2 size )
@@ -323,7 +408,7 @@ public sealed class MenuDichotomyRig : Component
 		causeCam.RenderTarget = _causeFeed;
 		_composite.CauseFeed = _causeFeed;
 		_composite.Bounds = size;
-		TickWave( size );
+		TickEdge( size );
 
 		float wantAngle = _introDrive ? _splitAngle : _baseAngle;
 		float wantOffset = _introDrive ? _splitOffset : DichotomyOffset;
