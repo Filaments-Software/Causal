@@ -19,6 +19,7 @@ public sealed class CausalGameManager : Component
 	private TimeSince _timeSinceIntro;
 	private Vector3 _flightFromPosition;
 	private Rotation _flightFromRotation;
+	private bool _paused;
 
 	protected override void OnAwake()
 	{
@@ -27,18 +28,40 @@ public sealed class CausalGameManager : Component
 
 	protected override void OnStart()
 	{
+		CausalSettings.Load();
 		ResolvePlayer();
 		EnterPreVideo();
 	}
 
 	protected override void OnUpdate()
 	{
+		if ( State == GameState.Active )
+		{
+			TickPauseInput();
+		}
+
 		if ( State != GameState.Intro )
 		{
 			return;
 		}
 
 		TickIntro();
+	}
+
+	private void TickPauseInput()
+	{
+		if ( !Input.EscapePressed )
+		{
+			return;
+		}
+
+		Input.EscapePressed = false;
+
+		var pause = CausalPauseMenu.Instance;
+		if ( pause.IsValid() )
+		{
+			pause.Toggle();
+		}
 	}
 
 	protected override void OnDestroy()
@@ -52,6 +75,7 @@ public sealed class CausalGameManager : Component
 	public void EnterPreVideo()
 	{
 		State = GameState.PreVideo;
+		_paused = false;
 		ApplyInputState();
 		SetMenuDichotomy( true );
 	}
@@ -59,6 +83,7 @@ public sealed class CausalGameManager : Component
 	public void EnterMenu()
 	{
 		State = GameState.Menu;
+		_paused = false;
 		ApplyInputState();
 		SetMenuDichotomy( true );
 	}
@@ -76,6 +101,7 @@ public sealed class CausalGameManager : Component
 			return;
 		}
 
+		EnsurePlayerAtSpawn();
 		_menuCam = FindMenuCamera();
 		_rig = FindRig();
 
@@ -101,7 +127,7 @@ public sealed class CausalGameManager : Component
 			SetMenuDichotomy( false );
 			DisableEffectIntroRoots();
 
-			if ( !Scene.Camera.IsValid() )
+			if ( !PrimaryScene().Camera.IsValid() )
 			{
 				EnterGame();
 				return;
@@ -123,9 +149,11 @@ public sealed class CausalGameManager : Component
 		}
 
 		State = GameState.Active;
+		_paused = false;
 		ApplyInputState();
 		SetMenuDichotomy( false );
 		DisableEffectIntroRoots();
+		EnsurePlayerAtSpawn();
 	}
 
 	private void TickIntro()
@@ -184,11 +212,24 @@ public sealed class CausalGameManager : Component
 
 		if ( !_controller.IsValid() )
 		{
-			foreach ( var controller in Scene.GetAllComponents<PlayerController>() )
+			foreach ( var scene in LookupScenes() )
 			{
-				_controller = controller;
-				Player = controller.GameObject;
-				break;
+				if ( !scene.IsValid() )
+				{
+					continue;
+				}
+
+				foreach ( var controller in scene.GetAllComponents<PlayerController>() )
+				{
+					_controller = controller;
+					Player = controller.GameObject;
+					break;
+				}
+
+				if ( _controller.IsValid() )
+				{
+					break;
+				}
 			}
 		}
 
@@ -198,42 +239,191 @@ public sealed class CausalGameManager : Component
 		}
 	}
 
+	private void EnsurePlayerAtSpawn()
+	{
+		if ( !_controller.IsValid() )
+		{
+			return;
+		}
+
+		var spawn = PickSpawn();
+		if ( !spawn.IsValid() )
+		{
+			Log.Warning( $"CausalGameManager on '{GameObject.Name}' found no active SpawnPoint." );
+			return;
+		}
+
+		var playerObject = _controller.GameObject;
+		if ( !playerObject.IsValid() )
+		{
+			return;
+		}
+
+		playerObject.WorldPosition = spawn.WorldPosition;
+		playerObject.WorldRotation = spawn.WorldRotation;
+		_controller.WishVelocity = 0;
+	}
+
+	// Single decision point for spawn selection. The current rule prefers the
+	// Cause branch so game start always lands in Cause. Later priorities such
+	// as checkpoints or round state only need to change the ordering here.
+	private SpawnPoint PickSpawn()
+	{
+		SpawnPoint activeFallback = null;
+		SpawnPoint causeFallback = null;
+
+		foreach ( var scene in LookupScenes() )
+		{
+			if ( !scene.IsValid() )
+			{
+				continue;
+			}
+
+			foreach ( var spawn in scene.GetAllComponents<SpawnPoint>() )
+			{
+				if ( !spawn.IsValid() || !spawn.Enabled )
+				{
+					continue;
+				}
+
+				var spawnObject = spawn.GameObject;
+				if ( !spawnObject.IsValid() || !spawnObject.Enabled )
+				{
+					continue;
+				}
+
+				bool branchActive = AreAncestorsEnabled( spawnObject );
+				bool cause = IsInCauseBranch( spawnObject );
+
+				if ( branchActive && cause )
+				{
+					return spawn;
+				}
+
+				if ( branchActive && activeFallback is null )
+				{
+					activeFallback = spawn;
+				}
+
+				if ( cause && causeFallback is null )
+				{
+					causeFallback = spawn;
+				}
+			}
+		}
+
+		return activeFallback ?? causeFallback;
+	}
+
+	private static bool AreAncestorsEnabled( GameObject go )
+	{
+		var parent = go.Parent;
+		while ( parent.IsValid() )
+		{
+			if ( !parent.Enabled )
+			{
+				return false;
+			}
+
+			parent = parent.Parent;
+		}
+
+		return true;
+	}
+
+	private static bool IsInCauseBranch( GameObject go )
+	{
+		var current = go;
+		while ( current.IsValid() )
+		{
+			if ( current.Tags.Has( TimeShiftManager.CauseTag ) )
+			{
+				return true;
+			}
+
+			current = current.Parent;
+		}
+
+		return false;
+	}
+
+	private Scene PrimaryScene()
+	{
+		var active = Game.ActiveScene;
+		if ( active is not null && active.IsValid() )
+		{
+			return active;
+		}
+
+		return Scene;
+	}
+
+	private IEnumerable<Scene> LookupScenes()
+	{
+		var primary = PrimaryScene();
+		if ( primary.IsValid() )
+		{
+			yield return primary;
+		}
+
+		if ( Scene.IsValid() && !ReferenceEquals( Scene, primary ) )
+		{
+			yield return Scene;
+		}
+	}
+
 	private CameraComponent FindMenuCamera()
 	{
-		var scene = Scene;
-		if ( !scene.IsValid() )
+		foreach ( var scene in LookupScenes() )
+		{
+			if ( !scene.IsValid() )
+			{
+				continue;
+			}
+
+			foreach ( var cam in scene.GetAllComponents<CameraComponent>() )
+			{
+				if ( cam.IsValid() && cam.IsMainCamera )
+				{
+					return cam;
+				}
+			}
+		}
+
+		var primary = PrimaryScene();
+		if ( !primary.IsValid() )
 		{
 			return null;
 		}
 
-		foreach ( var cam in scene.GetAllComponents<CameraComponent>() )
-		{
-			if ( cam.IsValid() && cam.IsMainCamera )
-			{
-				return cam;
-			}
-		}
-
-		return scene.Camera;
+		return primary.Camera;
 	}
 
 	private MenuDichotomyRig FindRig()
 	{
-		var scene = Scene;
-		if ( !scene.IsValid() )
+		foreach ( var scene in LookupScenes() )
 		{
-			return null;
-		}
-
-		foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
-		{
-			if ( rig.IsValid() )
+			if ( !scene.IsValid() )
 			{
-				return rig;
+				continue;
+			}
+
+			foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
+			{
+				if ( rig.IsValid() )
+				{
+					return rig;
+				}
 			}
 		}
 
 		return null;
+	}
+
+	public void SetPaused( bool paused )
+	{
+		_paused = paused;
+		ApplyInputState();
 	}
 
 	private void ApplyInputState()
@@ -243,7 +433,7 @@ public sealed class CausalGameManager : Component
 			return;
 		}
 
-		bool active = State == GameState.Active;
+		bool active = State == GameState.Active && !_paused;
 		_controller.WishVelocity = 0;
 		_controller.UseInputControls = active;
 		_controller.UseCameraControls = active;
@@ -254,51 +444,61 @@ public sealed class CausalGameManager : Component
 	{
 		// Game start is always Cause with shifting locked, so kill the
 		// effect intro roots directly instead of relying on bucket state.
-		var scene = Scene;
-		if ( !scene.IsValid() )
+		foreach ( var scene in LookupScenes() )
 		{
-			return;
-		}
-
-		foreach ( var go in scene.FindAllWithTag( TimeShiftManager.EffectTag ) )
-		{
-			if ( !go.IsValid() || !go.Tags.Has( TimeShiftManager.IntroTag, false ) )
+			if ( !scene.IsValid() )
 			{
 				continue;
 			}
 
-			var parent = go.Parent;
-			if ( parent.IsValid() && parent.Tags.Has( TimeShiftManager.EffectTag ) )
+			foreach ( var go in scene.FindAllWithTag( TimeShiftManager.EffectTag ) )
 			{
-				continue;
-			}
+				if ( !go.IsValid() || !go.Tags.Has( TimeShiftManager.IntroTag, false ) )
+				{
+					continue;
+				}
 
-			go.Enabled = false;
+				var parent = go.Parent;
+				if ( parent.IsValid() && parent.Tags.Has( TimeShiftManager.EffectTag ) )
+				{
+					continue;
+				}
+
+				go.Enabled = false;
+			}
 		}
 	}
 
 	private void SetMenuDichotomy( bool menu )
 	{
-		var scene = Scene;
-		if ( !scene.IsValid() )
+		var primary = PrimaryScene();
+		if ( !primary.IsValid() )
 		{
 			return;
 		}
 
-		var shift = scene.GetSystem<TimeShiftManager>();
+		var shift = primary.GetSystem<TimeShiftManager>();
 		if ( shift is not null )
 		{
 			shift.SetMenuDichotomy( menu );
 		}
 
-		foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
+		foreach ( var scene in LookupScenes() )
 		{
-			if ( !rig.IsValid() )
+			if ( !scene.IsValid() )
 			{
 				continue;
 			}
 
-			rig.SetMenuActive( menu );
+			foreach ( var rig in scene.GetAllComponents<MenuDichotomyRig>() )
+			{
+				if ( !rig.IsValid() )
+				{
+					continue;
+				}
+
+				rig.SetMenuActive( menu );
+			}
 		}
 	}
 

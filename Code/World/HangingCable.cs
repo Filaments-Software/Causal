@@ -327,7 +327,7 @@ public sealed class HangingCable : Component
 		{
 			if ( !HasJointBody( link.Anchor, false ) )
 			{
-				Log.Warning( $"HangingCable on '{GameObject.Name}' cable #{index} anchor '{link.Anchor.Name}' has no physics body yet; chain: {DescribeBodyChain( link.Anchor )} — a small static knob will be created." );
+				Log.Warning( $"HangingCable on '{GameObject.Name}' cable #{index} anchor '{link.Anchor.Name}' has no physics body yet; chain: {DescribeBodyChain( link.Anchor )} - a small static knob will be created." );
 			}
 
 			return true;
@@ -346,7 +346,7 @@ public sealed class HangingCable : Component
 
 		if ( !HasJointBody( link.Anchor, false ) )
 		{
-			Log.Warning( $"HangingCable on '{GameObject.Name}' cable #{index} anchor '{link.Anchor.Name}' has no physics body yet; chain: {DescribeBodyChain( link.Anchor )} — a small static knob will be created." );
+			Log.Warning( $"HangingCable on '{GameObject.Name}' cable #{index} anchor '{link.Anchor.Name}' has no physics body yet; chain: {DescribeBodyChain( link.Anchor )} - a small static knob will be created." );
 		}
 
 		return true;

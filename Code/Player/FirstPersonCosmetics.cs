@@ -28,6 +28,13 @@ public sealed class FirstPersonCosmetics : Component
 			return;
 		}
 
+		if ( !CausalSettings.FirstPersonClothing )
+		{
+			SetArmsBodyGroups( BareBodyGroups );
+			DisableClothingObject();
+			return;
+		}
+
 		_cts = new CancellationTokenSource();
 		int generation = ++_generation;
 		_ = ApplyCosmeticsAsync( generation, _cts.Token );
@@ -41,6 +48,54 @@ public sealed class FirstPersonCosmetics : Component
 			_cts.Cancel();
 			_cts.Dispose();
 			_cts = null;
+		}
+	}
+
+	public void Refresh()
+	{
+		if ( !ArmsRenderer.IsValid() || !ClothingRenderer.IsValid() )
+		{
+			return;
+		}
+
+		_generation++;
+		if ( _cts is not null )
+		{
+			_cts.Cancel();
+			_cts.Dispose();
+			_cts = null;
+		}
+
+		if ( !CausalSettings.FirstPersonClothing )
+		{
+			IsLoadingClothing = false;
+			SetArmsBodyGroups( BareBodyGroups );
+			DisableClothingObject();
+			return;
+		}
+
+		var clothingObject = ClothingRenderer.GameObject;
+		if ( clothingObject.IsValid() )
+		{
+			clothingObject.Enabled = true;
+		}
+
+		_cts = new CancellationTokenSource();
+		int generation = ++_generation;
+		_ = ApplyCosmeticsAsync( generation, _cts.Token );
+	}
+
+	private void DisableClothingObject()
+	{
+		if ( !ClothingRenderer.IsValid() )
+		{
+			return;
+		}
+
+		var clothingObject = ClothingRenderer.GameObject;
+		if ( clothingObject.IsValid() )
+		{
+			clothingObject.Enabled = false;
 		}
 	}
 

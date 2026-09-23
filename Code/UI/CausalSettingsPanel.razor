@@ -1,0 +1,169 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits Panel
+@namespace Causal
+
+<root>
+	<div class="settings-header">
+		<span>Settings</span>
+		<div class="settings-close" @onclick=@RequestClose>
+			<span>&#10005;</span>
+		</div>
+	</div>
+	<div class="settings-body">
+		<div class="toggle-row" @onclick=@ToggleClothing>
+			<div class="toggle-track @(_draftClothing ? "on" : "")">
+				<div class="toggle-thumb"></div>
+			</div>
+			<div class="toggle-text">
+				<span class="toggle-label">First Person Clothing</span>
+				<span class="toggle-note">When off, no avatar clothing is downloaded or shown.</span>
+			</div>
+		</div>
+	</div>
+	<div class="settings-footer">
+		@if ( IsDirty() )
+		{
+			<button class="settings-button" @onclick=@Discard>Discard</button>
+		}
+		<button class="settings-button primary @(IsDirty() ? "" : "disabled")" @onclick=@Apply>Apply</button>
+	</div>
+	@if ( _showLeaveWarning )
+	{
+		<div class="leave-overlay">
+			<div class="leave-box">
+				<div class="settings-close leave-cancel" @onclick=@CancelClose>
+					<span>&#10005;</span>
+				</div>
+				<span class="leave-text">You have unapplied changes. What would you like to do?</span>
+				<div class="leave-actions">
+					<button class="settings-button" @onclick=@DiscardAndClose>Discard and Close</button>
+					<button class="settings-button primary" @onclick=@ApplyAndClose>Apply and Close</button>
+				</div>
+			</div>
+		</div>
+	}
+</root>
+
+@code
+{
+	private bool _draftClothing = true;
+	private bool _showLeaveWarning;
+	private Action _pendingCloseAction;
+
+	protected override void OnAfterTreeRender( bool firstTime )
+	{
+		if ( firstTime )
+		{
+			SyncDraft();
+		}
+	}
+
+	public void SyncDraft()
+	{
+		_draftClothing = CausalSettings.FirstPersonClothing;
+		StateHasChanged();
+	}
+
+	public bool IsDirty()
+	{
+		return _draftClothing != CausalSettings.FirstPersonClothing;
+	}
+
+	private void ToggleClothing()
+	{
+		_draftClothing = !_draftClothing;
+		StateHasChanged();
+	}
+
+	private void Apply()
+	{
+		if ( !IsDirty() )
+		{
+			return;
+		}
+
+		CausalSettings.FirstPersonClothing = _draftClothing;
+		CausalSettings.Save();
+		CausalSettings.ApplyAll();
+		RefreshCosmetics();
+		StateHasChanged();
+	}
+
+	private void Discard()
+	{
+		SyncDraft();
+	}
+
+	public Action CustomClose;
+
+	private void RequestClose()
+	{
+		if ( CustomClose is not null )
+		{
+			RequestExternalClose( CustomClose );
+			return;
+		}
+
+		RequestExternalClose( () => CausalPauseMenu.CurrentView = CausalPauseMenu.ViewState.None );
+	}
+
+	public void RequestExternalClose( Action onConfirmed )
+	{
+		if ( IsDirty() )
+		{
+			_pendingCloseAction = onConfirmed;
+			_showLeaveWarning = true;
+			StateHasChanged();
+		}
+		else
+		{
+			onConfirmed?.Invoke();
+		}
+	}
+
+	private void CancelClose()
+	{
+		_showLeaveWarning = false;
+		_pendingCloseAction = null;
+		StateHasChanged();
+	}
+
+	private void DiscardAndClose()
+	{
+		SyncDraft();
+		_showLeaveWarning = false;
+		var action = _pendingCloseAction;
+		_pendingCloseAction = null;
+		action?.Invoke();
+	}
+
+	private void ApplyAndClose()
+	{
+		Apply();
+		_showLeaveWarning = false;
+		var action = _pendingCloseAction;
+		_pendingCloseAction = null;
+		action?.Invoke();
+	}
+
+	private static void RefreshCosmetics()
+	{
+		var scene = Game.ActiveScene;
+		if ( scene is null || !scene.IsValid() )
+		{
+			return;
+		}
+
+		foreach ( var cosmetics in scene.GetAllComponents<FirstPersonCosmetics>() )
+		{
+			if ( cosmetics.IsValid() )
+			{
+				cosmetics.Refresh();
+			}
+		}
+	}
+
+	protected override int BuildHash() => HashCode.Combine( _draftClothing, _showLeaveWarning, IsDirty() );
+}

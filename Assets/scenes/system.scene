@@ -5,7 +5,7 @@
       "__guid": "a028cc9f-0156-46a9-8465-34bf240576c0",
       "__version": 2,
       "__Prefab": {
-        "Id": "384febb8-da59-4635-b947-1dd2ed5ef27a",
+        "Id": "b8eb4f38-59da-3546-b947-1dd2ed5ef27a",
         "Path": "prefabs/player.prefab"
       },
       "__PrefabInstancePatch": {
@@ -81,7 +81,7 @@
               "IdValue": "0f074abc-e1e7-4c4f-ad9c-74fb8db4e277"
             },
             "Property": "RunSpeed",
-            "Value": 220
+            "Value": 110
           },
           {
             "Target": {
@@ -123,7 +123,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "UI",
-      "Position": "246.506042,0.347578555,-129.790588",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -161,18 +161,6 @@
           "AboutSlideSeconds": 0.25,
           "MenuMusicPath": "audio/ui/menumusic.sound",
           "MusicFadeInSeconds": 1.5,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "Causal.CosmeticLoadingIndicator",
-          "__guid": "b646940b-804c-408d-8924-844813107902",
-          "__enabled": true,
-          "Flags": 0,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -225,7 +213,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "Game Manager",
-      "Position": "246.506042,0.347578555,-129.790588",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",

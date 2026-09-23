@@ -1,5 +1,4 @@
 {
-  "guid": "36daa93c-31a0-4109-86cd-9e6b15a42cd5",
   "loop": true,
   "start": 0,
   "end": 0,
@@ -9,5 +8,6 @@
   "gain": 0,
   "rate": 44100,
   "compress": false,
-  "bitrate": 256
+  "bitrate": 256,
+  "guid": "36daa93c-31a0-4109-86cd-9e6b15a42cd5"
 }

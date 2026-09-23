@@ -1,0 +1,474 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@inherits Panel
+@namespace Causal
+
+<root class="@RootClass">
+	<div class="pause-layout">
+		<div class="pause-hitbox" @ref=_resumeHitbox @onclick=@Resume></div>
+		<div class="pause-hitbox" @ref=_settingsHitbox @onclick=@ToggleSettings></div>
+		<div class="pause-hitbox" @ref=_quitHitbox @onclick=@QuitGame></div>
+	</div>
+	<CausalSettingsPanel style="@SettingsStyle" @ref=SettingsView></CausalSettingsPanel>
+</root>
+
+@code
+{
+	public static CausalPauseMenu Instance { get; private set; }
+	public CausalSettingsPanel SettingsView { get; set; }
+	public static ViewState CurrentView { get; set; } = ViewState.None;
+
+	private bool _open;
+
+	private Panel _resumeHitbox;
+	private Panel _settingsHitbox;
+	private Panel _quitHitbox;
+
+	private float _resumeHover;
+	private float _settingsHover;
+	private float _quitHover;
+
+	private Texture _logoTexture;
+	private bool _logoTried;
+
+	private string RootClass => _open ? "focused" : "hidden";
+
+	private string SettingsStyle => CurrentView == ViewState.Settings
+		? "opacity: 1; pointer-events: all; transform: translateX(0);"
+		: "opacity: 0; pointer-events: none; transform: translateX(18px);";
+
+	protected override void OnAfterTreeRender( bool firstTime )
+	{
+		Instance = this;
+
+		if ( firstTime )
+		{
+			_open = false;
+			CurrentView = ViewState.None;
+			return;
+		}
+
+		if ( !_open && CurrentView != ViewState.None )
+		{
+			CurrentView = ViewState.None;
+		}
+	}
+
+	public override void OnDraw( Painter painter )
+	{
+		if ( !_open )
+		{
+			return;
+		}
+
+		var bounds = painter.Bounds;
+
+		// Dim scrim - GPU
+		painter.Fill = new Color( 0f, 0f, 0f, 0.55f );
+		painter.Stroke = Stroke.None;
+		painter.Rect( bounds );
+
+		// Logo + PAUSED - Painter image + text (drawn first so chrome can anchor to hitboxes after)
+		DrawBrand( painter );
+
+		// Resolve hitbox rects early so chrome can anchor to Razor's viewport tracking
+		Rect resumeRect = default;
+		Rect quitRect = default;
+		bool hasMenu = _resumeHitbox.IsValid() && _quitHitbox.IsValid();
+		if ( hasMenu )
+		{
+			Vector2 rootPos = Box.Rect.Position;
+			resumeRect = new Rect( _resumeHitbox.Box.Rect.Position - rootPos, _resumeHitbox.Box.Rect.Size );
+			quitRect = new Rect( _quitHitbox.Box.Rect.Position - rootPos, _quitHitbox.Box.Rect.Size );
+			// Fallback if flex pushed outside viewport (your bottom-drift screenshot) - use bounds-centered
+			if ( resumeRect.Top < -100f || resumeRect.Top > bounds.Height - 20f )
+			{
+				float totalH = 3f * 52f + 2f * 12f;
+				float startY = bounds.Height * 0.5f - totalH * 0.5f;
+				resumeRect = new Rect( 150f, startY, 360f, 52f );
+				quitRect = new Rect( 150f, startY + 2f * (52f + 12f), 360f, 52f );
+			}
+		}
+
+		// Subtle chrome - now anchored to hitboxes like Razor does, not fixed screen coords
+		using ( painter.Scope() )
+		{
+			var cyan = new Color( 0.67f, 0.86f, 1f );
+			// Vertical gutter 18px left of menu, spanning menu height with 24px padding
+			if ( hasMenu && resumeRect.Width > 0 && quitRect.Width > 0 )
+			{
+				float x = resumeRect.Left - 18f;
+				float top = resumeRect.Top - 24f;
+				float bottom = quitRect.Bottom + 24f;
+				// Clamp inside viewport like Razor's overflow clip
+				top = Math.Max( top, bounds.Top + 100f );
+				bottom = Math.Min( bottom, bounds.Bottom - 40f );
+				if ( top < bottom && x > bounds.Left && x < bounds.Right )
+				{
+					painter.Stroke = Stroke.Solid( cyan.WithAlpha( 0.22f ), 1.2f );
+					painter.Line( new Vector2( x, top ), new Vector2( x, bottom ) );
+				}
+			}
+			else
+			{
+				// Fallback fixed if hitboxes not yet laid out
+				painter.Stroke = Stroke.Solid( cyan.WithAlpha( 0.18f ), 1.5f );
+				painter.Line( new Vector2( 132f, 118f ), new Vector2( 132f, bounds.Height - 80f ) );
+			}
+
+			// Horizontal hairline under brand - use brand rect width, not fixed 300
+			painter.Stroke = Stroke.Solid( cyan.WithAlpha( 0.14f ), 1f );
+			float hy = 82f;
+			// Brand bottom is at 32+36=68, so hairline 14px below
+			painter.Line( new Vector2( 32f, hy ), new Vector2( Math.Min( 320f, bounds.Width - 40f ), hy ) );
+		}
+
+		// Menu items - Painter text drawn into invisible hitboxes
+		DrawMenuItems( painter );
+
+		// Hint - Painter text
+		DrawHint( painter );
+	}
+
+	private void DrawBrand( Painter painter )
+	{
+		if ( !_logoTried )
+		{
+			_logoTried = true;
+			try
+			{
+				_logoTexture = Texture.Load( "textures/causal-logo.png" );
+			}
+			catch
+			{
+				_logoTexture = null;
+			}
+		}
+
+		var cyan = new Color( 0.67f, 0.86f, 1f );
+		var bounds = painter.Bounds;
+
+		// Use bounds as viewport like Razor does - brand stays viewport-top-left
+		// regardless of flex. This mirrors how Razor's Box.Rect for an absolute
+		// brand would be computed from screen bounds.
+		float bx = 40f;
+		float by = 32f;
+
+		if ( _logoTexture.IsValid() )
+		{
+			float logoW = 160f;
+			float aspect = _logoTexture.Height > 0 ? (float)_logoTexture.Width / _logoTexture.Height : 1f;
+			float logoH = logoW / (aspect > 0 ? aspect : 1f);
+			if ( logoH > 36f )
+			{
+				logoH = 36f;
+				logoW = logoH * aspect;
+			}
+
+			// Clamp logo rect to viewport so it never drifts off-screen if bounds shrinks
+			logoW = Math.Min( logoW, bounds.Width - bx - 240f );
+			var logoRect = new Rect( bx, by, logoW, logoH );
+			painter.Texture( _logoTexture, logoRect, Color.White );
+
+			var pausedRect = new Rect( logoRect.Right + 18f, by, 220f, logoH );
+			// Ensure paused stays inside viewport
+			if ( pausedRect.Right > bounds.Width - 20f )
+			{
+				pausedRect = new Rect( pausedRect.Left, pausedRect.Top, bounds.Width - pausedRect.Left - 20f, pausedRect.Height );
+			}
+
+			painter.TextStyle = new TextStyle( "Roboto", 22f, new Color( 1f, 1f, 1f, 0.9f ) )
+				.WithWeight( 600 )
+				.WithLetterSpacing( 8f )
+				.WithAlignment( TextFlag.LeftCenter )
+				.WithShadow( cyan.WithAlpha( 0.9f ), blur: 8f, offset: new Vector2( 0f, 0f ) );
+			painter.Text( "PAUSED", pausedRect );
+		}
+		else
+		{
+			painter.TextStyle = new TextStyle( "Roboto", 28f, new Color( 1f, 1f, 1f, 0.9f ) )
+				.WithWeight( 600 )
+				.WithLetterSpacing( 8f )
+				.WithAlignment( TextFlag.LeftCenter )
+				.WithShadow( cyan.WithAlpha( 0.9f ), blur: 8f, offset: new Vector2( 0f, 0f ) );
+			painter.Text( "PAUSED", new Rect( bx, by, 260f, 36f ) );
+		}
+	}
+
+	private void DrawMenuItems( Painter painter )
+	{
+		if ( !_resumeHitbox.IsValid() || !_settingsHitbox.IsValid() || !_quitHitbox.IsValid() )
+		{
+			return;
+		}
+
+		Vector2 rootPos = Box.Rect.Position;
+		var bounds = painter.Bounds;
+
+		Rect ToLocal( Panel p )
+		{
+			if ( !p.IsValid() )
+			{
+				return default;
+			}
+
+			var screen = p.Box.Rect;
+			var pos = screen.Position - rootPos;
+			bool outside = pos.y < -100f || pos.y > bounds.Height - 20f;
+			if ( outside )
+			{
+				int idx = p == _resumeHitbox ? 0 : p == _settingsHitbox ? 1 : 2;
+				float totalH = 3f * 52f + 2f * 12f;
+				float startY = bounds.Height * 0.5f - totalH * 0.5f;
+				float y = startY + idx * (52f + 12f);
+				return new Rect( 150f, y, 360f, 52f );
+			}
+
+			return new Rect( pos, screen.Size );
+		}
+
+		var resumeRect = ToLocal( _resumeHitbox );
+		var settingsRect = ToLocal( _settingsHitbox );
+		var quitRect = ToLocal( _quitHitbox );
+
+		var cyan = new Color( 0.67f, 0.86f, 1f );
+
+		DrawMenuEntry( painter, "RESUME", resumeRect, _resumeHover, _resumeHitbox.HasActive, cyan );
+		DrawMenuEntry( painter, "SETTINGS", settingsRect, _settingsHover, _settingsHitbox.HasActive, cyan );
+		DrawMenuEntry( painter, "QUIT", quitRect, _quitHover, _quitHitbox.HasActive, cyan );
+	}
+
+	private void DrawMenuEntry( Painter painter, string text, Rect rect, float hover, bool active, Color cyan )
+	{
+		if ( rect.Width <= 0 || rect.Height <= 0 )
+		{
+			return;
+		}
+
+		// Smooth eased transition like CSS transition: color 0.2s ease, transform 0.2s ease, width 0.28s ease-out, arrow 0.3s ease
+		hover = Math.Clamp( hover, 0f, 1f );
+		float eased = hover * hover * (3f - 2f * hover); // smoothstep - matches ease
+
+		float nudgeX = 5f * eased;
+		if ( active )
+		{
+			nudgeX += 1f * eased;
+		}
+
+		// Interpolate idle -> hover
+		var baseColor = new Color( 1f, 1f, 1f, 0.7f + 0.3f * eased );
+		var idleShadow = new Color( 0.47f, 0.78f, 1f, 0.35f );
+		var hoverShadow = cyan.WithAlpha( 0.95f );
+		var shadowColor = Color.Lerp( idleShadow, hoverShadow, eased );
+		float shadowBlur = 6f + 6f * eased;
+
+		painter.TextStyle = new TextStyle( "Roboto", 32f, baseColor )
+			.WithWeight( 500 )
+			.WithLetterSpacing( 4f )
+			.WithAlignment( TextFlag.LeftCenter )
+			.WithShadow( shadowColor, blur: shadowBlur, offset: new Vector2( 0f, 0f ) );
+
+		var textRect = new Rect( rect.Position + new Vector2( nudgeX, 0f ), rect.Size );
+		float scale = active ? 0.98f : 1f;
+		if ( active )
+		{
+			textRect = new Rect( textRect.Position + new Vector2( 1f, 1f ) * eased, textRect.Size * (1f - 0.02f * eased) );
+		}
+
+		_ = scale;
+
+		painter.Text( text, textRect );
+
+		// Arrow - fades/ slides in with eased hover, replicates CSS transition: all 0.3s ease, left -10 -> -15
+		if ( eased > 0.01f )
+		{
+			using ( painter.Scope() )
+			{
+				float arrowAlpha = eased;
+				// Idle left -10 (alpha 0), hover left -15 (alpha 1) - lerp
+				float cxBase = rect.Left - 10f - 5f * eased + nudgeX;
+				float cy = rect.Top + rect.Height * 0.5f;
+				painter.Fill = cyan.WithAlpha( 0.9f * arrowAlpha );
+				painter.Stroke = Stroke.None;
+				painter.Polygon( new Vector2[]
+				{
+					new Vector2( cxBase - 8f, cy - 6f ),
+					new Vector2( cxBase, cy ),
+					new Vector2( cxBase - 8f, cy + 6f ),
+				} );
+			}
+		}
+
+		// Hover line - width 0% -> 100% with ease-out, like CSS width 0.28s ease-out
+		if ( eased > 0.01f )
+		{
+			using ( painter.Scope() )
+			{
+				float y = rect.Bottom - 3f;
+				float w = rect.Width * eased;
+				var lineRect = new Rect( rect.Left + nudgeX, y, w, 3f );
+				var gradStart = new Color( 0.55f, 0.82f, 1f, 0.9f );
+				var gradEnd = new Color( 0.47f, 0.78f, 1f, 0.9f );
+				// Fade gradient with eased alpha so line grows smoothly
+				painter.Fill = Fill.LinearGradient( gradStart.WithAlpha( 0.9f * eased ), gradEnd.WithAlpha( 0.9f * eased ), 0f );
+				painter.Stroke = Stroke.None;
+				painter.Rect( lineRect );
+
+				painter.Fill = new Color( 0.55f, 0.82f, 1f, 0.18f * eased );
+				painter.Rect( new Rect( lineRect.Left, lineRect.Top - 1f, lineRect.Width, lineRect.Height + 2f ) );
+			}
+		}
+	}
+
+	private void DrawHint( Painter painter )
+	{
+		if ( !_quitHitbox.IsValid() )
+		{
+			return;
+		}
+
+		Vector2 rootPos = Box.Rect.Position;
+		var quitScreen = _quitHitbox.Box.Rect;
+		var quitLocal = new Rect( quitScreen.Position - rootPos, quitScreen.Size );
+
+		var hintRect = new Rect( quitLocal.Left, quitLocal.Bottom + 18f, 220f, 20f );
+		var pulse = 0.65f + 0.35f * MathF.Sin( Time.Now * 2.6f );
+		var hintColor = new Color( 0.67f, 0.82f, 0.94f, 0.45f * pulse + 0.35f );
+
+		painter.TextStyle = new TextStyle( "Roboto", 12f, hintColor )
+			.WithWeight( 400 )
+			.WithLetterSpacing( 2f )
+			.WithAlignment( TextFlag.LeftTop );
+		painter.Text( "ESC TO RESUME", hintRect );
+	}
+
+	public override void Tick()
+	{
+		var manager = CausalGameManager.Instance;
+		if ( !manager.IsValid() || !manager.IsActive )
+		{
+			if ( _open )
+			{
+				_open = false;
+				CurrentView = ViewState.None;
+				UpdateControls();
+				StateHasChanged();
+			}
+		}
+
+		if ( !_open && CurrentView != ViewState.None )
+		{
+			CurrentView = ViewState.None;
+			StateHasChanged();
+		}
+
+		// Animate hover transitions like CSS transition 0.2s ease / 0.28s ease-out / 0.3s ease
+		float dt = Time.Delta;
+		float spd = dt * 11f; // ~0.2s to 90%
+		if ( _resumeHitbox.IsValid() )
+		{
+			float t = _resumeHitbox.HasHovered ? 1f : 0f;
+			_resumeHover = _resumeHover.LerpTo( t, spd );
+		}
+
+		if ( _settingsHitbox.IsValid() )
+		{
+			float t = _settingsHitbox.HasHovered ? 1f : 0f;
+			_settingsHover = _settingsHover.LerpTo( t, spd );
+		}
+
+		if ( _quitHitbox.IsValid() )
+		{
+			float t = _quitHitbox.HasHovered ? 1f : 0f;
+			_quitHover = _quitHover.LerpTo( t, spd );
+		}
+	}
+
+	public void Toggle()
+	{
+		if ( _open )
+		{
+			Close();
+		}
+		else
+		{
+			Open();
+		}
+	}
+
+	public void Open()
+	{
+		_open = true;
+		CurrentView = ViewState.None;
+		SettingsView?.SyncDraft();
+		UpdateControls();
+		StateHasChanged();
+	}
+
+	public void Close()
+	{
+		Gate( () =>
+		{
+			_open = false;
+			CurrentView = ViewState.None;
+			UpdateControls();
+			StateHasChanged();
+		} );
+	}
+
+	private void Resume()
+	{
+		Close();
+	}
+
+	private void ToggleSettings()
+	{
+		if ( CurrentView != ViewState.Settings )
+		{
+			CurrentView = ViewState.Settings;
+			SettingsView?.SyncDraft();
+			StateHasChanged();
+			return;
+		}
+
+		Gate( () =>
+		{
+			CurrentView = ViewState.None;
+			StateHasChanged();
+		} );
+	}
+
+	private void QuitGame()
+	{
+		Gate( () => Game.Close() );
+	}
+
+	private void Gate( Action action )
+	{
+		if ( CurrentView == ViewState.Settings && SettingsView is not null && SettingsView.IsDirty() )
+		{
+			SettingsView.RequestExternalClose( action );
+			return;
+		}
+
+		action();
+	}
+
+	private void UpdateControls()
+	{
+		var manager = CausalGameManager.Instance;
+		if ( manager.IsValid() )
+		{
+			manager.SetPaused( _open );
+		}
+	}
+
+	protected override int BuildHash() => HashCode.Combine( _open, CurrentView );
+
+	public enum ViewState
+	{
+		None,
+		Settings
+	}
+}

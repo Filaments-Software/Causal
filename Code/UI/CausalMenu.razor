@@ -19,10 +19,23 @@
 					<label class="avatar-status">Applying avatar clothing...</label>
 				}
 			</div>
+			<div class="settings-row">
+				<div class="menu-item" @onclick=@ShowSettings onmouseover=@PlayHoverSound>
+					<span>Settings</span>
+				</div>
+				@if ( !CausalSettings.FirstPersonClothing )
+				{
+					<span class="settings-tip" title="Enable First Person Clothing to see your avatar outfit in first person. Disabled by default to save downloads.">Tip: avatar clothing off - enable in Settings for full detail</span>
+				}
+			</div>
 			<div class="menu-item" @onclick=@QuitGame onmouseover=@PlayHoverSound>
 				<span>Quit</span>
 			</div>
 		</div>
+	</div>
+	<div class="settings-backdrop" @ref="_settingsBackdrop" @onclick=@HideSettings></div>
+	<div class="settings-modal" @ref="_settingsModal">
+		<CausalSettingsPanel @ref="_menuSettingsPanel"></CausalSettingsPanel>
 	</div>
 	<div class="about-link" @onclick=@ShowAbout onmouseover=@PlayHoverSound>
 		<span class="about-glyph">?</span>
@@ -62,6 +75,13 @@
 
 	private Panel _aboutBackdrop;
 	private Panel _aboutPanel;
+	private Panel _settingsBackdrop;
+	private Panel _settingsModal;
+	private CausalSettingsPanel _menuSettingsPanel;
+	private bool _showSettings;
+	private float _settingsSlideT;
+	private float _lastSettingsRight = float.MaxValue;
+	private float _lastSettingsOpacity = -1f;
 
 	private TimeSince _timeSinceHover = 10f;
 
@@ -95,16 +115,25 @@
 	protected override void OnStart()
 	{
 		TickAboutSlide();
+		TickSettingsSlide();
+		EnsurePauseMenu();
 	}
 
 	protected override void OnUpdate()
 	{
 		TickAboutSlide();
+		TickSettingsSlide();
 		TickMenuMusic();
 
 		if ( _showAbout && Input.EscapePressed )
 		{
 			HideAbout();
+			Input.EscapePressed = false;
+		}
+		else if ( _showSettings && Input.EscapePressed )
+		{
+			HideSettings();
+			Input.EscapePressed = false;
 		}
 	}
 
@@ -141,6 +170,24 @@
 		{
 			ApplyAboutClasses();
 		}
+	}
+
+	private void EnsurePauseMenu()
+	{
+		if ( CausalPauseMenu.Instance.IsValid() )
+		{
+			return;
+		}
+
+		// Host at the UI tree root, not under this menu: the menu root goes
+		// display:none outside menu states, which would hide the pause menu too.
+		var host = Panel;
+		while ( host.Parent.IsValid() )
+		{
+			host = host.Parent;
+		}
+
+		host.AddChild<CausalPauseMenu>();
 	}
 
 	private void EnterGame()
@@ -184,6 +231,65 @@
 	{
 		_aboutBackdrop?.SetClass( "open", _showAbout );
 		_aboutClassesOpen = _showAbout;
+	}
+
+	private void TickSettingsSlide()
+	{
+		if ( _menuSettingsPanel.IsValid() && _menuSettingsPanel.CustomClose is null )
+		{
+			_menuSettingsPanel.CustomClose = HideSettings;
+			_menuSettingsPanel.SyncDraft();
+		}
+
+		float duration = AboutSlideSeconds <= 0.01f ? 0.01f : AboutSlideSeconds;
+		_settingsSlideT = MathX.Clamp( _settingsSlideT + ( _showSettings ? Time.Delta : -Time.Delta ) / duration, 0f, 1f );
+		float eased = _settingsSlideT * _settingsSlideT * ( 3f - 2f * _settingsSlideT );
+
+		if ( _settingsModal.IsValid() )
+		{
+			float offset = -120f * ( 1f - eased );
+			if ( MathF.Abs( offset - _lastSettingsRight ) > 0.1f )
+			{
+				_settingsModal.Style.Right = Length.Percent( offset );
+				_lastSettingsRight = offset;
+			}
+		}
+
+		if ( _settingsBackdrop.IsValid() )
+		{
+			float opacity = 0.45f * eased;
+			if ( MathF.Abs( opacity - _lastSettingsOpacity ) > 0.005f )
+			{
+				_settingsBackdrop.Style.Opacity = opacity;
+				_lastSettingsOpacity = opacity;
+			}
+		}
+
+		_settingsBackdrop?.SetClass( "open", _showSettings );
+	}
+
+	private void ShowSettings()
+	{
+		_showAbout = false;
+		ApplyAboutClasses();
+		_showSettings = true;
+		_menuSettingsPanel?.SyncDraft();
+	}
+
+	private void HideSettings()
+	{
+		if ( !_showSettings )
+		{
+			return;
+		}
+
+		if ( _menuSettingsPanel.IsValid() && _menuSettingsPanel.IsDirty() )
+		{
+			_menuSettingsPanel.RequestExternalClose( () => { _showSettings = false; } );
+			return;
+		}
+
+		_showSettings = false;
 	}
 
 	private void TickMenuMusic()
@@ -263,5 +369,5 @@
 		Sound.Play( "audio/ui/menuhover.sound" );
 	}
 
-	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading, IsApplyingClothing );
+	protected override int BuildHash() => HashCode.Combine( IsMenuVisible, IsFading, IsApplyingClothing, _showSettings, CausalSettings.FirstPersonClothing );
 }

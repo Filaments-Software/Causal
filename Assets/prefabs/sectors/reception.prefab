@@ -12796,7 +12796,7 @@
             },
             "Scale": 0.13,
             "TextScope": {
-              "Text": "RESEARCH\n\nFOR A SAFER\n\nTOMORROW\n——————",
+              "Text": "RESEARCH\n\nFOR A SAFER\n\nTOMORROW\n------",
               "TextColor": "0.03256,0.03256,0.03256,1",
               "FontName": "Inter",
               "FontSize": 128,
